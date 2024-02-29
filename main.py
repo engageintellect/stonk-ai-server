@@ -28,6 +28,13 @@ else:
 client = OpenAI(api_key=openai_api_key)
 
 # Hello World route
+@app.get("/", tags=["root"])
+def hello():
+    msg={"message": "Hello, World!", "version": "0.0.5"}
+    print(msg)
+    return msg
+
+# Hello World route
 @app.get("/api/hello")
 def hello():
     msg={"message": "Hello, World!", "version": "0.0.5"}
@@ -112,5 +119,5 @@ def get_stock_data(ticker: str):
     
 
 if __name__ == "__main__":
-    uvicorn.run("main_v3:app", host="0.0.0.0", port=6969,)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000,)
 
