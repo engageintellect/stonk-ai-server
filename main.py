@@ -102,22 +102,19 @@ def get_stock_data(ticker: str):
         # Get the current date
         current_date = datetime.date.today()
         # Generate future dates starting from the current date
-        dates = [current_date + datetime.timedelta(days=i) for i in range(len(predicted_prices))]
+        dates_ascending = [current_date + datetime.timedelta(days=i) for i in range(len(predicted_prices))]
+        dates_descending = [current_date - datetime.timedelta(days=i) for i in range(len(close_prices[-90:]))][::-1]
+
         # Create list of dictionaries containing date, price, and id
-        price_objects = [{"id": i+1, "date": str(date), "price": price} for i, (date, price) in enumerate(zip(dates, predicted_prices))]
-        close_objects = [{"id": i+1, "date": str(date), "price": price} for i, (date, price) in enumerate(zip(dates, close_prices))]
+        price_objects = [{"id": i+1, "date": str(date), "price": price} for i, (date, price) in enumerate(zip(dates_ascending, predicted_prices))]
+        close_objects = [{"id": i+1, "date": str(date), "price": price} for i, (date, price) in enumerate(zip(dates_descending, close_prices[-90:]))]
         
         # Pretty print ticker_data.info
         ticker_info_dict = ticker_data.info
         ticker_info_str = json.dumps(ticker_info_dict, indent=4)
         print(ticker_info_str)
 
-        payload={"ticker": ticker, "ticker_info": ticker_info_dict, "predicted_prices": price_objects, "price_history": close_prices[-90:]}
-
-
-        
-
-
+        payload={"ticker": ticker, "ticker_info": ticker_info_dict, "predicted_prices": price_objects, "price_history": close_objects}
         return payload
 
     except Exception as e:
