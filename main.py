@@ -112,7 +112,7 @@ def get_stock_data(ticker: str):
         ticker_info_str = json.dumps(ticker_info_dict, indent=4)
         print(ticker_info_str)
 
-        payload={"ticker": ticker, "ticker_info": ticker_info_dict, "predicted_prices": price_objects, "price_history": close_prices}
+        payload={"ticker": ticker, "ticker_info": ticker_info_dict, "predicted_prices": price_objects, "price_history": close_prices[-30:]}
 
 
         
