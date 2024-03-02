@@ -97,6 +97,7 @@ def get_stock_data(ticker: str):
 
         predicted_prices = scaler.inverse_transform(np.array(predicted_prices_scaled).reshape(-1, 1))
         predicted_prices = [price for sublist in predicted_prices.tolist() for price in sublist]
+        close_prices = [price for sublist in close_prices.tolist() for price in sublist]
 
         # Get the current date
         current_date = datetime.date.today()
@@ -104,13 +105,18 @@ def get_stock_data(ticker: str):
         dates = [current_date + datetime.timedelta(days=i) for i in range(len(predicted_prices))]
         # Create list of dictionaries containing date, price, and id
         price_objects = [{"id": i+1, "date": str(date), "price": price} for i, (date, price) in enumerate(zip(dates, predicted_prices))]
+        close_objects = [{"id": i+1, "date": str(date), "price": price} for i, (date, price) in enumerate(zip(dates, close_prices))]
         
         # Pretty print ticker_data.info
         ticker_info_dict = ticker_data.info
         ticker_info_str = json.dumps(ticker_info_dict, indent=4)
         print(ticker_info_str)
 
-        payload={"ticker": ticker, "ticker_info": ticker_info_dict, "predicted_prices": price_objects}
+        payload={"ticker": ticker, "ticker_info": ticker_info_dict, "predicted_prices": price_objects, "price_history": close_prices}
+
+
+        
+
 
         return payload
 
