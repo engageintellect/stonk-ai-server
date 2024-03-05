@@ -66,6 +66,9 @@ def get_stock_data(ticker: str):
         close_prices = np.array(stock_data['Close']).reshape(-1, 1)
         scaler = MinMaxScaler(feature_range=(0, 1))
         close_prices_scaled = scaler.fit_transform(close_prices)
+        stock_news = yf.Ticker(ticker).news
+        # options = yf.Ticker(ticker).options
+        earnings_dates = yf.Ticker(ticker).institutional_holders
 
         X, y = [], []
         look_back = 90
@@ -114,7 +117,14 @@ def get_stock_data(ticker: str):
         ticker_info_str = json.dumps(ticker_info_dict, indent=4)
         print(ticker_info_str)
 
-        payload={"ticker": ticker, "ticker_info": ticker_info_dict, "predicted_prices": price_objects, "price_history": close_objects}
+        payload={
+            "ticker": ticker, 
+            "ticker_info": ticker_info_dict, 
+            "predicted_prices": price_objects, 
+            "price_history": close_objects,
+            "news": stock_news,
+
+        }
         return payload
 
     except Exception as e:
