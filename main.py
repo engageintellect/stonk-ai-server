@@ -64,11 +64,50 @@ def get_stock_data(ticker: str):
         stock_data = yf.download(ticker, period="1y")
         ticker_data = yf.Ticker(ticker)
         close_prices = np.array(stock_data['Close']).reshape(-1, 1)
+        stock_news = yf.Ticker(ticker).news
+        close_prices = [price for sublist in close_prices.tolist() for price in sublist]
+
+        # Get the current date
+        current_date = datetime.date.today()
+        # Generate future dates starting from the current date
+        # dates_ascending = [current_date + datetime.timedelta(days=i) for i in range(len(predicted_prices))]
+        dates_descending = [current_date - datetime.timedelta(days=i) for i in range(len(close_prices[-90:]))][::-1]
+
+        # Create list of dictionaries containing date, price, and id
+        close_objects = [{"id": i+1, "date": str(date), "price": price} for i, (date, price) in enumerate(zip(dates_descending, close_prices[-90:]))]
+        
+        # Pretty print ticker_data.info
+        ticker_info_dict = ticker_data.info
+        ticker_info_str = json.dumps(ticker_info_dict, indent=4)
+        print(ticker_info_str)
+
+        payload={
+            "ticker": ticker, 
+            "ticker_info": ticker_info_dict, 
+            "price_history": close_objects,
+            "news": stock_news,
+
+        }
+        return payload
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    
+
+
+
+
+
+# API route for stock data
+@app.get("/api/predict/{ticker}")
+def get_stock_data(ticker: str):
+    try:
+        stock_data = yf.download(ticker, period="1y")
+        ticker_data = yf.Ticker(ticker)
+        close_prices = np.array(stock_data['Close']).reshape(-1, 1)
         scaler = MinMaxScaler(feature_range=(0, 1))
         close_prices_scaled = scaler.fit_transform(close_prices)
-        stock_news = yf.Ticker(ticker).news
         # options = yf.Ticker(ticker).options
-        earnings_dates = yf.Ticker(ticker).institutional_holders
 
         X, y = [], []
         look_back = 90
@@ -106,11 +145,9 @@ def get_stock_data(ticker: str):
         current_date = datetime.date.today()
         # Generate future dates starting from the current date
         dates_ascending = [current_date + datetime.timedelta(days=i) for i in range(len(predicted_prices))]
-        dates_descending = [current_date - datetime.timedelta(days=i) for i in range(len(close_prices[-90:]))][::-1]
 
         # Create list of dictionaries containing date, price, and id
         price_objects = [{"id": i+1, "date": str(date), "price": price} for i, (date, price) in enumerate(zip(dates_ascending, predicted_prices))]
-        close_objects = [{"id": i+1, "date": str(date), "price": price} for i, (date, price) in enumerate(zip(dates_descending, close_prices[-90:]))]
         
         # Pretty print ticker_data.info
         ticker_info_dict = ticker_data.info
@@ -118,18 +155,23 @@ def get_stock_data(ticker: str):
         print(ticker_info_str)
 
         payload={
-            "ticker": ticker, 
-            "ticker_info": ticker_info_dict, 
             "predicted_prices": price_objects, 
-            "price_history": close_objects,
-            "news": stock_news,
 
         }
         return payload
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-    
+ 
+
+
+
+
+
+
+
+
+
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000,)
