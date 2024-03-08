@@ -71,10 +71,10 @@ def get_stock_data(ticker: str):
         current_date = datetime.date.today()
         # Generate future dates starting from the current date
         # dates_ascending = [current_date + datetime.timedelta(days=i) for i in range(len(predicted_prices))]
-        dates_descending = [current_date - datetime.timedelta(days=i) for i in range(len(close_prices[-90:]))][::-1]
+        dates_descending = [current_date - datetime.timedelta(days=i) for i in range(len(close_prices[-180:]))][::-1]
 
         # Create list of dictionaries containing date, price, and id
-        close_objects = [{"id": i+1, "date": str(date), "price": price} for i, (date, price) in enumerate(zip(dates_descending, close_prices[-90:]))]
+        close_objects = [{"id": i+1, "date": str(date), "price": price} for i, (date, price) in enumerate(zip(dates_descending, close_prices[-180:]))]
         
         # Pretty print ticker_data.info
         ticker_info_dict = ticker_data.info
