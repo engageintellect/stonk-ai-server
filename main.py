@@ -34,21 +34,21 @@ client = OpenAI(api_key=openai_api_key)
 @app.get("/", tags=["root"])
 def hello():
     msg = {"message": "Hello, World!", "version": "0.0.5"}
-    logging.info("Hello API called")
+    logging.info("GET / called")
     return msg
 
 # Hello World route
 @app.get("/api/hello")
 def hello():
     msg = {"message": "Hello, World!", "version": "0.0.5"}
-    logging.info("Hello API called")
+    logging.info("GET /api/hello called")
     return msg
 
 # API route for chat
 @app.post("/api/chat")
 def chat(data: dict):
     message = data.get("message")
-    logging.info(f"Chat API called with message: {message}")
+    logging.info(f"POST /api/chat called with message: {message}")
     if message:
         response = client.chat.completions.create(
             model="gpt-3.5-turbo",
@@ -57,15 +57,17 @@ def chat(data: dict):
                 {"role": "user", "content": message}
             ]
         )
+        logging.info(f"POST /api/chat returning chat response: {response.choices[0].message.content}")
         return {"message": response.choices[0].message.content}
     else:
+        logging.error("POST /api/chat Invalid request")
         raise HTTPException(status_code=400, detail="Invalid request")
 
 # API route for stock data
 @app.get("/api/stock/{ticker}")
 def get_stock_data(ticker: str):
     try:
-        logging.info(f"Stock API called for ticker: {ticker}")
+        logging.info(f"GET /api/stock/{ticker} called")
         stock_data = yf.download(ticker, period="1y")
         ticker_data = yf.Ticker(ticker)
         close_prices = np.array(stock_data['Close']).reshape(-1, 1)
@@ -83,7 +85,8 @@ def get_stock_data(ticker: str):
         # Pretty print ticker_data.info
         ticker_info_dict = ticker_data.info
         ticker_info_str = json.dumps(ticker_info_dict, indent=4)
-        logging.info(f"Returning stock data for {ticker}")
+        logging.info(f"Returning stock data for {ticker}...")
+        logging.success(f"Stock data for {ticker} returned successfully")
 
         payload={
             "ticker": ticker, 
@@ -102,7 +105,7 @@ def get_stock_data(ticker: str):
 @app.get("/api/predict/{ticker}")
 def get_stock_prediction(ticker: str):
     try:
-        logging.info(f"Stock prediction API called for ticker: {ticker}")
+        logging.info(f"GET /api/predict/{ticker} called")
         stock_data = yf.download(ticker, period="1y")
         ticker_data = yf.Ticker(ticker)
         close_prices = np.array(stock_data['Close']).reshape(-1, 1)
@@ -142,6 +145,8 @@ def get_stock_prediction(ticker: str):
         predicted_prices = [price for sublist in predicted_prices.tolist() for price in sublist]
         close_prices = [price for sublist in close_prices.tolist() for price in sublist]
 
+
+
         # Get the current date
         current_date = datetime.date.today()
         # Generate future dates starting from the current date
@@ -159,11 +164,10 @@ def get_stock_prediction(ticker: str):
             "predicted_prices": price_objects, 
 
         }
-        logging.info(f"Price prediction for ticker {ticker}")
         return payload
 
     except Exception as e:
-        logging.error(f"Error predicting stock data for ticker {ticker}")
+        logging.error(f"Error predicting stock data for ticker {ticker}: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
