@@ -10,12 +10,9 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense
 import datetime
 import uvicorn
-import logging
+
 
 app = FastAPI()
-
-# Configure logging
-logging.basicConfig(filename='log.txt', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Load OpenAI API key
 config_file_path = '/etc/python-gpt.json'
@@ -33,22 +30,21 @@ client = OpenAI(api_key=openai_api_key)
 # Hello World route
 @app.get("/", tags=["root"])
 def hello():
-    msg = {"message": "Hello, World!", "version": "0.0.5"}
-    logging.info("Hello API called")
+    msg={"message": "Hello, World!", "version": "0.0.5"}
+    print(msg)
     return msg
 
 # Hello World route
 @app.get("/api/hello")
 def hello():
-    msg = {"message": "Hello, World!", "version": "0.0.5"}
-    logging.info("Hello API called")
+    msg={"message": "Hello, World!", "version": "0.0.5"}
+    print(msg)
     return msg
 
 # API route for chat
 @app.post("/api/chat")
 def chat(data: dict):
     message = data.get("message")
-    logging.info(f"Chat API called with message: {message}")
     if message:
         response = client.chat.completions.create(
             model="gpt-3.5-turbo",
@@ -65,7 +61,6 @@ def chat(data: dict):
 @app.get("/api/stock/{ticker}")
 def get_stock_data(ticker: str):
     try:
-        logging.info(f"Stock API called for ticker: {ticker}")
         stock_data = yf.download(ticker, period="1y")
         ticker_data = yf.Ticker(ticker)
         close_prices = np.array(stock_data['Close']).reshape(-1, 1)
@@ -75,6 +70,7 @@ def get_stock_data(ticker: str):
         # Get the current date
         current_date = datetime.date.today()
         # Generate future dates starting from the current date
+        # dates_ascending = [current_date + datetime.timedelta(days=i) for i in range(len(predicted_prices))]
         dates_descending = [current_date - datetime.timedelta(days=i) for i in range(len(close_prices[-180:]))][::-1]
 
         # Create list of dictionaries containing date, price, and id
@@ -83,7 +79,7 @@ def get_stock_data(ticker: str):
         # Pretty print ticker_data.info
         ticker_info_dict = ticker_data.info
         ticker_info_str = json.dumps(ticker_info_dict, indent=4)
-        logging.info(f"Returning stock data for {ticker}")
+        print(ticker_info_str)
 
         payload={
             "ticker": ticker, 
@@ -95,14 +91,17 @@ def get_stock_data(ticker: str):
         return payload
 
     except Exception as e:
-        logging.error(f"Error fetching stock data for ticker {ticker}: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
+    
 
-# API route for stock data prediction
+
+
+
+
+# API route for stock data
 @app.get("/api/predict/{ticker}")
-def get_stock_prediction(ticker: str):
+def get_stock_data(ticker: str):
     try:
-        logging.info(f"Stock prediction API called for ticker: {ticker}")
         stock_data = yf.download(ticker, period="1y")
         ticker_data = yf.Ticker(ticker)
         close_prices = np.array(stock_data['Close']).reshape(-1, 1)
@@ -159,12 +158,21 @@ def get_stock_prediction(ticker: str):
             "predicted_prices": price_objects, 
 
         }
-        logging.info(f"Price prediction for ticker {ticker}")
         return payload
 
     except Exception as e:
-        logging.error(f"Error predicting stock data for ticker {ticker}")
         raise HTTPException(status_code=500, detail=str(e))
+ 
+
+
+
+
+
+
+
+
+
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=8000)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000,)
+
