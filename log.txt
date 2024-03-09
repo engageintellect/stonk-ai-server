@@ -1,0 +1,1157 @@
+2024-03-08 21:04:31,468 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-08 21:04:32,180 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-08 21:04:33,347 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-08 21:04:36,881 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-08 21:04:49,185 - INFO - GET /api/stock API called for ticker: msft
+2024-03-08 21:04:49,765 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-08 21:04:52,336 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-08 21:04:52,493 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-08 21:04:52,843 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-08 21:04:56,274 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-08 21:05:43,725 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-08 21:05:43,883 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-08 21:13:33,959 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-08 21:13:34,266 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-08 21:13:34,363 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-08 21:13:37,764 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-08 21:16:39,608 - INFO - GET /api/stock API called for ticker: plre
+2024-03-08 21:16:39,849 - ERROR - 
+1 Failed download:
+2024-03-08 21:16:39,850 - ERROR - ['PLRE']: Exception('%ticker%: No price data found, symbol may be delisted (period=1y)')
+2024-03-08 21:16:40,310 - INFO - GET /api/stock API Returning stock data for plre
+2024-03-08 21:16:40,378 - INFO - GET /api/predict AI prediction API called for ticker: PLRE
+2024-03-08 21:16:40,404 - ERROR - 
+1 Failed download:
+2024-03-08 21:16:40,404 - ERROR - ['PLRE']: Exception('%ticker%: No price data found, symbol may be delisted (period=1y)')
+2024-03-08 21:16:40,405 - ERROR - Error predicting stock data for ticker PLRE
+2024-03-08 21:16:52,294 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-08 21:16:52,451 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-08 21:16:52,533 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-08 21:16:56,059 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-08 21:20:15,919 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:20:18,399 - ERROR - 
+1 Failed download:
+2024-03-08 21:20:18,399 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:20:19,475 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:20:19,535 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:20:19,588 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:20:20,513 - ERROR - 
+1 Failed download:
+2024-03-08 21:20:20,514 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:20:20,515 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:20:42,966 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:20:43,676 - ERROR - 
+1 Failed download:
+2024-03-08 21:20:43,676 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:20:44,567 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:20:44,567 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:20:44,874 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:20:45,596 - ERROR - 
+1 Failed download:
+2024-03-08 21:20:45,597 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:20:45,597 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:20:53,045 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:20:53,973 - ERROR - 
+1 Failed download:
+2024-03-08 21:20:53,973 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:20:55,010 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:20:55,010 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:20:55,234 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:20:56,208 - ERROR - 
+1 Failed download:
+2024-03-08 21:20:56,208 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:20:56,209 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:21:05,936 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:21:06,641 - ERROR - 
+1 Failed download:
+2024-03-08 21:21:06,642 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:21:07,571 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:21:07,572 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:21:07,803 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:21:08,815 - ERROR - 
+1 Failed download:
+2024-03-08 21:21:08,816 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:21:08,816 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:21:22,654 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:21:23,378 - ERROR - 
+1 Failed download:
+2024-03-08 21:21:23,378 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:21:24,238 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:21:24,238 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:21:24,544 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:21:25,478 - ERROR - 
+1 Failed download:
+2024-03-08 21:21:25,478 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:21:25,479 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:21:28,707 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:21:29,636 - ERROR - 
+1 Failed download:
+2024-03-08 21:21:29,636 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:21:30,530 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:21:30,531 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:21:30,782 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:21:31,845 - ERROR - 
+1 Failed download:
+2024-03-08 21:21:31,846 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:21:31,846 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:21:34,416 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:21:35,366 - ERROR - 
+1 Failed download:
+2024-03-08 21:21:35,366 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:21:35,980 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:21:35,980 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:21:36,198 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:21:37,126 - ERROR - 
+1 Failed download:
+2024-03-08 21:21:37,126 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:21:37,126 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:21:39,352 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:21:40,240 - ERROR - 
+1 Failed download:
+2024-03-08 21:21:40,240 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:21:41,075 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:21:41,077 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:21:41,321 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:21:42,182 - ERROR - 
+1 Failed download:
+2024-03-08 21:21:42,182 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:21:42,183 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:24:06,545 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:24:09,110 - ERROR - 
+1 Failed download:
+2024-03-08 21:24:09,111 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:24:09,975 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:24:09,977 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:24:10,352 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:24:11,190 - ERROR - 
+1 Failed download:
+2024-03-08 21:24:11,190 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:24:11,192 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:24:20,558 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:24:21,254 - ERROR - 
+1 Failed download:
+2024-03-08 21:24:21,255 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:24:23,248 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:24:23,249 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:24:23,534 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:24:24,360 - ERROR - 
+1 Failed download:
+2024-03-08 21:24:24,361 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:24:24,362 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:24:33,163 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-08 21:24:33,347 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-08 21:24:33,408 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-08 21:24:36,862 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-08 21:25:08,479 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-08 21:25:08,790 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-08 21:25:09,083 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-08 21:25:12,421 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-08 21:25:24,796 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:25:25,243 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:25:25,308 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 21:25:28,873 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 21:25:31,803 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:25:31,910 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:25:31,973 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 21:25:35,374 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 21:25:46,653 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:25:46,906 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:25:47,279 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 21:25:50,812 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 21:25:52,876 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:25:53,964 - ERROR - 
+1 Failed download:
+2024-03-08 21:25:53,964 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:25:54,833 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:25:54,835 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:25:54,896 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:25:55,608 - ERROR - 
+1 Failed download:
+2024-03-08 21:25:55,608 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:25:55,610 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:26:21,573 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:26:22,680 - ERROR - 
+1 Failed download:
+2024-03-08 21:26:22,680 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:26:23,438 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:26:23,439 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:26:27,697 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:26:27,943 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:26:28,031 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 21:26:31,474 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 21:26:32,138 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:26:32,766 - ERROR - 
+1 Failed download:
+2024-03-08 21:26:32,767 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:26:33,630 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:26:33,631 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:26:33,684 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:26:34,308 - ERROR - 
+1 Failed download:
+2024-03-08 21:26:34,309 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:26:34,310 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:27:22,911 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:27:23,594 - ERROR - 
+1 Failed download:
+2024-03-08 21:27:23,594 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:27:24,551 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:27:24,551 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:27:31,271 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:27:31,493 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:27:31,566 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 21:27:34,962 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 21:27:41,717 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:27:42,512 - ERROR - 
+1 Failed download:
+2024-03-08 21:27:42,512 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:27:43,478 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:27:43,480 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:27:43,534 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:27:44,534 - ERROR - 
+1 Failed download:
+2024-03-08 21:27:44,534 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:27:44,535 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:28:01,737 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:28:02,769 - ERROR - 
+1 Failed download:
+2024-03-08 21:28:02,769 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:28:03,393 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:28:03,394 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:28:08,795 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:28:09,082 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:28:09,168 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 21:28:12,746 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 21:28:16,610 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:28:17,573 - ERROR - 
+1 Failed download:
+2024-03-08 21:28:17,574 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:28:18,534 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:28:18,535 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:28:18,595 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:28:19,652 - ERROR - 
+1 Failed download:
+2024-03-08 21:28:19,652 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:28:19,653 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:28:40,537 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:28:41,252 - ERROR - 
+1 Failed download:
+2024-03-08 21:28:41,252 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:28:42,212 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:28:42,213 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:28:42,571 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:28:43,258 - ERROR - 
+1 Failed download:
+2024-03-08 21:28:43,259 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:28:43,260 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:28:47,799 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:28:48,553 - ERROR - 
+1 Failed download:
+2024-03-08 21:28:48,553 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:28:49,662 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:28:49,662 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:28:49,708 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:28:50,693 - ERROR - 
+1 Failed download:
+2024-03-08 21:28:50,694 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:28:50,695 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:28:53,606 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:28:53,760 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:28:53,824 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 21:28:57,280 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 21:28:58,153 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:28:58,314 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:28:58,343 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 21:29:01,696 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 21:29:06,105 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:29:06,267 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:29:06,521 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 21:29:10,159 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 21:29:24,773 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:29:25,705 - ERROR - 
+1 Failed download:
+2024-03-08 21:29:25,705 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:29:26,331 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:29:26,332 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:29:26,368 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:29:27,226 - ERROR - 
+1 Failed download:
+2024-03-08 21:29:27,226 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:29:27,227 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:29:35,050 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:29:35,786 - ERROR - 
+1 Failed download:
+2024-03-08 21:29:35,786 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:29:36,768 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:29:36,769 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:29:37,062 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:29:37,797 - ERROR - 
+1 Failed download:
+2024-03-08 21:29:37,798 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:29:37,798 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:29:43,905 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:29:44,060 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:29:44,147 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 21:29:47,630 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 21:29:49,492 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:29:50,391 - ERROR - 
+1 Failed download:
+2024-03-08 21:29:50,391 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:29:51,282 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:29:51,285 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:29:51,339 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:29:51,966 - ERROR - 
+1 Failed download:
+2024-03-08 21:29:51,967 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:29:51,968 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:29:59,739 - INFO - GET /api/stock API called for ticker: spy
+2024-03-08 21:30:00,334 - INFO - GET /api/stock API Returning stock data for spy
+2024-03-08 21:30:00,405 - INFO - GET /api/predict AI prediction API called for ticker: SPY
+2024-03-08 21:30:03,950 - INFO - GET /api/predict prediction for ticker SPY
+2024-03-08 21:30:06,430 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:30:06,584 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:30:06,666 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 21:30:10,168 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 21:30:24,020 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:30:24,325 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:30:24,706 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 21:30:28,267 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 21:35:08,555 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:35:08,945 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:35:09,322 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 21:35:12,666 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 21:35:26,481 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:35:27,824 - ERROR - 
+1 Failed download:
+2024-03-08 21:35:27,824 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:35:28,553 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:35:28,554 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:35:28,606 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:35:29,637 - ERROR - 
+1 Failed download:
+2024-03-08 21:35:29,638 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:35:29,639 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:36:05,827 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:36:07,148 - ERROR - 
+1 Failed download:
+2024-03-08 21:36:07,148 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:36:07,836 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:36:07,837 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:36:08,182 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:36:08,892 - ERROR - 
+1 Failed download:
+2024-03-08 21:36:08,892 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:36:08,894 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:37:23,175 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:37:24,298 - ERROR - 
+1 Failed download:
+2024-03-08 21:37:24,298 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:37:24,913 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:37:24,913 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:37:24,959 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:37:25,845 - ERROR - 
+1 Failed download:
+2024-03-08 21:37:25,846 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:37:25,847 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:37:38,523 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:37:39,524 - ERROR - 
+1 Failed download:
+2024-03-08 21:37:39,525 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:37:40,157 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:37:40,157 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:37:40,439 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:37:41,150 - ERROR - 
+1 Failed download:
+2024-03-08 21:37:41,150 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:37:41,151 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:37:51,264 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:37:52,107 - ERROR - 
+1 Failed download:
+2024-03-08 21:37:52,108 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:37:52,813 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:37:52,813 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:37:53,054 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:37:53,860 - ERROR - 
+1 Failed download:
+2024-03-08 21:37:53,860 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:37:53,862 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:38:00,187 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:38:01,084 - ERROR - 
+1 Failed download:
+2024-03-08 21:38:01,084 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:38:01,702 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:38:01,702 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:38:01,923 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:38:02,709 - ERROR - 
+1 Failed download:
+2024-03-08 21:38:02,709 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:38:02,711 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:38:14,864 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:38:15,764 - ERROR - 
+1 Failed download:
+2024-03-08 21:38:15,765 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:38:16,534 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:38:16,535 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:38:16,771 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:38:17,687 - ERROR - 
+1 Failed download:
+2024-03-08 21:38:17,689 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:38:17,690 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:38:25,351 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:38:26,248 - ERROR - 
+1 Failed download:
+2024-03-08 21:38:26,248 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:38:27,122 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:38:27,124 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:38:27,387 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:38:28,291 - ERROR - 
+1 Failed download:
+2024-03-08 21:38:28,292 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:38:28,293 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:42:17,297 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:42:18,860 - ERROR - 
+1 Failed download:
+2024-03-08 21:42:18,861 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:42:20,002 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:42:20,003 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:42:22,224 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:42:23,300 - ERROR - 
+1 Failed download:
+2024-03-08 21:42:23,300 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:42:24,206 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:42:24,206 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:43:01,444 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:43:02,436 - ERROR - 
+1 Failed download:
+2024-03-08 21:43:02,436 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:43:03,125 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:43:03,125 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:43:06,625 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:43:07,330 - ERROR - 
+1 Failed download:
+2024-03-08 21:43:07,330 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:43:08,201 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:43:08,202 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:43:09,343 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:43:10,039 - ERROR - 
+1 Failed download:
+2024-03-08 21:43:10,040 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:43:11,116 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:43:11,117 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:43:24,486 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:43:25,171 - ERROR - 
+1 Failed download:
+2024-03-08 21:43:25,171 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:43:26,145 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:43:26,146 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:43:26,442 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:43:27,307 - ERROR - 
+1 Failed download:
+2024-03-08 21:43:27,307 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:43:27,307 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:44:11,517 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:44:12,276 - ERROR - 
+1 Failed download:
+2024-03-08 21:44:12,276 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:44:12,902 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:44:12,904 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:44:13,196 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:44:13,895 - ERROR - 
+1 Failed download:
+2024-03-08 21:44:13,896 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:44:13,897 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:44:22,529 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:44:23,704 - ERROR - 
+1 Failed download:
+2024-03-08 21:44:23,705 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:44:24,440 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:44:24,441 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:44:24,696 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:44:25,454 - ERROR - 
+1 Failed download:
+2024-03-08 21:44:25,455 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:44:25,457 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:44:43,112 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:44:44,090 - ERROR - 
+1 Failed download:
+2024-03-08 21:44:44,090 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:44:44,791 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:44:44,793 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:44:45,077 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:44:45,840 - ERROR - 
+1 Failed download:
+2024-03-08 21:44:45,840 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:44:45,840 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:46:09,602 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:46:10,791 - ERROR - 
+1 Failed download:
+2024-03-08 21:46:10,792 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:46:11,386 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:46:11,386 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:46:11,636 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:46:12,362 - ERROR - 
+1 Failed download:
+2024-03-08 21:46:12,362 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:46:12,363 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:46:30,545 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:46:31,272 - ERROR - 
+1 Failed download:
+2024-03-08 21:46:31,272 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:46:32,273 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:46:32,274 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:46:32,537 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:46:33,486 - ERROR - 
+1 Failed download:
+2024-03-08 21:46:33,486 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:46:33,487 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:46:33,810 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:46:34,480 - ERROR - 
+1 Failed download:
+2024-03-08 21:46:34,480 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:46:35,406 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:46:35,407 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:46:35,564 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:46:36,565 - ERROR - 
+1 Failed download:
+2024-03-08 21:46:36,565 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:46:36,566 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:46:55,023 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:46:55,920 - ERROR - 
+1 Failed download:
+2024-03-08 21:46:55,920 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:46:56,910 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:46:56,912 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:46:57,218 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:46:57,953 - ERROR - 
+1 Failed download:
+2024-03-08 21:46:57,954 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:46:57,955 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:49:10,410 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:49:11,678 - ERROR - 
+1 Failed download:
+2024-03-08 21:49:11,678 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:49:12,637 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:49:12,639 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:49:36,437 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:49:37,337 - ERROR - 
+1 Failed download:
+2024-03-08 21:49:37,338 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:49:37,927 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:49:37,928 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:49:42,512 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:49:43,175 - ERROR - 
+1 Failed download:
+2024-03-08 21:49:43,176 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:49:44,040 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:49:44,042 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:49:45,011 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:49:45,790 - ERROR - 
+1 Failed download:
+2024-03-08 21:49:45,790 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:49:46,704 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:49:46,704 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:50:03,165 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:50:04,488 - ERROR - 
+1 Failed download:
+2024-03-08 21:50:04,488 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:50:05,138 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:50:05,139 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:50:08,309 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:50:09,331 - ERROR - 
+1 Failed download:
+2024-03-08 21:50:09,331 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:50:09,974 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:50:09,974 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:50:46,178 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:50:47,238 - ERROR - 
+1 Failed download:
+2024-03-08 21:50:47,238 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:50:48,110 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:50:48,111 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:50:48,436 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:50:49,182 - ERROR - 
+1 Failed download:
+2024-03-08 21:50:49,182 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:50:50,206 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:50:50,208 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:50:55,726 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:50:55,936 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:51:42,243 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:51:42,523 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:51:44,471 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:51:44,685 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:51:45,487 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:51:45,671 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:51:46,302 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:51:46,410 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:51:46,943 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:51:47,009 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:51:52,136 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:51:52,223 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:52:18,543 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:52:18,766 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:52:20,428 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:52:20,536 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:52:21,212 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:52:21,315 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:52:21,826 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:52:21,896 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:52:27,200 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:52:27,296 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:52:41,337 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:52:41,488 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:52:43,732 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:52:43,902 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:52:44,571 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:52:44,638 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:52:48,369 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:52:48,616 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:53:19,458 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:53:19,594 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:53:19,865 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 21:53:23,468 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 21:53:26,170 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:53:27,522 - ERROR - 
+1 Failed download:
+2024-03-08 21:53:27,524 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:53:28,619 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:53:28,620 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:53:28,673 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:53:29,628 - ERROR - 
+1 Failed download:
+2024-03-08 21:53:29,628 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:53:29,629 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:53:47,232 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:53:48,026 - ERROR - 
+1 Failed download:
+2024-03-08 21:53:48,026 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:53:48,937 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:53:48,938 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:53:48,992 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:53:49,881 - ERROR - 
+1 Failed download:
+2024-03-08 21:53:49,881 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:53:49,883 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:54:03,269 - INFO - GET /api/stock API called for ticker: peak
+2024-03-08 21:54:04,102 - INFO - GET /api/stock API Returning stock data for peak
+2024-03-08 21:54:04,181 - INFO - GET /api/predict AI prediction API called for ticker: PEAK
+2024-03-08 21:54:07,763 - INFO - GET /api/predict prediction for ticker PEAK
+2024-03-08 21:54:11,399 - INFO - GET /api/stock API called for ticker: f
+2024-03-08 21:54:12,026 - INFO - GET /api/stock API Returning stock data for f
+2024-03-08 21:54:12,104 - INFO - GET /api/predict AI prediction API called for ticker: F
+2024-03-08 21:54:15,622 - INFO - GET /api/predict prediction for ticker F
+2024-03-08 21:54:42,809 - INFO - GET /api/stock API called for ticker: faf
+2024-03-08 21:54:43,362 - INFO - GET /api/stock API Returning stock data for faf
+2024-03-08 21:54:43,442 - INFO - GET /api/predict AI prediction API called for ticker: FAF
+2024-03-08 21:54:46,848 - INFO - GET /api/predict prediction for ticker FAF
+2024-03-08 21:55:36,224 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:55:37,583 - ERROR - 
+1 Failed download:
+2024-03-08 21:55:37,583 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:55:38,581 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:55:38,583 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:55:38,639 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:55:39,696 - ERROR - 
+1 Failed download:
+2024-03-08 21:55:39,696 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:55:39,697 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:56:56,567 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:56:57,707 - ERROR - 
+1 Failed download:
+2024-03-08 21:56:57,707 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:56:58,330 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:56:58,330 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:57:12,983 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:57:13,896 - ERROR - 
+1 Failed download:
+2024-03-08 21:57:13,896 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:57:14,606 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:57:14,607 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:57:30,515 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:57:31,306 - ERROR - 
+1 Failed download:
+2024-03-08 21:57:31,306 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:57:31,984 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=dlcKcFblvyD
+2024-03-08 21:57:31,985 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:57:32,269 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:57:33,304 - ERROR - 
+1 Failed download:
+2024-03-08 21:57:33,304 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:57:33,305 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:58:00,280 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:58:01,341 - ERROR - 
+1 Failed download:
+2024-03-08 21:58:01,341 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:58:02,257 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=5TYAteYtUdo
+2024-03-08 21:58:02,258 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:58:02,547 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:58:03,449 - ERROR - 
+1 Failed download:
+2024-03-08 21:58:03,450 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:58:03,451 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:58:25,714 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:58:26,533 - ERROR - 
+1 Failed download:
+2024-03-08 21:58:26,533 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:58:27,362 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=5TYAteYtUdo
+2024-03-08 21:58:27,363 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:58:27,639 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:58:28,508 - ERROR - 
+1 Failed download:
+2024-03-08 21:58:28,508 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:58:28,509 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:58:31,311 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:58:32,208 - ERROR - 
+1 Failed download:
+2024-03-08 21:58:32,209 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:58:32,999 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=5TYAteYtUdo
+2024-03-08 21:58:33,001 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:58:33,270 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:58:34,124 - ERROR - 
+1 Failed download:
+2024-03-08 21:58:34,125 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:58:34,126 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:58:42,837 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:58:44,847 - ERROR - 
+1 Failed download:
+2024-03-08 21:58:44,847 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:58:45,690 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=5TYAteYtUdo
+2024-03-08 21:58:45,692 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:58:45,981 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:58:46,797 - ERROR - 
+1 Failed download:
+2024-03-08 21:58:46,797 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:58:46,799 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 21:58:56,074 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-08 21:58:56,231 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-08 21:58:56,321 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-08 21:58:59,788 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-08 21:59:07,766 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 21:59:07,934 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 21:59:07,994 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 21:59:11,603 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 21:59:18,281 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 21:59:19,383 - ERROR - 
+1 Failed download:
+2024-03-08 21:59:19,384 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:59:20,290 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=5TYAteYtUdo
+2024-03-08 21:59:20,291 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 21:59:20,347 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 21:59:20,946 - ERROR - 
+1 Failed download:
+2024-03-08 21:59:20,946 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 21:59:20,948 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 22:00:50,709 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 22:00:52,293 - ERROR - 
+1 Failed download:
+2024-03-08 22:00:52,293 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 22:00:53,284 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=5TYAteYtUdo
+2024-03-08 22:00:53,285 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 22:00:53,609 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 22:00:54,621 - ERROR - 
+1 Failed download:
+2024-03-08 22:00:54,621 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 22:00:54,622 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 22:01:17,527 - INFO - GET /api/stock API called for ticker: PLTRE
+2024-03-08 22:01:18,330 - ERROR - 
+1 Failed download:
+2024-03-08 22:01:18,331 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 22:01:18,949 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=5TYAteYtUdo
+2024-03-08 22:01:18,950 - INFO - GET /api/stock API Returning stock data for PLTRE
+2024-03-08 22:01:19,000 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 22:01:19,957 - ERROR - 
+1 Failed download:
+2024-03-08 22:01:19,957 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 22:01:19,958 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 22:01:36,265 - INFO - GET /api/stock API called for ticker: PLTRE
+2024-03-08 22:01:37,093 - ERROR - 
+1 Failed download:
+2024-03-08 22:01:37,094 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 22:01:37,744 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=5TYAteYtUdo
+2024-03-08 22:01:37,745 - INFO - GET /api/stock API Returning stock data for PLTRE
+2024-03-08 22:01:38,027 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 22:01:38,794 - ERROR - 
+1 Failed download:
+2024-03-08 22:01:38,795 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 22:01:38,796 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 22:05:13,301 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:05:13,652 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:05:13,739 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:05:17,238 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:05:38,870 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:05:39,337 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:05:39,717 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:05:43,449 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:05:49,935 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:05:50,081 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:05:50,386 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:05:53,725 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:06:25,575 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:06:25,732 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:06:26,029 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:06:29,632 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:06:44,875 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:06:45,031 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:06:45,326 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:06:48,721 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:07:09,799 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:07:10,099 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:07:10,432 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:07:13,907 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:07:19,537 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:07:19,623 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:07:19,905 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:07:23,643 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:07:27,277 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:07:27,423 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:07:27,709 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:07:31,289 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:07:33,620 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:07:33,705 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:07:33,993 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:07:37,482 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:08:09,705 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:08:09,857 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:08:10,181 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:08:13,763 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:10:05,076 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 22:10:06,405 - ERROR - 
+1 Failed download:
+2024-03-08 22:10:06,405 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 22:10:07,805 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=5TYAteYtUdo
+2024-03-08 22:10:07,807 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 22:10:07,865 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 22:10:08,505 - ERROR - 
+1 Failed download:
+2024-03-08 22:10:08,505 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 22:10:08,508 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 22:10:13,463 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:10:13,616 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:10:13,694 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:10:16,943 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:11:17,580 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:11:17,754 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:11:18,107 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:11:21,728 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:13:32,398 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:13:32,768 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:13:33,264 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:13:36,898 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:16:21,389 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:16:21,755 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:16:22,155 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:16:25,538 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:16:58,300 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:16:58,466 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:16:58,960 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:17:02,674 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:19:39,999 - INFO - GET /api/stock API called for ticker: pltre
+2024-03-08 22:19:41,492 - ERROR - 
+1 Failed download:
+2024-03-08 22:19:41,492 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 22:19:42,424 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/PLTRE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=PLTRE&crumb=5TYAteYtUdo
+2024-03-08 22:19:42,425 - INFO - GET /api/stock API Returning stock data for pltre
+2024-03-08 22:19:42,472 - INFO - GET /api/predict AI prediction API called for ticker: PLTRE
+2024-03-08 22:19:43,126 - ERROR - 
+1 Failed download:
+2024-03-08 22:19:43,127 - ERROR - ['PLTRE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-08 22:19:43,128 - ERROR - Error predicting stock data for ticker PLTRE
+2024-03-08 22:19:55,162 - INFO - GET /api/stock API called for ticker: meta
+2024-03-08 22:19:55,546 - INFO - GET /api/stock API Returning stock data for meta
+2024-03-08 22:19:55,614 - INFO - GET /api/predict AI prediction API called for ticker: META
+2024-03-08 22:19:58,933 - INFO - GET /api/predict prediction for ticker META
+2024-03-08 22:21:09,468 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:21:09,648 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:21:09,704 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:21:13,331 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:22:56,848 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:22:57,259 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:22:57,787 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:23:01,235 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:23:33,242 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:23:33,392 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:23:33,839 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:23:37,408 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:23:49,276 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:23:49,549 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:23:50,033 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:23:53,658 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:25:23,138 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:25:23,405 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:25:23,907 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:25:27,453 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:25:49,655 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:25:49,794 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:25:50,259 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:25:53,727 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:26:08,714 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:26:08,948 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:26:09,435 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:26:13,121 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:27:23,481 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:27:23,641 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:27:24,116 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:27:27,618 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:27:33,220 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-08 22:27:33,430 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-08 22:27:33,502 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-08 22:27:37,031 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-08 22:27:45,461 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:27:45,622 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:27:45,691 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:27:49,595 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:28:47,996 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:28:48,332 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:28:48,836 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:28:52,241 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:28:58,506 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:28:58,590 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:28:59,071 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:29:02,769 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:29:16,413 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:29:16,704 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:29:17,174 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:29:20,954 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:29:25,229 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-08 22:29:25,485 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-08 22:29:25,555 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-08 22:29:29,157 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-08 22:37:19,785 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-08 22:37:20,043 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-08 22:37:20,399 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-08 22:37:24,195 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-08 22:54:43,855 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 22:54:44,112 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 22:54:44,202 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 22:54:48,160 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 22:54:50,802 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-08 22:54:50,955 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-08 22:54:51,038 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-08 22:54:54,611 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-08 23:23:22,427 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 23:23:22,686 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 23:23:22,777 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 23:23:26,312 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 23:37:10,334 - INFO - GET /api/stock API called for ticker: meta
+2024-03-08 23:37:10,946 - INFO - GET /api/stock API Returning stock data for meta
+2024-03-08 23:37:11,029 - INFO - GET /api/predict AI prediction API called for ticker: META
+2024-03-08 23:37:14,659 - INFO - GET /api/predict prediction for ticker META
+2024-03-08 23:37:27,002 - INFO - GET /api/stock API called for ticker: meta
+2024-03-08 23:37:27,150 - INFO - GET /api/stock API Returning stock data for meta
+2024-03-08 23:37:27,477 - INFO - GET /api/predict AI prediction API called for ticker: META
+2024-03-08 23:37:30,994 - INFO - GET /api/predict prediction for ticker META
+2024-03-08 23:37:48,077 - INFO - GET /api/stock API called for ticker: meta
+2024-03-08 23:37:48,224 - INFO - GET /api/stock API Returning stock data for meta
+2024-03-08 23:37:48,457 - INFO - GET /api/predict AI prediction API called for ticker: META
+2024-03-08 23:37:52,185 - INFO - GET /api/predict prediction for ticker META
+2024-03-08 23:37:54,192 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 23:37:54,354 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 23:37:54,432 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 23:37:57,972 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 23:38:01,482 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-08 23:38:01,735 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-08 23:38:01,805 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-08 23:38:05,294 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-08 23:38:10,652 - INFO - GET /api/stock API called for ticker: msft
+2024-03-08 23:38:10,851 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-08 23:38:10,921 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-08 23:38:14,732 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-08 23:38:19,941 - INFO - GET /api/stock API called for ticker: msft
+2024-03-08 23:38:20,049 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-08 23:38:20,107 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-08 23:38:23,607 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-08 23:38:50,880 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-08 23:38:51,031 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-08 23:38:51,091 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-08 23:38:54,578 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-08 23:40:46,067 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-08 23:40:46,390 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-08 23:40:46,747 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-08 23:40:50,537 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-08 23:41:05,450 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-08 23:41:05,731 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-08 23:41:06,107 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-08 23:41:09,834 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-08 23:41:14,940 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-08 23:41:15,113 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-08 23:41:15,369 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-08 23:41:18,899 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-08 23:41:33,912 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-08 23:41:34,060 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-08 23:41:34,378 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-08 23:41:38,224 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-08 23:41:59,090 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 23:41:59,257 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 23:41:59,315 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 23:42:02,782 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 23:42:34,587 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-08 23:42:34,873 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-08 23:42:34,950 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-08 23:42:38,441 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-08 23:44:05,674 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 23:44:06,023 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 23:44:06,082 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 23:44:09,778 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 23:46:51,639 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 23:46:51,861 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 23:46:52,220 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 23:46:55,848 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 23:47:26,809 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 23:47:26,984 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 23:47:27,341 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 23:47:31,027 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 23:48:39,092 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 23:48:39,276 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 23:48:39,616 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 23:48:43,359 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 23:48:46,820 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 23:48:47,019 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 23:48:47,294 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 23:48:50,958 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 23:49:58,713 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 23:49:58,916 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 23:50:00,667 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 23:50:00,919 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 23:50:19,128 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 23:50:19,332 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 23:50:19,602 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 23:50:23,410 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 23:51:10,661 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 23:51:10,822 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 23:51:11,157 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 23:51:14,990 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 23:51:20,768 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 23:51:20,854 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 23:51:21,175 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 23:51:24,838 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 23:51:43,232 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 23:51:43,369 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 23:51:44,772 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 23:51:44,883 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 23:51:51,409 - INFO - GET /api/stock API called for ticker: hood
+2024-03-08 23:51:51,559 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-08 23:51:51,798 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-08 23:51:55,418 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-08 23:52:40,828 - INFO - GET /api/stock API called for ticker: msft
+2024-03-08 23:52:41,037 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-08 23:52:41,105 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-08 23:52:44,652 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-08 23:53:24,843 - INFO - GET /api/stock API called for ticker: msft
+2024-03-08 23:53:25,044 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-08 23:53:25,443 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-08 23:53:29,044 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-08 23:53:33,417 - INFO - GET /api/stock API called for ticker: msft
+2024-03-08 23:53:33,513 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-08 23:53:33,832 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-08 23:53:37,498 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-08 23:53:46,966 - INFO - GET /api/stock API called for ticker: msft
+2024-03-08 23:53:47,154 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-08 23:53:47,476 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-08 23:53:51,259 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-08 23:54:09,306 - INFO - GET /api/stock API called for ticker: msft
+2024-03-08 23:54:09,553 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-08 23:54:09,835 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-08 23:54:13,616 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-08 23:54:20,221 - INFO - GET /api/stock API called for ticker: msft
+2024-03-08 23:54:20,525 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-08 23:54:20,803 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-08 23:54:24,627 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-08 23:55:37,326 - INFO - GET /api/stock API called for ticker: msft
+2024-03-08 23:55:37,620 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-08 23:55:37,914 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-08 23:55:41,649 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-08 23:56:58,826 - INFO - GET /api/stock API called for ticker: msft
+2024-03-08 23:56:59,029 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-08 23:56:59,399 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-08 23:57:02,946 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-09 00:00:40,911 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:00:41,313 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:00:41,749 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-09 00:00:45,438 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-09 00:01:29,526 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:01:29,831 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:01:30,187 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-09 00:01:33,684 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-09 00:02:11,504 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:02:11,763 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:02:12,131 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-09 00:02:15,692 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-09 00:02:38,748 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:02:39,049 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:02:39,329 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-09 00:02:43,213 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-09 00:03:06,136 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:03:06,394 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:03:06,788 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-09 00:03:10,457 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-09 00:03:19,981 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:03:20,150 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:03:20,461 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-09 00:03:24,085 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-09 00:03:41,641 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:03:41,936 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:03:42,375 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-09 00:03:46,191 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-09 00:03:51,137 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:03:51,359 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:03:51,744 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-09 00:03:55,546 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-09 00:04:02,271 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:04:02,456 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:04:02,719 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-09 00:04:06,503 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-09 00:04:50,709 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:04:50,889 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:05:02,659 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:05:02,848 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:05:03,194 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-09 00:05:07,147 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-09 00:05:43,415 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:05:43,684 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:05:44,060 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-09 00:05:47,684 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-09 00:05:54,595 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:05:54,759 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:05:55,008 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-09 00:05:58,696 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-09 00:06:13,928 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:06:14,126 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:06:14,449 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-09 00:06:18,216 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-09 00:06:27,485 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:06:27,679 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:06:27,954 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-09 00:06:31,779 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-09 00:07:04,856 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:07:05,036 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:07:05,355 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-09 00:07:09,000 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-09 00:10:27,573 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:10:27,887 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:10:28,309 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-09 00:10:32,020 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-09 00:10:41,261 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:10:41,445 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:10:41,743 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-09 00:10:45,531 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-09 00:11:04,829 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:11:05,001 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:11:05,326 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-09 00:11:09,046 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-09 00:11:18,173 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:11:18,481 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:11:18,767 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-09 00:11:22,677 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-09 00:13:46,880 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:13:47,153 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:13:50,000 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:13:50,126 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:13:50,892 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:13:51,139 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:13:57,148 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:13:57,397 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:13:57,697 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-09 00:14:01,297 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-09 00:15:59,930 - INFO - GET /api/stock API called for ticker: msft
+2024-03-09 00:16:00,286 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-09 00:16:00,360 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-09 00:16:03,766 - INFO - GET /api/predict prediction for ticker MSFT
