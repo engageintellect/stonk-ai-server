@@ -53,7 +53,7 @@ def chat(data: dict):
         response = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "You are a helpful assistant. You also happen to be great at finding value. Give your opinion on the stock data provided to you.    "},
+                {"role": "system", "content": "You are a helpful assistant. You also happen to be great at finding value. Give your opinion on the stock data provided to you."},
                 {"role": "user", "content": message}
             ]
         )
@@ -67,11 +67,16 @@ def chat(data: dict):
 def get_stock_data(ticker: str):
     try:
         logging.info(f"GET /api/stock API called for ticker: {ticker}")
+
         stock_data = yf.download(ticker, period="1y")
         ticker_data = yf.Ticker(ticker)
         close_prices = np.array(stock_data['Close']).reshape(-1, 1)
         stock_news = yf.Ticker(ticker).news
         close_prices = [price for sublist in close_prices.tolist() for price in sublist]
+        dividends = ticker_data.dividends
+        actions = ticker_data.actions
+        major_holders = ticker_data.major_holders
+        options = ticker_data.options
 
         # Get the current date
         current_date = datetime.date.today()
@@ -83,14 +88,18 @@ def get_stock_data(ticker: str):
         
         # Pretty print ticker_data.info
         ticker_info_dict = ticker_data.info
-        ticker_info_str = json.dumps(ticker_info_dict, indent=4)
+        # ticker_info_str = json.dumps(ticker_info_dict, indent=4)
         logging.info(f"GET /api/stock API Returning stock data for {ticker}")
 
         payload={
             "ticker": ticker, 
             "ticker_info": ticker_info_dict, 
             "price_history": close_objects,
+            "dividends": dividends,
             "news": stock_news,
+            "actions": actions,
+            "major_holders": major_holders,
+            "options": options
 
         }
         return payload
@@ -105,7 +114,7 @@ def get_stock_prediction(ticker: str):
     try:
         logging.info(f"GET /api/predict AI prediction API called for ticker: {ticker}")
         stock_data = yf.download(ticker, period="1y")
-        ticker_data = yf.Ticker(ticker)
+        # ticker_data = yf.Ticker(ticker)
         close_prices = np.array(stock_data['Close']).reshape(-1, 1)
         scaler = MinMaxScaler(feature_range=(0, 1))
         close_prices_scaled = scaler.fit_transform(close_prices)
@@ -152,9 +161,9 @@ def get_stock_prediction(ticker: str):
         price_objects = [{"id": i+1, "date": str(date), "price": price} for i, (date, price) in enumerate(zip(dates_ascending, predicted_prices))]
         
         # Pretty print ticker_data.info
-        ticker_info_dict = ticker_data.info
-        ticker_info_str = json.dumps(ticker_info_dict, indent=4)
-        print(ticker_info_str)
+        # ticker_info_dict = ticker_data.info
+        # ticker_info_str = json.dumps(ticker_info_dict, indent=4)
+        # print(ticker_info_str)
 
         payload={
             "predicted_prices": price_objects, 

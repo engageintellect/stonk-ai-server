@@ -4755,3 +4755,656 @@
 2024-03-10 19:54:03,219 - INFO - GET /api/stock API Returning stock data for hood
 2024-03-10 19:54:03,523 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
 2024-03-10 19:54:07,098 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 20:07:50,350 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 20:07:51,178 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 20:07:51,776 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 20:07:55,381 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 20:07:55,637 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 20:07:55,830 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 20:07:56,243 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 20:07:59,830 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 20:08:09,721 - INFO - GET /api/stock API called for ticker: meta
+2024-03-10 20:08:10,244 - INFO - GET /api/stock API Returning stock data for meta
+2024-03-10 20:08:10,343 - INFO - GET /api/predict AI prediction API called for ticker: META
+2024-03-10 20:08:13,967 - INFO - GET /api/predict prediction for ticker META
+2024-03-10 20:08:20,160 - INFO - GET /api/stock API called for ticker: sndl
+2024-03-10 20:08:20,604 - INFO - GET /api/stock API Returning stock data for sndl
+2024-03-10 20:08:20,678 - INFO - GET /api/predict AI prediction API called for ticker: SNDL
+2024-03-10 20:08:24,199 - INFO - GET /api/predict prediction for ticker SNDL
+2024-03-10 20:08:30,489 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 20:08:30,642 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 20:08:30,701 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 20:08:34,247 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 20:08:52,589 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 20:08:53,097 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-10 20:08:53,165 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-10 20:08:56,704 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-10 20:08:59,641 - INFO - GET /api/stock API called for ticker: f
+2024-03-10 20:09:00,377 - INFO - GET /api/stock API Returning stock data for f
+2024-03-10 20:09:00,450 - INFO - GET /api/predict AI prediction API called for ticker: F
+2024-03-10 20:09:04,152 - INFO - GET /api/predict prediction for ticker F
+2024-03-10 20:09:07,517 - INFO - GET /api/stock API called for ticker: spy
+2024-03-10 20:09:08,240 - INFO - GET /api/stock API Returning stock data for spy
+2024-03-10 20:09:08,295 - INFO - GET /api/predict AI prediction API called for ticker: SPY
+2024-03-10 20:09:11,902 - INFO - GET /api/predict prediction for ticker SPY
+2024-03-10 20:09:29,497 - INFO - GET /api/stock API called for ticker: weed
+2024-03-10 20:09:30,256 - INFO - GET /api/stock API Returning stock data for weed
+2024-03-10 20:09:30,309 - INFO - GET /api/predict AI prediction API called for ticker: WEED
+2024-03-10 20:09:33,944 - INFO - GET /api/predict prediction for ticker WEED
+2024-03-10 20:11:00,301 - INFO - GET /api/stock API called for ticker: faf
+2024-03-10 20:11:01,079 - INFO - GET /api/stock API Returning stock data for faf
+2024-03-10 20:11:01,179 - INFO - GET /api/predict AI prediction API called for ticker: FAF
+2024-03-10 20:11:04,844 - INFO - GET /api/predict prediction for ticker FAF
+2024-03-10 20:11:26,573 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 20:11:26,734 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 20:11:26,802 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 20:11:30,343 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 20:11:56,993 - INFO - GET /api/stock API called for ticker: meta
+2024-03-10 20:11:57,163 - INFO - GET /api/stock API Returning stock data for meta
+2024-03-10 20:11:57,222 - INFO - GET /api/predict AI prediction API called for ticker: META
+2024-03-10 20:12:00,717 - INFO - GET /api/predict prediction for ticker META
+2024-03-10 20:12:44,991 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 20:12:45,559 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 20:12:45,628 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 20:12:49,492 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 20:12:59,229 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 20:12:59,525 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 20:12:59,959 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 20:13:03,576 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 20:18:15,393 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 20:18:15,737 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 20:18:16,746 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 20:18:20,286 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 20:20:15,503 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 20:20:15,818 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 20:20:15,887 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 20:20:19,542 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 20:21:23,837 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 20:21:23,999 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 20:21:24,816 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 20:21:28,445 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 20:22:06,044 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 20:22:06,345 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 20:22:06,715 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 20:22:10,386 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 20:22:39,418 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 20:22:39,571 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 20:22:40,052 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 20:22:43,702 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 20:23:04,148 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 20:23:04,386 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 20:23:05,746 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 20:23:09,279 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 20:23:36,350 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 20:23:36,509 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 20:23:36,955 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 20:23:40,667 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 20:23:59,627 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 20:23:59,776 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 20:24:00,280 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 20:24:03,820 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 20:24:29,148 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 20:24:29,518 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-10 20:24:29,584 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-10 20:24:33,084 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-10 20:25:08,960 - INFO - GET /api/stock API called for ticker: figs
+2024-03-10 20:25:09,511 - INFO - GET /api/stock API Returning stock data for figs
+2024-03-10 20:25:09,574 - INFO - GET /api/predict AI prediction API called for ticker: FIGS
+2024-03-10 20:25:13,478 - INFO - GET /api/predict prediction for ticker FIGS
+2024-03-10 20:25:30,425 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 20:25:30,738 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-10 20:25:30,802 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-10 20:25:34,381 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-10 20:41:35,189 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 20:41:35,542 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 20:41:35,609 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 20:41:39,060 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 20:56:33,104 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 20:56:33,437 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 20:56:33,529 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 20:56:37,089 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 20:56:55,386 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 20:56:55,525 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 20:56:56,067 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 20:56:59,625 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 20:57:18,461 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 20:57:18,601 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 20:57:18,664 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 20:57:23,010 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 20:58:27,608 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 20:58:27,777 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 20:58:37,246 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 20:58:37,462 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 20:58:37,891 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 20:58:42,236 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 20:58:56,026 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 20:58:56,339 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 20:58:56,864 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 20:59:00,335 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:00:10,770 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:00:10,944 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:00:11,393 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:00:14,985 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:00:22,205 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:00:22,490 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:00:22,961 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:00:26,856 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:01:05,892 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:01:06,079 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:01:06,630 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:01:10,612 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:03:21,879 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:03:22,240 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:03:22,984 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:03:26,935 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:06:24,362 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:06:24,689 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:06:25,657 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:06:29,388 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:06:36,885 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:06:37,034 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:06:37,096 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:06:40,615 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:06:56,016 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:06:56,215 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:06:56,282 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:06:59,867 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:09:13,886 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:09:14,202 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:09:14,255 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:09:18,159 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:09:36,523 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:09:36,676 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:09:36,733 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:09:40,274 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:09:46,096 - INFO - GET /api/stock API called for ticker: figs
+2024-03-10 21:09:46,244 - INFO - GET /api/stock API Returning stock data for figs
+2024-03-10 21:09:46,296 - INFO - GET /api/predict AI prediction API called for ticker: FIGS
+2024-03-10 21:09:49,980 - INFO - GET /api/predict prediction for ticker FIGS
+2024-03-10 21:10:56,583 - INFO - GET /api/stock API called for ticker: figs
+2024-03-10 21:10:56,881 - INFO - GET /api/stock API Returning stock data for figs
+2024-03-10 21:10:57,602 - INFO - GET /api/predict AI prediction API called for ticker: FIGS
+2024-03-10 21:11:01,192 - INFO - GET /api/predict prediction for ticker FIGS
+2024-03-10 21:11:06,581 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:11:06,836 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:11:06,894 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:11:10,418 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:11:35,472 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:11:35,653 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:11:36,108 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:11:39,808 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:11:41,813 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:11:41,912 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:11:41,982 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:11:45,543 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:12:00,283 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:12:00,512 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:12:00,577 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:12:04,430 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:13:09,283 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:13:09,595 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:13:10,524 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:13:14,263 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:13:27,381 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:13:27,517 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:13:28,038 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:13:31,670 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:13:34,210 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:13:34,298 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:13:34,850 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:13:38,578 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:13:42,046 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:13:42,183 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:13:42,733 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:13:46,602 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:13:52,359 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:13:52,515 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:13:52,924 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:13:56,618 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:14:31,126 - INFO - GET /api/stock API called for ticker: f
+2024-03-10 21:14:31,417 - INFO - GET /api/stock API Returning stock data for f
+2024-03-10 21:14:31,478 - INFO - GET /api/predict AI prediction API called for ticker: F
+2024-03-10 21:14:35,023 - INFO - GET /api/predict prediction for ticker F
+2024-03-10 21:15:02,866 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:15:03,152 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:15:03,223 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:15:06,971 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:16:00,893 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:16:01,116 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:16:01,669 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:16:05,183 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:16:32,986 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:16:33,120 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:16:33,968 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:16:37,585 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:16:50,732 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:16:50,892 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:16:50,997 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:16:54,886 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:17:12,627 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:17:12,796 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:17:13,063 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:17:16,901 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:19:26,852 - INFO - GET /api/stock API called for ticker: meta
+2024-03-10 21:19:27,156 - INFO - GET /api/stock API Returning stock data for meta
+2024-03-10 21:19:27,210 - INFO - GET /api/predict AI prediction API called for ticker: META
+2024-03-10 21:19:30,814 - INFO - GET /api/predict prediction for ticker META
+2024-03-10 21:20:13,829 - INFO - GET /api/stock API called for ticker: faf
+2024-03-10 21:20:14,149 - INFO - GET /api/stock API Returning stock data for faf
+2024-03-10 21:20:14,226 - INFO - GET /api/predict AI prediction API called for ticker: FAF
+2024-03-10 21:20:17,841 - INFO - GET /api/predict prediction for ticker FAF
+2024-03-10 21:20:31,361 - INFO - GET /api/stock API called for ticker: figs
+2024-03-10 21:20:31,530 - INFO - GET /api/stock API Returning stock data for figs
+2024-03-10 21:20:31,608 - INFO - GET /api/predict AI prediction API called for ticker: FIGS
+2024-03-10 21:20:35,105 - INFO - GET /api/predict prediction for ticker FIGS
+2024-03-10 21:21:02,128 - INFO - GET /api/stock API called for ticker: faf
+2024-03-10 21:21:02,388 - INFO - GET /api/stock API Returning stock data for faf
+2024-03-10 21:21:02,457 - INFO - GET /api/predict AI prediction API called for ticker: FAF
+2024-03-10 21:21:06,260 - INFO - GET /api/predict prediction for ticker FAF
+2024-03-10 21:21:14,440 - INFO - GET /api/stock API called for ticker: f
+2024-03-10 21:21:14,634 - INFO - GET /api/stock API Returning stock data for f
+2024-03-10 21:21:14,684 - INFO - GET /api/predict AI prediction API called for ticker: F
+2024-03-10 21:21:18,247 - INFO - GET /api/predict prediction for ticker F
+2024-03-10 21:21:39,527 - INFO - GET /api/stock API called for ticker: faf
+2024-03-10 21:21:39,750 - INFO - GET /api/stock API Returning stock data for faf
+2024-03-10 21:21:40,014 - INFO - GET /api/predict AI prediction API called for ticker: FAF
+2024-03-10 21:21:43,779 - INFO - GET /api/predict prediction for ticker FAF
+2024-03-10 21:23:25,100 - INFO - GET /api/stock API called for ticker: f
+2024-03-10 21:23:26,145 - INFO - GET /api/stock API Returning stock data for f
+2024-03-10 21:23:26,230 - INFO - GET /api/predict AI prediction API called for ticker: F
+2024-03-10 21:23:29,687 - INFO - GET /api/predict prediction for ticker F
+2024-03-10 21:23:46,727 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:23:47,202 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:23:47,274 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:23:50,784 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:25:20,001 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:25:20,912 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:25:20,991 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:25:21,046 - ERROR - Error predicting stock data for ticker HOOD
+2024-03-10 21:26:01,947 - INFO - GET /api/stock API called for ticker: hooe
+2024-03-10 21:26:03,939 - ERROR - 
+1 Failed download:
+2024-03-10 21:26:03,940 - ERROR - ['HOOE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-10 21:26:04,881 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/HOOE?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=HOOE&crumb=I2qll4G1qWH
+2024-03-10 21:26:05,004 - INFO - GET /api/stock API Returning stock data for hooe
+2024-03-10 21:26:05,019 - INFO - GET /api/predict AI prediction API called for ticker: HOOE
+2024-03-10 21:26:05,875 - ERROR - 
+1 Failed download:
+2024-03-10 21:26:05,875 - ERROR - ['HOOE']: Exception('%ticker%: No data found, symbol may be delisted')
+2024-03-10 21:26:05,876 - ERROR - Error predicting stock data for ticker HOOE
+2024-03-10 21:26:19,805 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:26:20,618 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:26:20,687 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:26:24,221 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:28:50,579 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:28:51,282 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:28:51,362 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:28:55,220 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:29:29,911 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:29:30,052 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:29:30,160 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:29:33,623 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:30:42,245 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:30:42,404 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:30:42,486 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:30:46,067 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:31:29,316 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:31:29,325 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:31:29,499 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:31:29,557 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:31:29,607 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:31:29,708 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:31:30,293 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:31:30,342 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:31:30,493 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:31:36,222 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:31:36,225 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:31:36,241 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:31:58,832 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:31:59,004 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:31:59,078 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:32:02,751 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:32:18,343 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:32:18,345 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:32:18,486 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:32:18,490 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:32:18,629 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:32:18,717 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:32:19,268 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:32:19,270 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:32:19,276 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:32:19,310 - ERROR - Error predicting stock data for ticker HOOD
+2024-03-10 21:32:24,227 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:32:24,242 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:34:32,708 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:34:32,716 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:34:33,083 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:34:33,149 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:34:33,580 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:34:33,663 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:34:33,724 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:34:33,779 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:34:34,140 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:34:39,442 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:34:39,681 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:34:39,754 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:34:39,915 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:34:40,214 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:34:40,257 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:34:43,688 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:35:18,745 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:35:18,745 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:35:19,002 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:35:19,099 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:35:19,512 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:35:19,539 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:35:19,589 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:35:19,654 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:35:19,996 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:35:25,572 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:35:25,817 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:35:25,835 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:37:54,317 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:37:54,318 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:37:54,582 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:37:54,722 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:37:54,722 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:37:54,919 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:37:55,542 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:37:55,612 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:37:55,700 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:38:01,594 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:38:01,799 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:38:01,863 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:38:02,548 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:38:02,631 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:38:02,697 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:38:06,311 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:39:29,254 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:39:29,263 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:39:29,408 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:39:29,410 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:39:29,581 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:39:29,671 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:39:30,221 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:39:30,330 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:39:30,356 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:39:35,979 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:39:36,012 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:39:36,106 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:39:43,690 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:39:43,693 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:39:43,900 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:39:43,908 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:39:44,364 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:39:44,388 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:39:44,605 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:39:44,828 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:39:45,127 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:39:50,067 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:39:50,127 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:39:50,210 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:40:29,272 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:40:29,275 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:40:29,585 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:40:29,599 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:40:29,600 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:40:29,917 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:40:30,344 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:40:30,479 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:40:30,483 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:40:35,958 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:40:36,052 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:40:36,412 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:40:36,438 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:40:36,443 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:40:36,498 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:40:39,991 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:42:50,058 - INFO - GET /api/stock API called for ticker: gme
+2024-03-10 21:42:50,776 - INFO - GET /api/stock API Returning stock data for gme
+2024-03-10 21:42:50,864 - INFO - GET /api/predict AI prediction API called for ticker: GME
+2024-03-10 21:42:54,435 - INFO - GET /api/predict prediction for ticker GME
+2024-03-10 21:43:01,381 - INFO - GET /api/stock API called for ticker: gme
+2024-03-10 21:43:01,584 - INFO - GET /api/stock API Returning stock data for gme
+2024-03-10 21:43:01,665 - INFO - GET /api/predict AI prediction API called for ticker: GME
+2024-03-10 21:43:05,157 - INFO - GET /api/predict prediction for ticker GME
+2024-03-10 21:43:56,792 - INFO - GET /api/stock API called for ticker: gme
+2024-03-10 21:43:56,801 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:43:57,017 - ERROR - Error fetching stock data for ticker hood: 'HOOD'
+2024-03-10 21:43:57,076 - INFO - GET /api/stock API Returning stock data for gme
+2024-03-10 21:43:57,524 - INFO - GET /api/predict AI prediction API called for ticker: GME
+2024-03-10 21:43:57,604 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:43:57,724 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:43:58,127 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:44:02,526 - INFO - GET /api/predict prediction for ticker GME
+2024-03-10 21:44:02,775 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:44:04,309 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:44:04,440 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:44:04,515 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:44:08,218 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:44:14,919 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:44:15,062 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:44:15,139 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:44:18,714 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:44:18,886 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:44:18,891 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:44:19,045 - ERROR - Error fetching stock data for ticker hood: 'HOOD'
+2024-03-10 21:44:19,065 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:44:19,523 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:44:19,585 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:44:19,701 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:44:19,971 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:44:23,699 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:44:23,835 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:44:24,111 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:44:24,115 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:44:24,396 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:44:27,851 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:44:27,855 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:44:27,959 - ERROR - Error fetching stock data for ticker hood: 'HOOD'
+2024-03-10 21:44:27,994 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:44:28,061 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:44:28,438 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:44:28,583 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:44:28,677 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:44:28,907 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:44:32,846 - INFO - GET /api/stock API called for ticker: amc
+2024-03-10 21:44:33,184 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:44:33,347 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:44:33,360 - INFO - GET /api/stock API Returning stock data for amc
+2024-03-10 21:44:33,414 - INFO - GET /api/predict AI prediction API called for ticker: AMC
+2024-03-10 21:44:37,031 - INFO - GET /api/predict prediction for ticker AMC
+2024-03-10 21:44:40,889 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:44:41,126 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:44:41,204 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:44:44,876 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:44:45,530 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:44:45,537 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:44:45,575 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:44:45,625 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:44:45,768 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:44:45,808 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:44:46,311 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:44:46,313 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:44:46,518 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:44:50,566 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:44:50,670 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:44:52,222 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:44:52,225 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:44:52,252 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:44:52,271 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:44:55,906 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 21:44:57,763 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 21:44:57,966 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 21:44:58,039 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 21:45:01,580 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 21:45:09,487 - INFO - GET /api/stock API called for ticker: spy
+2024-03-10 21:45:10,018 - INFO - GET /api/stock API Returning stock data for spy
+2024-03-10 21:45:10,098 - INFO - GET /api/predict AI prediction API called for ticker: SPY
+2024-03-10 21:45:13,666 - INFO - GET /api/predict prediction for ticker SPY
+2024-03-10 21:45:45,010 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 21:45:45,538 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-10 21:45:45,619 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-10 21:45:49,263 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-10 21:53:22,841 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 21:53:23,834 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 21:53:24,123 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 21:53:27,700 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 22:00:20,268 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 22:00:21,118 - ERROR - Error fetching stock data for ticker hood: 'dict' object has no attribute 'major_holders'
+2024-03-10 22:00:43,602 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 22:00:44,341 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 22:00:44,628 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 22:00:48,196 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 22:01:23,906 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 22:01:24,820 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 22:01:25,095 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 22:01:28,540 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 22:01:56,723 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 22:01:57,604 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-10 22:01:57,665 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-10 22:02:01,332 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-10 22:03:28,939 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 22:03:30,158 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-10 22:03:30,158 - ERROR - Error fetching stock data for ticker msft: name 'dividends' is not defined
+2024-03-10 22:05:38,295 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 22:05:39,156 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 22:05:39,458 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 22:05:43,128 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 22:06:27,378 - INFO - GET /api/stock API called for ticker: spy
+2024-03-10 22:06:30,026 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/?modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com&symbol=SPY&formatted=false&crumb=I2qll4G1qWH
+2024-03-10 22:06:30,303 - INFO - GET /api/stock API Returning stock data for spy
+2024-03-10 22:06:30,420 - INFO - GET /api/predict AI prediction API called for ticker: SPY
+2024-03-10 22:06:34,020 - INFO - GET /api/predict prediction for ticker SPY
+2024-03-10 22:06:43,475 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 22:06:44,167 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 22:06:44,241 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 22:06:47,861 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 22:07:28,484 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 22:07:29,344 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 22:07:29,651 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 22:07:33,220 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 22:08:14,916 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 22:08:16,157 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 22:08:16,451 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 22:08:20,049 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 22:09:47,511 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 22:09:48,602 - ERROR - Error fetching stock data for ticker hood: Have not implemented fetching 'earnings' from Yahoo API
+2024-03-10 22:10:19,145 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 22:10:21,802 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 22:10:24,480 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 22:10:25,190 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 22:10:47,514 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 22:10:48,855 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 22:11:08,740 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 22:11:09,422 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 22:11:42,044 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 22:11:43,102 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 22:11:43,410 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 22:11:46,984 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 22:12:28,328 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 22:12:29,124 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 22:12:29,266 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 22:12:33,124 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 22:14:58,092 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-10 22:14:58,640 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 22:14:58,659 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 22:14:58,891 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-10 22:14:58,899 - ERROR - Error fetching stock data for ticker msft: 'MSFT'
+2024-03-10 22:14:59,353 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 22:14:59,596 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-10 22:14:59,790 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 22:15:04,262 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-10 22:15:04,386 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 22:15:06,827 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 22:15:08,046 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-10 22:15:08,131 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-10 22:15:11,983 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-10 22:15:41,439 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 22:15:41,615 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 22:15:41,618 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 22:15:42,185 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 22:15:42,340 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-10 22:15:42,601 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-10 22:15:42,742 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 22:15:42,829 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-10 22:15:42,909 - ERROR - Error predicting stock data for ticker HOOD
+2024-03-10 22:15:42,950 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-10 22:15:47,639 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-10 22:15:47,642 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-10 22:17:19,726 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 22:17:21,807 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-10 22:17:22,164 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-10 22:17:25,682 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-10 22:18:12,925 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 22:18:13,632 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 22:18:13,637 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 22:18:13,946 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-10 22:18:14,600 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-10 22:18:14,689 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 22:18:14,717 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-10 22:18:15,291 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-10 22:18:15,296 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 22:18:15,526 - ERROR - Error predicting stock data for ticker MSFT
+2024-03-10 22:18:19,474 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-10 22:18:19,774 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 22:18:46,381 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 22:18:46,634 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 22:18:46,635 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 22:18:46,718 - ERROR - Error fetching stock data for ticker msft: 'MSFT'
+2024-03-10 22:18:47,150 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 22:18:47,418 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-10 22:18:47,526 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 22:18:47,811 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-10 22:18:52,194 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-10 22:18:52,404 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-10 22:18:57,808 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 22:18:58,621 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 22:18:58,628 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 22:18:58,733 - ERROR - Error fetching stock data for ticker hood: 'HOOD'
+2024-03-10 22:18:58,756 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-10 22:18:59,311 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-10 22:18:59,480 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-10 22:18:59,782 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-10 22:19:04,256 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-10 22:19:04,261 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-10 22:20:06,500 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 22:20:06,634 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 22:20:06,635 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 22:20:06,706 - ERROR - Error fetching stock data for ticker hood: 'HOOD'
+2024-03-10 22:20:07,480 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-10 22:20:07,640 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-10 22:20:07,947 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-10 22:20:07,993 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-10 22:20:11,703 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 22:20:12,553 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-10 22:20:12,643 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 22:20:12,662 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 22:20:12,690 - ERROR - Error fetching stock data for ticker hood: 'HOOD'
+2024-03-10 22:20:12,971 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-10 22:20:13,067 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-10 22:20:13,149 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-10 22:20:13,214 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-10 22:20:13,389 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-10 22:20:17,259 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-10 22:20:17,615 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-10 22:20:38,490 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 22:20:38,628 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 22:20:38,631 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 22:20:38,670 - ERROR - Error fetching stock data for ticker hood: 'HOOD'
+2024-03-10 22:20:39,447 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-10 22:20:39,471 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-10 22:20:39,673 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-10 22:20:39,918 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-10 22:20:44,393 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-10 22:20:44,568 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-10 22:20:46,133 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 22:20:46,622 - INFO - GET /api/stock API called for ticker: msft
+2024-03-10 22:20:46,631 - INFO - GET /api/stock API called for ticker: hood
+2024-03-10 22:20:46,702 - ERROR - Error fetching stock data for ticker msft: 'MSFT'
+2024-03-10 22:20:46,961 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-10 22:20:47,177 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-10 22:20:47,300 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-10 22:20:47,410 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-10 22:20:51,791 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-10 22:20:51,956 - INFO - GET /api/predict prediction for ticker HOOD
