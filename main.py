@@ -53,7 +53,7 @@ def chat(data: dict):
         response = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "system", "content": "You are a helpful assistant. You also happen to be great at finding value. Give your opinion on the stock data provided to you.    "},
                 {"role": "user", "content": message}
             ]
         )
@@ -168,6 +168,6 @@ def get_stock_prediction(ticker: str):
         raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
-    # uvicorn.run("main:app", host="0.0.0.0", port=8000)
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, ssl_keyfile="/etc/letsencrypt/live/engage-dev.com/privkey.pem", ssl_certfile="/etc/letsencrypt/live/engage-dev.com/fullchain.pem")
+    uvicorn.run("main:app", host="0.0.0.0", port=8000)
+    # uvicorn.run("main:app", host="0.0.0.0", port=8000, ssl_keyfile="/etc/letsencrypt/live/engage-dev.com/privkey.pem", ssl_certfile="/etc/letsencrypt/live/engage-dev.com/fullchain.pem")
 
