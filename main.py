@@ -49,6 +49,7 @@ def hello():
 def chat(data: dict):
     message = data.get("message")
     logging.info(f"GET /api/chat AI API called with message: {message}")
+
     if message:
         response = client.chat.completions.create(
             model="gpt-3.5-turbo",
@@ -58,9 +59,10 @@ def chat(data: dict):
             ]
         )
         logging.info(f"GET /api/chat AI API returning response: {response.choices[0].message.content}")
+
         return {"message": response.choices[0].message.content}
     else:
-        raise HTTPException(status_code=400, detail="Invalid request")
+        raise HTTPException(status_code=400, detail="Invalid request to OpenAI")
 
 # API route for stock data
 @app.get("/api/stock/{ticker}")
@@ -88,7 +90,6 @@ def get_stock_data(ticker: str):
         
         # Pretty print ticker_data.info
         ticker_info_dict = ticker_data.info
-        # ticker_info_str = json.dumps(ticker_info_dict, indent=4)
         logging.info(f"GET /api/stock API Returning stock data for {ticker}")
 
         payload={
