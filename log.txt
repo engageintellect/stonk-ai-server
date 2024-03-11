@@ -1212,3 +1212,1415 @@
 2024-03-11 01:56:43,570 - INFO - GET /api/predict AI prediction API called for ticker: SPY
 2024-03-11 01:56:45,012 - INFO - GET /api/predict prediction for ticker HOOD
 2024-03-11 01:56:47,238 - INFO - GET /api/predict prediction for ticker SPY
+2024-03-11 01:59:06,154 - INFO - GET /api/stock API called for ticker: hood
+2024-03-11 01:59:07,304 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-11 01:59:07,381 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-11 01:59:11,082 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-11 01:59:18,995 - INFO - GET /api/stock API called for ticker: aa
+2024-03-11 01:59:20,297 - INFO - GET /api/stock API Returning stock data for aa
+2024-03-11 01:59:20,369 - INFO - GET /api/predict AI prediction API called for ticker: AA
+2024-03-11 01:59:23,911 - INFO - GET /api/predict prediction for ticker AA
+2024-03-11 02:02:11,656 - INFO - GET /api/stock API called for ticker: aa
+2024-03-11 02:02:13,131 - INFO - GET /api/stock API Returning stock data for aa
+2024-03-11 02:02:13,399 - INFO - GET /api/predict AI prediction API called for ticker: AA
+2024-03-11 02:02:16,836 - INFO - GET /api/predict prediction for ticker AA
+2024-03-11 02:02:29,650 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-03-11 02:02:29,651 - DEBUG - load_verify_locations cafile='/Users/r3dux/Repositories/ai-stocks/server/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-03-11 02:02:29,658 - DEBUG - Using selector: KqueueSelector
+2024-03-11 02:02:29,662 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-03-11 02:02:29,662 - DEBUG - load_verify_locations cafile='/Users/r3dux/Repositories/ai-stocks/server/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-03-11 02:02:29,999 - INFO - GET /api/stock API called for ticker: aa
+2024-03-11 02:02:29,999 - DEBUG - Entering download()
+2024-03-11 02:02:29,999 - DEBUG - Disabling multithreading because DEBUG logging enabled
+2024-03-11 02:02:29,999 - DEBUG -  Entering history()
+2024-03-11 02:02:30,001 - DEBUG - ('CREATE TABLE IF NOT EXISTS "_kv" ("key" VARCHAR(255) NOT NULL PRIMARY KEY, "value" VARCHAR(255)) WITHOUT ROWID', [])
+2024-03-11 02:02:30,001 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AA', 1, 0])
+2024-03-11 02:02:30,020 - DEBUG -   Entering history()
+2024-03-11 02:02:30,020 - DEBUG - AA: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:02:30,020 - DEBUG -    Entering get()
+2024-03-11 02:02:30,020 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AA
+2024-03-11 02:02:30,020 - DEBUG - params={'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:02:30,020 - DEBUG -     Entering _get_cookie_and_crumb()
+2024-03-11 02:02:30,020 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:02:30,020 - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:02:30,021 - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-03-11 02:02:30,021 - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-03-11 02:02:30,021 - DEBUG - loaded persistent cookie
+2024-03-11 02:02:30,021 - DEBUG - reusing cookie
+2024-03-11 02:02:30,027 - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-03-11 02:02:30,136 - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-03-11 02:02:30,137 - DEBUG - crumb = 'hvfQf/FPNsu'
+2024-03-11 02:02:30,137 - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:02:30,137 - DEBUG -     Exiting _get_cookie_and_crumb()
+2024-03-11 02:02:30,140 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-03-11 02:02:30,369 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AA?range=1y&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:02:30,379 - DEBUG - response code=200
+2024-03-11 02:02:30,380 - DEBUG -    Exiting get()
+2024-03-11 02:02:30,382 - DEBUG - AA: yfinance received OHLC data: 2023-03-09 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:02:30,385 - DEBUG - AA: OHLC after cleaning: 2023-03-09 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:02:30,388 - DEBUG - AA: OHLC after combining events: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:02:30,389 - DEBUG - AA: yfinance returning OHLC: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:02:30,389 - DEBUG -   Exiting history()
+2024-03-11 02:02:30,389 - DEBUG -  Exiting history()
+2024-03-11 02:02:30,389 - DEBUG - Exiting download()
+2024-03-11 02:02:30,389 - DEBUG - Entering get()
+2024-03-11 02:02:30,389 - DEBUG - url=https://query2.finance.yahoo.com/v1/finance/search?q=AA
+2024-03-11 02:02:30,389 - DEBUG - params=None
+2024-03-11 02:02:30,389 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:02:30,389 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:02:30,389 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:02:30,389 - DEBUG - reusing cookie
+2024-03-11 02:02:30,389 - DEBUG - reusing crumb
+2024-03-11 02:02:30,389 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:02:30,389 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:02:30,524 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v1/finance/search?q=AA&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:02:30,524 - DEBUG - response code=200
+2024-03-11 02:02:30,524 - DEBUG - Exiting get()
+2024-03-11 02:02:30,524 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AA', 1, 0])
+2024-03-11 02:02:30,524 - DEBUG - Entering history()
+2024-03-11 02:02:30,525 - DEBUG - AA: Yahoo GET parameters: {'period1': '1925-04-04 19:00:00-05:00', 'period2': '2024-03-11 05:02:30-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:02:30,525 - DEBUG -  Entering get()
+2024-03-11 02:02:30,525 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AA
+2024-03-11 02:02:30,525 - DEBUG - params={'period1': -1411948800, 'period2': 1710147750, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:02:30,525 - DEBUG -   Entering _get_cookie_and_crumb()
+2024-03-11 02:02:30,525 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:02:30,525 - DEBUG -    Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:02:30,525 - DEBUG - reusing cookie
+2024-03-11 02:02:30,525 - DEBUG - reusing crumb
+2024-03-11 02:02:30,525 - DEBUG -    Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:02:30,525 - DEBUG -   Exiting _get_cookie_and_crumb()
+2024-03-11 02:02:30,893 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AA?period1=-1411948800&period2=1710147750&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:02:31,004 - DEBUG - response code=200
+2024-03-11 02:02:31,004 - DEBUG -  Exiting get()
+2024-03-11 02:02:31,029 - DEBUG - AA: yfinance received OHLC data: 1962-01-02 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:02:31,032 - DEBUG - AA: OHLC after cleaning: 1962-01-02 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:02:31,075 - DEBUG - AA: OHLC after combining events: 1962-01-02 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:02:31,077 - DEBUG - AA: yfinance returning OHLC: 1962-01-02 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:02:31,078 - DEBUG - Exiting history()
+2024-03-11 02:02:31,079 - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/
+2024-03-11 02:02:31,079 - DEBUG - Entering get()
+2024-03-11 02:02:31,079 - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/
+2024-03-11 02:02:31,079 - DEBUG - params={'modules': 'institutionOwnership,fundOwnership,majorDirectHolders,majorHoldersBreakdown,insiderTransactions,insiderHolders,netSharePurchaseActivity', 'corsDomain': 'finance.yahoo.com', 'symbol': 'AA', 'formatted': 'false'}
+2024-03-11 02:02:31,079 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:02:31,079 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:02:31,079 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:02:31,079 - DEBUG - reusing cookie
+2024-03-11 02:02:31,079 - DEBUG - reusing crumb
+2024-03-11 02:02:31,079 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:02:31,079 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:02:31,157 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/?modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com&symbol=AA&formatted=false&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 6590
+2024-03-11 02:02:31,157 - DEBUG - response code=200
+2024-03-11 02:02:31,157 - DEBUG - Exiting get()
+2024-03-11 02:02:31,160 - DEBUG - Entering get()
+2024-03-11 02:02:31,160 - DEBUG - url=https://query2.finance.yahoo.com/v7/finance/options/AA
+2024-03-11 02:02:31,160 - DEBUG - params=None
+2024-03-11 02:02:31,160 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:02:31,160 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:02:31,160 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:02:31,160 - DEBUG - reusing cookie
+2024-03-11 02:02:31,160 - DEBUG - reusing crumb
+2024-03-11 02:02:31,160 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:02:31,160 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:02:31,252 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v7/finance/options/AA?crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:02:31,253 - DEBUG - response code=200
+2024-03-11 02:02:31,253 - DEBUG - Exiting get()
+2024-03-11 02:02:31,253 - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AA
+2024-03-11 02:02:31,253 - DEBUG - Entering get()
+2024-03-11 02:02:31,253 - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AA
+2024-03-11 02:02:31,253 - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AA'}
+2024-03-11 02:02:31,253 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:02:31,253 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:02:31,253 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:02:31,253 - DEBUG - reusing cookie
+2024-03-11 02:02:31,253 - DEBUG - reusing crumb
+2024-03-11 02:02:31,253 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:02:31,253 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:02:31,417 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AA?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AA&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 2759
+2024-03-11 02:02:31,417 - DEBUG - response code=200
+2024-03-11 02:02:31,417 - DEBUG - Exiting get()
+2024-03-11 02:02:31,417 - DEBUG - Entering get()
+2024-03-11 02:02:31,417 - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AA?symbol=AA&type=trailingPegRatio&period1=1694390400&period2=1710201600
+2024-03-11 02:02:31,417 - DEBUG - params=None
+2024-03-11 02:02:31,417 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:02:31,417 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:02:31,417 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:02:31,417 - DEBUG - reusing cookie
+2024-03-11 02:02:31,418 - DEBUG - reusing crumb
+2024-03-11 02:02:31,418 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:02:31,418 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:02:31,476 - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AA?symbol=AA&type=trailingPegRatio&period1=1694390400&period2=1710201600&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 95
+2024-03-11 02:02:31,477 - DEBUG - response code=200
+2024-03-11 02:02:31,477 - DEBUG - Exiting get()
+2024-03-11 02:02:31,477 - INFO - GET /api/stock API Returning stock data for aa
+2024-03-11 02:02:31,753 - INFO - GET /api/predict AI prediction API called for ticker: AA
+2024-03-11 02:02:31,753 - DEBUG - Entering download()
+2024-03-11 02:02:31,753 - DEBUG - Disabling multithreading because DEBUG logging enabled
+2024-03-11 02:02:31,753 - DEBUG -  Entering history()
+2024-03-11 02:02:31,754 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AA', 1, 0])
+2024-03-11 02:02:31,754 - DEBUG -   Entering history()
+2024-03-11 02:02:31,754 - DEBUG - AA: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:02:31,754 - DEBUG -    Entering get()
+2024-03-11 02:02:31,754 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AA
+2024-03-11 02:02:31,754 - DEBUG - params={'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:02:31,754 - DEBUG -     Entering _get_cookie_and_crumb()
+2024-03-11 02:02:31,754 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:02:31,754 - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:02:31,754 - DEBUG - reusing cookie
+2024-03-11 02:02:31,754 - DEBUG - reusing crumb
+2024-03-11 02:02:31,754 - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:02:31,754 - DEBUG -     Exiting _get_cookie_and_crumb()
+2024-03-11 02:02:31,771 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AA?range=1y&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 8355
+2024-03-11 02:02:31,772 - DEBUG - response code=200
+2024-03-11 02:02:31,773 - DEBUG -    Exiting get()
+2024-03-11 02:02:31,775 - DEBUG - AA: yfinance received OHLC data: 2023-03-09 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:02:31,776 - DEBUG - AA: OHLC after cleaning: 2023-03-09 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:02:31,781 - DEBUG - AA: OHLC after combining events: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:02:31,782 - DEBUG - AA: yfinance returning OHLC: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:02:31,782 - DEBUG -   Exiting history()
+2024-03-11 02:02:31,782 - DEBUG -  Exiting history()
+2024-03-11 02:02:31,782 - DEBUG - Exiting download()
+2024-03-11 02:02:35,211 - INFO - GET /api/predict prediction for ticker AA
+2024-03-11 02:03:44,022 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-03-11 02:03:44,023 - DEBUG - load_verify_locations cafile='/Users/r3dux/Repositories/ai-stocks/server/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-03-11 02:03:44,030 - DEBUG - Using selector: KqueueSelector
+2024-03-11 02:03:44,033 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-03-11 02:03:44,033 - DEBUG - load_verify_locations cafile='/Users/r3dux/Repositories/ai-stocks/server/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-03-11 02:03:45,603 - INFO - GET /api/stock API called for ticker: aa
+2024-03-11 02:03:45,603 - DEBUG - Entering download()
+2024-03-11 02:03:45,603 - DEBUG - Disabling multithreading because DEBUG logging enabled
+2024-03-11 02:03:45,604 - DEBUG -  Entering history()
+2024-03-11 02:03:45,606 - DEBUG - ('CREATE TABLE IF NOT EXISTS "_kv" ("key" VARCHAR(255) NOT NULL PRIMARY KEY, "value" VARCHAR(255)) WITHOUT ROWID', [])
+2024-03-11 02:03:45,606 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AA', 1, 0])
+2024-03-11 02:03:45,623 - DEBUG -   Entering history()
+2024-03-11 02:03:45,623 - DEBUG - AA: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:03:45,623 - DEBUG -    Entering get()
+2024-03-11 02:03:45,623 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AA
+2024-03-11 02:03:45,623 - DEBUG - params={'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:03:45,623 - DEBUG -     Entering _get_cookie_and_crumb()
+2024-03-11 02:03:45,623 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:03:45,623 - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:03:45,624 - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-03-11 02:03:45,624 - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-03-11 02:03:45,624 - DEBUG - loaded persistent cookie
+2024-03-11 02:03:45,624 - DEBUG - reusing cookie
+2024-03-11 02:03:45,646 - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-03-11 02:03:45,867 - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-03-11 02:03:45,868 - DEBUG - crumb = 'hvfQf/FPNsu'
+2024-03-11 02:03:45,868 - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:03:45,868 - DEBUG -     Exiting _get_cookie_and_crumb()
+2024-03-11 02:03:45,872 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-03-11 02:03:46,151 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AA?range=1y&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:03:46,166 - DEBUG - response code=200
+2024-03-11 02:03:46,167 - DEBUG -    Exiting get()
+2024-03-11 02:03:46,172 - DEBUG - AA: yfinance received OHLC data: 2023-03-09 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:03:46,176 - DEBUG - AA: OHLC after cleaning: 2023-03-09 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:03:46,185 - DEBUG - AA: OHLC after combining events: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:03:46,187 - DEBUG - AA: yfinance returning OHLC: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:03:46,187 - DEBUG -   Exiting history()
+2024-03-11 02:03:46,187 - DEBUG -  Exiting history()
+2024-03-11 02:03:46,187 - DEBUG - Exiting download()
+2024-03-11 02:03:46,187 - DEBUG - Entering get()
+2024-03-11 02:03:46,187 - DEBUG - url=https://query2.finance.yahoo.com/v1/finance/search?q=AA
+2024-03-11 02:03:46,187 - DEBUG - params=None
+2024-03-11 02:03:46,187 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:03:46,187 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:03:46,187 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:03:46,187 - DEBUG - reusing cookie
+2024-03-11 02:03:46,187 - DEBUG - reusing crumb
+2024-03-11 02:03:46,187 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:03:46,187 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:03:46,392 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v1/finance/search?q=AA&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:03:46,393 - DEBUG - response code=200
+2024-03-11 02:03:46,393 - DEBUG - Exiting get()
+2024-03-11 02:03:46,393 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AA', 1, 0])
+2024-03-11 02:03:46,393 - DEBUG - Entering history()
+2024-03-11 02:03:46,394 - DEBUG - AA: Yahoo GET parameters: {'period1': '1925-04-04 19:00:00-05:00', 'period2': '2024-03-11 05:03:46-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:03:46,394 - DEBUG -  Entering get()
+2024-03-11 02:03:46,394 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AA
+2024-03-11 02:03:46,394 - DEBUG - params={'period1': -1411948800, 'period2': 1710147826, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:03:46,394 - DEBUG -   Entering _get_cookie_and_crumb()
+2024-03-11 02:03:46,394 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:03:46,394 - DEBUG -    Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:03:46,394 - DEBUG - reusing cookie
+2024-03-11 02:03:46,394 - DEBUG - reusing crumb
+2024-03-11 02:03:46,394 - DEBUG -    Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:03:46,394 - DEBUG -   Exiting _get_cookie_and_crumb()
+2024-03-11 02:03:46,678 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AA?period1=-1411948800&period2=1710147826&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:03:46,929 - DEBUG - response code=200
+2024-03-11 02:03:46,929 - DEBUG -  Exiting get()
+2024-03-11 02:03:46,964 - DEBUG - AA: yfinance received OHLC data: 1962-01-02 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:03:46,967 - DEBUG - AA: OHLC after cleaning: 1962-01-02 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:03:47,012 - DEBUG - AA: OHLC after combining events: 1962-01-02 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:03:47,014 - DEBUG - AA: yfinance returning OHLC: 1962-01-02 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:03:47,015 - DEBUG - Exiting history()
+2024-03-11 02:03:47,016 - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/
+2024-03-11 02:03:47,016 - DEBUG - Entering get()
+2024-03-11 02:03:47,016 - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/
+2024-03-11 02:03:47,016 - DEBUG - params={'modules': 'institutionOwnership,fundOwnership,majorDirectHolders,majorHoldersBreakdown,insiderTransactions,insiderHolders,netSharePurchaseActivity', 'corsDomain': 'finance.yahoo.com', 'symbol': 'AA', 'formatted': 'false'}
+2024-03-11 02:03:47,016 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:03:47,016 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:03:47,016 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:03:47,016 - DEBUG - reusing cookie
+2024-03-11 02:03:47,016 - DEBUG - reusing crumb
+2024-03-11 02:03:47,016 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:03:47,016 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:03:47,118 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/?modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com&symbol=AA&formatted=false&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 6590
+2024-03-11 02:03:47,119 - DEBUG - response code=200
+2024-03-11 02:03:47,119 - DEBUG - Exiting get()
+2024-03-11 02:03:47,123 - DEBUG - Entering get()
+2024-03-11 02:03:47,123 - DEBUG - url=https://query2.finance.yahoo.com/v7/finance/options/AA
+2024-03-11 02:03:47,123 - DEBUG - params=None
+2024-03-11 02:03:47,123 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:03:47,123 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:03:47,123 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:03:47,123 - DEBUG - reusing cookie
+2024-03-11 02:03:47,123 - DEBUG - reusing crumb
+2024-03-11 02:03:47,123 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:03:47,123 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:03:47,214 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v7/finance/options/AA?crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:03:47,215 - DEBUG - response code=200
+2024-03-11 02:03:47,215 - DEBUG - Exiting get()
+2024-03-11 02:03:47,216 - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AA
+2024-03-11 02:03:47,216 - DEBUG - Entering get()
+2024-03-11 02:03:47,216 - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AA
+2024-03-11 02:03:47,216 - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AA'}
+2024-03-11 02:03:47,216 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:03:47,216 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:03:47,216 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:03:47,216 - DEBUG - reusing cookie
+2024-03-11 02:03:47,216 - DEBUG - reusing crumb
+2024-03-11 02:03:47,216 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:03:47,216 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:03:47,278 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AA?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AA&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 2759
+2024-03-11 02:03:47,279 - DEBUG - response code=200
+2024-03-11 02:03:47,280 - DEBUG - Exiting get()
+2024-03-11 02:03:47,280 - DEBUG - Entering get()
+2024-03-11 02:03:47,281 - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AA?symbol=AA&type=trailingPegRatio&period1=1694390400&period2=1710201600
+2024-03-11 02:03:47,281 - DEBUG - params=None
+2024-03-11 02:03:47,281 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:03:47,281 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:03:47,281 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:03:47,281 - DEBUG - reusing cookie
+2024-03-11 02:03:47,281 - DEBUG - reusing crumb
+2024-03-11 02:03:47,281 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:03:47,281 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:03:47,439 - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AA?symbol=AA&type=trailingPegRatio&period1=1694390400&period2=1710201600&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 95
+2024-03-11 02:03:47,439 - DEBUG - response code=200
+2024-03-11 02:03:47,440 - DEBUG - Exiting get()
+2024-03-11 02:03:47,440 - INFO - GET /api/stock API Returning stock data for aa
+2024-03-11 02:03:47,713 - INFO - GET /api/predict AI prediction API called for ticker: AA
+2024-03-11 02:03:47,713 - DEBUG - Entering download()
+2024-03-11 02:03:47,713 - DEBUG - Disabling multithreading because DEBUG logging enabled
+2024-03-11 02:03:47,713 - DEBUG -  Entering history()
+2024-03-11 02:03:47,713 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AA', 1, 0])
+2024-03-11 02:03:47,714 - DEBUG -   Entering history()
+2024-03-11 02:03:47,714 - DEBUG - AA: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:03:47,714 - DEBUG -    Entering get()
+2024-03-11 02:03:47,714 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AA
+2024-03-11 02:03:47,714 - DEBUG - params={'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:03:47,714 - DEBUG -     Entering _get_cookie_and_crumb()
+2024-03-11 02:03:47,714 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:03:47,714 - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:03:47,714 - DEBUG - reusing cookie
+2024-03-11 02:03:47,714 - DEBUG - reusing crumb
+2024-03-11 02:03:47,714 - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:03:47,714 - DEBUG -     Exiting _get_cookie_and_crumb()
+2024-03-11 02:03:47,734 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AA?range=1y&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 8313
+2024-03-11 02:03:47,735 - DEBUG - response code=200
+2024-03-11 02:03:47,735 - DEBUG -    Exiting get()
+2024-03-11 02:03:47,737 - DEBUG - AA: yfinance received OHLC data: 2023-03-09 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:03:47,738 - DEBUG - AA: OHLC after cleaning: 2023-03-09 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:03:47,743 - DEBUG - AA: OHLC after combining events: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:03:47,745 - DEBUG - AA: yfinance returning OHLC: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:03:47,745 - DEBUG -   Exiting history()
+2024-03-11 02:03:47,745 - DEBUG -  Exiting history()
+2024-03-11 02:03:47,746 - DEBUG - Exiting download()
+2024-03-11 02:03:51,151 - INFO - GET /api/predict prediction for ticker AA
+2024-03-11 02:05:20,177 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-03-11 02:05:20,178 - DEBUG - load_verify_locations cafile='/Users/r3dux/Repositories/ai-stocks/server/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-03-11 02:05:20,185 - DEBUG - Using selector: KqueueSelector
+2024-03-11 02:05:20,188 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-03-11 02:05:20,189 - DEBUG - load_verify_locations cafile='/Users/r3dux/Repositories/ai-stocks/server/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-03-11 02:05:20,731 - INFO - GET /api/stock API called for ticker: aa
+2024-03-11 02:05:20,731 - DEBUG - Entering download()
+2024-03-11 02:05:20,731 - DEBUG - Disabling multithreading because DEBUG logging enabled
+2024-03-11 02:05:20,731 - DEBUG -  Entering history()
+2024-03-11 02:05:20,732 - DEBUG - ('CREATE TABLE IF NOT EXISTS "_kv" ("key" VARCHAR(255) NOT NULL PRIMARY KEY, "value" VARCHAR(255)) WITHOUT ROWID', [])
+2024-03-11 02:05:20,732 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AA', 1, 0])
+2024-03-11 02:05:20,746 - DEBUG -   Entering history()
+2024-03-11 02:05:20,746 - DEBUG - AA: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:05:20,746 - DEBUG -    Entering get()
+2024-03-11 02:05:20,746 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AA
+2024-03-11 02:05:20,746 - DEBUG - params={'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:05:20,746 - DEBUG -     Entering _get_cookie_and_crumb()
+2024-03-11 02:05:20,746 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:05:20,746 - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:05:20,746 - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-03-11 02:05:20,746 - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-03-11 02:05:20,746 - DEBUG - loaded persistent cookie
+2024-03-11 02:05:20,746 - DEBUG - reusing cookie
+2024-03-11 02:05:20,777 - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-03-11 02:05:20,895 - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-03-11 02:05:20,895 - DEBUG - crumb = 'hvfQf/FPNsu'
+2024-03-11 02:05:20,895 - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:05:20,895 - DEBUG -     Exiting _get_cookie_and_crumb()
+2024-03-11 02:05:20,898 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-03-11 02:05:21,090 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AA?range=1y&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:05:21,105 - DEBUG - response code=200
+2024-03-11 02:05:21,105 - DEBUG -    Exiting get()
+2024-03-11 02:05:21,107 - DEBUG - AA: yfinance received OHLC data: 2023-03-09 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:05:21,110 - DEBUG - AA: OHLC after cleaning: 2023-03-09 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:05:21,113 - DEBUG - AA: OHLC after combining events: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:05:21,114 - DEBUG - AA: yfinance returning OHLC: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:05:21,114 - DEBUG -   Exiting history()
+2024-03-11 02:05:21,114 - DEBUG -  Exiting history()
+2024-03-11 02:05:21,114 - DEBUG - Exiting download()
+2024-03-11 02:05:21,114 - DEBUG - Entering get()
+2024-03-11 02:05:21,114 - DEBUG - url=https://query2.finance.yahoo.com/v1/finance/search?q=AA
+2024-03-11 02:05:21,114 - DEBUG - params=None
+2024-03-11 02:05:21,114 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:05:21,114 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:05:21,114 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:05:21,114 - DEBUG - reusing cookie
+2024-03-11 02:05:21,114 - DEBUG - reusing crumb
+2024-03-11 02:05:21,114 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:05:21,114 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:05:21,291 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v1/finance/search?q=AA&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:05:21,291 - DEBUG - response code=200
+2024-03-11 02:05:21,291 - DEBUG - Exiting get()
+2024-03-11 02:05:21,292 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AA', 1, 0])
+2024-03-11 02:05:21,292 - DEBUG - Entering history()
+2024-03-11 02:05:21,292 - DEBUG - AA: Yahoo GET parameters: {'period1': '1925-04-04 19:00:00-05:00', 'period2': '2024-03-11 05:05:21-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:05:21,292 - DEBUG -  Entering get()
+2024-03-11 02:05:21,292 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AA
+2024-03-11 02:05:21,292 - DEBUG - params={'period1': -1411948800, 'period2': 1710147921, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:05:21,292 - DEBUG -   Entering _get_cookie_and_crumb()
+2024-03-11 02:05:21,292 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:05:21,292 - DEBUG -    Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:05:21,292 - DEBUG - reusing cookie
+2024-03-11 02:05:21,292 - DEBUG - reusing crumb
+2024-03-11 02:05:21,292 - DEBUG -    Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:05:21,292 - DEBUG -   Exiting _get_cookie_and_crumb()
+2024-03-11 02:05:21,551 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AA?period1=-1411948800&period2=1710147921&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:05:21,834 - DEBUG - response code=200
+2024-03-11 02:05:21,835 - DEBUG -  Exiting get()
+2024-03-11 02:05:21,871 - DEBUG - AA: yfinance received OHLC data: 1962-01-02 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:05:21,874 - DEBUG - AA: OHLC after cleaning: 1962-01-02 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:05:21,926 - DEBUG - AA: OHLC after combining events: 1962-01-02 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:05:21,929 - DEBUG - AA: yfinance returning OHLC: 1962-01-02 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:05:21,930 - DEBUG - Exiting history()
+2024-03-11 02:05:21,931 - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/
+2024-03-11 02:05:21,931 - DEBUG - Entering get()
+2024-03-11 02:05:21,931 - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/
+2024-03-11 02:05:21,931 - DEBUG - params={'modules': 'institutionOwnership,fundOwnership,majorDirectHolders,majorHoldersBreakdown,insiderTransactions,insiderHolders,netSharePurchaseActivity', 'corsDomain': 'finance.yahoo.com', 'symbol': 'AA', 'formatted': 'false'}
+2024-03-11 02:05:21,931 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:05:21,931 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:05:21,931 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:05:21,931 - DEBUG - reusing cookie
+2024-03-11 02:05:21,931 - DEBUG - reusing crumb
+2024-03-11 02:05:21,931 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:05:21,931 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:05:22,003 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/?modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com&symbol=AA&formatted=false&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 6590
+2024-03-11 02:05:22,003 - DEBUG - response code=200
+2024-03-11 02:05:22,003 - DEBUG - Exiting get()
+2024-03-11 02:05:22,007 - DEBUG - Entering get()
+2024-03-11 02:05:22,007 - DEBUG - url=https://query2.finance.yahoo.com/v7/finance/options/AA
+2024-03-11 02:05:22,007 - DEBUG - params=None
+2024-03-11 02:05:22,007 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:05:22,007 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:05:22,007 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:05:22,007 - DEBUG - reusing cookie
+2024-03-11 02:05:22,007 - DEBUG - reusing crumb
+2024-03-11 02:05:22,007 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:05:22,007 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:05:22,099 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v7/finance/options/AA?crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:05:22,100 - DEBUG - response code=200
+2024-03-11 02:05:22,100 - DEBUG - Exiting get()
+2024-03-11 02:05:22,101 - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AA
+2024-03-11 02:05:22,101 - DEBUG - Entering get()
+2024-03-11 02:05:22,101 - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AA
+2024-03-11 02:05:22,101 - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AA'}
+2024-03-11 02:05:22,101 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:05:22,101 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:05:22,101 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:05:22,101 - DEBUG - reusing cookie
+2024-03-11 02:05:22,101 - DEBUG - reusing crumb
+2024-03-11 02:05:22,101 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:05:22,101 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:05:22,163 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AA?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AA&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 2759
+2024-03-11 02:05:22,164 - DEBUG - response code=200
+2024-03-11 02:05:22,164 - DEBUG - Exiting get()
+2024-03-11 02:05:22,165 - DEBUG - Entering get()
+2024-03-11 02:05:22,165 - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AA?symbol=AA&type=trailingPegRatio&period1=1694390400&period2=1710201600
+2024-03-11 02:05:22,165 - DEBUG - params=None
+2024-03-11 02:05:22,165 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:05:22,165 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:05:22,165 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:05:22,165 - DEBUG - reusing cookie
+2024-03-11 02:05:22,165 - DEBUG - reusing crumb
+2024-03-11 02:05:22,165 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:05:22,166 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:05:22,339 - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AA?symbol=AA&type=trailingPegRatio&period1=1694390400&period2=1710201600&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 95
+2024-03-11 02:05:22,340 - DEBUG - response code=200
+2024-03-11 02:05:22,340 - DEBUG - Exiting get()
+2024-03-11 02:05:22,340 - INFO - GET /api/stock API Returning stock data for aa
+2024-03-11 02:05:22,621 - INFO - GET /api/predict AI prediction API called for ticker: AA
+2024-03-11 02:05:22,621 - DEBUG - Entering download()
+2024-03-11 02:05:22,621 - DEBUG - Disabling multithreading because DEBUG logging enabled
+2024-03-11 02:05:22,621 - DEBUG -  Entering history()
+2024-03-11 02:05:22,622 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AA', 1, 0])
+2024-03-11 02:05:22,622 - DEBUG -   Entering history()
+2024-03-11 02:05:22,622 - DEBUG - AA: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:05:22,622 - DEBUG -    Entering get()
+2024-03-11 02:05:22,622 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AA
+2024-03-11 02:05:22,622 - DEBUG - params={'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:05:22,622 - DEBUG -     Entering _get_cookie_and_crumb()
+2024-03-11 02:05:22,622 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:05:22,622 - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:05:22,622 - DEBUG - reusing cookie
+2024-03-11 02:05:22,622 - DEBUG - reusing crumb
+2024-03-11 02:05:22,622 - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:05:22,622 - DEBUG -     Exiting _get_cookie_and_crumb()
+2024-03-11 02:05:22,639 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AA?range=1y&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 8328
+2024-03-11 02:05:22,640 - DEBUG - response code=200
+2024-03-11 02:05:22,640 - DEBUG -    Exiting get()
+2024-03-11 02:05:22,642 - DEBUG - AA: yfinance received OHLC data: 2023-03-09 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:05:22,643 - DEBUG - AA: OHLC after cleaning: 2023-03-09 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:05:22,650 - DEBUG - AA: OHLC after combining events: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:05:22,652 - DEBUG - AA: yfinance returning OHLC: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:05:22,652 - DEBUG -   Exiting history()
+2024-03-11 02:05:22,652 - DEBUG -  Exiting history()
+2024-03-11 02:05:22,652 - DEBUG - Exiting download()
+2024-03-11 02:05:26,047 - INFO - GET /api/predict prediction for ticker AA
+2024-03-11 02:05:58,058 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-03-11 02:05:58,059 - DEBUG - load_verify_locations cafile='/Users/r3dux/Repositories/ai-stocks/server/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-03-11 02:05:58,066 - DEBUG - Using selector: KqueueSelector
+2024-03-11 02:05:58,069 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-03-11 02:05:58,070 - DEBUG - load_verify_locations cafile='/Users/r3dux/Repositories/ai-stocks/server/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-03-11 02:06:13,493 - INFO - GET /api/stock API called for ticker: aa
+2024-03-11 02:06:13,494 - DEBUG - Entering download()
+2024-03-11 02:06:13,494 - DEBUG - Disabling multithreading because DEBUG logging enabled
+2024-03-11 02:06:13,494 - DEBUG -  Entering history()
+2024-03-11 02:06:13,494 - DEBUG - ('CREATE TABLE IF NOT EXISTS "_kv" ("key" VARCHAR(255) NOT NULL PRIMARY KEY, "value" VARCHAR(255)) WITHOUT ROWID', [])
+2024-03-11 02:06:13,495 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AA', 1, 0])
+2024-03-11 02:06:13,508 - DEBUG -   Entering history()
+2024-03-11 02:06:13,508 - DEBUG - AA: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:06:13,508 - DEBUG -    Entering get()
+2024-03-11 02:06:13,508 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AA
+2024-03-11 02:06:13,508 - DEBUG - params={'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:06:13,508 - DEBUG -     Entering _get_cookie_and_crumb()
+2024-03-11 02:06:13,508 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:06:13,508 - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:06:13,508 - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-03-11 02:06:13,509 - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-03-11 02:06:13,509 - DEBUG - loaded persistent cookie
+2024-03-11 02:06:13,509 - DEBUG - reusing cookie
+2024-03-11 02:06:13,533 - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-03-11 02:06:13,873 - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-03-11 02:06:13,873 - DEBUG - crumb = 'hvfQf/FPNsu'
+2024-03-11 02:06:13,874 - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:06:13,874 - DEBUG -     Exiting _get_cookie_and_crumb()
+2024-03-11 02:06:13,877 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-03-11 02:06:14,247 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AA?range=1y&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:06:14,248 - DEBUG - response code=200
+2024-03-11 02:06:14,248 - DEBUG -    Exiting get()
+2024-03-11 02:06:14,253 - DEBUG - AA: yfinance received OHLC data: 2023-03-09 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:06:14,257 - DEBUG - AA: OHLC after cleaning: 2023-03-09 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:06:14,265 - DEBUG - AA: OHLC after combining events: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:06:14,267 - DEBUG - AA: yfinance returning OHLC: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:06:14,267 - DEBUG -   Exiting history()
+2024-03-11 02:06:14,267 - DEBUG -  Exiting history()
+2024-03-11 02:06:14,267 - DEBUG - Exiting download()
+2024-03-11 02:06:14,267 - DEBUG - Entering get()
+2024-03-11 02:06:14,267 - DEBUG - url=https://query2.finance.yahoo.com/v1/finance/search?q=AA
+2024-03-11 02:06:14,267 - DEBUG - params=None
+2024-03-11 02:06:14,267 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:06:14,267 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:06:14,267 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:06:14,267 - DEBUG - reusing cookie
+2024-03-11 02:06:14,267 - DEBUG - reusing crumb
+2024-03-11 02:06:14,267 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:06:14,267 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:06:14,409 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v1/finance/search?q=AA&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:06:14,410 - DEBUG - response code=200
+2024-03-11 02:06:14,410 - DEBUG - Exiting get()
+2024-03-11 02:06:14,411 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AA', 1, 0])
+2024-03-11 02:06:14,411 - DEBUG - Entering history()
+2024-03-11 02:06:14,413 - DEBUG - AA: Yahoo GET parameters: {'period1': '1925-04-04 19:00:00-05:00', 'period2': '2024-03-11 05:06:14-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:06:14,413 - DEBUG -  Entering get()
+2024-03-11 02:06:14,413 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AA
+2024-03-11 02:06:14,413 - DEBUG - params={'period1': -1411948800, 'period2': 1710147974, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:06:14,413 - DEBUG -   Entering _get_cookie_and_crumb()
+2024-03-11 02:06:14,413 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:06:14,413 - DEBUG -    Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:06:14,413 - DEBUG - reusing cookie
+2024-03-11 02:06:14,413 - DEBUG - reusing crumb
+2024-03-11 02:06:14,413 - DEBUG -    Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:06:14,413 - DEBUG -   Exiting _get_cookie_and_crumb()
+2024-03-11 02:06:14,773 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AA?period1=-1411948800&period2=1710147974&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:06:14,855 - DEBUG - response code=200
+2024-03-11 02:06:14,855 - DEBUG -  Exiting get()
+2024-03-11 02:06:14,880 - DEBUG - AA: yfinance received OHLC data: 1962-01-02 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:06:14,883 - DEBUG - AA: OHLC after cleaning: 1962-01-02 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:06:14,926 - DEBUG - AA: OHLC after combining events: 1962-01-02 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:06:14,928 - DEBUG - AA: yfinance returning OHLC: 1962-01-02 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:06:14,928 - DEBUG - Exiting history()
+2024-03-11 02:06:14,929 - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/
+2024-03-11 02:06:14,929 - DEBUG - Entering get()
+2024-03-11 02:06:14,929 - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/
+2024-03-11 02:06:14,929 - DEBUG - params={'modules': 'institutionOwnership,fundOwnership,majorDirectHolders,majorHoldersBreakdown,insiderTransactions,insiderHolders,netSharePurchaseActivity', 'corsDomain': 'finance.yahoo.com', 'symbol': 'AA', 'formatted': 'false'}
+2024-03-11 02:06:14,929 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:06:14,929 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:06:14,929 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:06:14,929 - DEBUG - reusing cookie
+2024-03-11 02:06:14,929 - DEBUG - reusing crumb
+2024-03-11 02:06:14,930 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:06:14,930 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:06:15,010 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/?modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com&symbol=AA&formatted=false&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 6590
+2024-03-11 02:06:15,010 - DEBUG - response code=200
+2024-03-11 02:06:15,010 - DEBUG - Exiting get()
+2024-03-11 02:06:15,013 - DEBUG - Entering get()
+2024-03-11 02:06:15,014 - DEBUG - url=https://query2.finance.yahoo.com/v7/finance/options/AA
+2024-03-11 02:06:15,014 - DEBUG - params=None
+2024-03-11 02:06:15,014 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:06:15,014 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:06:15,014 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:06:15,014 - DEBUG - reusing cookie
+2024-03-11 02:06:15,014 - DEBUG - reusing crumb
+2024-03-11 02:06:15,014 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:06:15,014 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:06:15,097 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v7/finance/options/AA?crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:06:15,097 - DEBUG - response code=200
+2024-03-11 02:06:15,097 - DEBUG - Exiting get()
+2024-03-11 02:06:15,098 - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AA
+2024-03-11 02:06:15,098 - DEBUG - Entering get()
+2024-03-11 02:06:15,098 - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AA
+2024-03-11 02:06:15,098 - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AA'}
+2024-03-11 02:06:15,098 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:06:15,098 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:06:15,098 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:06:15,098 - DEBUG - reusing cookie
+2024-03-11 02:06:15,098 - DEBUG - reusing crumb
+2024-03-11 02:06:15,098 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:06:15,098 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:06:15,294 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AA?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AA&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 2759
+2024-03-11 02:06:15,295 - DEBUG - response code=200
+2024-03-11 02:06:15,295 - DEBUG - Exiting get()
+2024-03-11 02:06:15,297 - DEBUG - Entering get()
+2024-03-11 02:06:15,297 - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AA?symbol=AA&type=trailingPegRatio&period1=1694390400&period2=1710201600
+2024-03-11 02:06:15,297 - DEBUG - params=None
+2024-03-11 02:06:15,297 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:06:15,297 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:06:15,297 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:06:15,297 - DEBUG - reusing cookie
+2024-03-11 02:06:15,297 - DEBUG - reusing crumb
+2024-03-11 02:06:15,297 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:06:15,297 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:06:15,362 - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AA?symbol=AA&type=trailingPegRatio&period1=1694390400&period2=1710201600&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 95
+2024-03-11 02:06:15,363 - DEBUG - response code=200
+2024-03-11 02:06:15,363 - DEBUG - Exiting get()
+2024-03-11 02:06:15,363 - INFO - GET /api/stock API Returning stock data for aa
+2024-03-11 02:06:15,640 - INFO - GET /api/predict AI prediction API called for ticker: AA
+2024-03-11 02:06:15,640 - DEBUG - Entering download()
+2024-03-11 02:06:15,640 - DEBUG - Disabling multithreading because DEBUG logging enabled
+2024-03-11 02:06:15,641 - DEBUG -  Entering history()
+2024-03-11 02:06:15,641 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AA', 1, 0])
+2024-03-11 02:06:15,641 - DEBUG -   Entering history()
+2024-03-11 02:06:15,641 - DEBUG - AA: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:06:15,641 - DEBUG -    Entering get()
+2024-03-11 02:06:15,641 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AA
+2024-03-11 02:06:15,641 - DEBUG - params={'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:06:15,641 - DEBUG -     Entering _get_cookie_and_crumb()
+2024-03-11 02:06:15,641 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:06:15,641 - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:06:15,641 - DEBUG - reusing cookie
+2024-03-11 02:06:15,641 - DEBUG - reusing crumb
+2024-03-11 02:06:15,641 - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:06:15,641 - DEBUG -     Exiting _get_cookie_and_crumb()
+2024-03-11 02:06:15,662 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AA?range=1y&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 8374
+2024-03-11 02:06:15,662 - DEBUG - response code=200
+2024-03-11 02:06:15,662 - DEBUG -    Exiting get()
+2024-03-11 02:06:15,664 - DEBUG - AA: yfinance received OHLC data: 2023-03-09 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:06:15,665 - DEBUG - AA: OHLC after cleaning: 2023-03-09 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:06:15,672 - DEBUG - AA: OHLC after combining events: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:06:15,674 - DEBUG - AA: yfinance returning OHLC: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:06:15,674 - DEBUG -   Exiting history()
+2024-03-11 02:06:15,675 - DEBUG -  Exiting history()
+2024-03-11 02:06:15,675 - DEBUG - Exiting download()
+2024-03-11 02:06:19,136 - INFO - GET /api/predict prediction for ticker AA
+2024-03-11 02:09:07,013 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-03-11 02:09:07,014 - DEBUG - load_verify_locations cafile='/Users/r3dux/Repositories/ai-stocks/server/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-03-11 02:09:46,417 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-03-11 02:09:46,418 - DEBUG - load_verify_locations cafile='/Users/r3dux/Repositories/ai-stocks/server/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-03-11 02:09:46,425 - DEBUG - Using selector: KqueueSelector
+2024-03-11 02:09:46,429 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-03-11 02:09:46,429 - DEBUG - load_verify_locations cafile='/Users/r3dux/Repositories/ai-stocks/server/venv/lib/python3.12/site-packages/certifi/cacert.pem'
+2024-03-11 02:09:53,133 - INFO - GET /api/stock API called for ticker: aa
+2024-03-11 02:09:53,133 - DEBUG - Entering download()
+2024-03-11 02:09:53,133 - DEBUG - Disabling multithreading because DEBUG logging enabled
+2024-03-11 02:09:53,134 - DEBUG -  Entering history()
+2024-03-11 02:09:53,136 - DEBUG - ('CREATE TABLE IF NOT EXISTS "_kv" ("key" VARCHAR(255) NOT NULL PRIMARY KEY, "value" VARCHAR(255)) WITHOUT ROWID', [])
+2024-03-11 02:09:53,137 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AA', 1, 0])
+2024-03-11 02:09:53,152 - DEBUG -   Entering history()
+2024-03-11 02:09:53,152 - DEBUG - AA: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:09:53,152 - DEBUG -    Entering get()
+2024-03-11 02:09:53,152 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AA
+2024-03-11 02:09:53,152 - DEBUG - params={'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:09:53,152 - DEBUG -     Entering _get_cookie_and_crumb()
+2024-03-11 02:09:53,152 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:09:53,152 - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:09:53,152 - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-03-11 02:09:53,153 - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-03-11 02:09:53,153 - DEBUG - loaded persistent cookie
+2024-03-11 02:09:53,153 - DEBUG - reusing cookie
+2024-03-11 02:09:53,239 - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-03-11 02:09:53,378 - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-03-11 02:09:53,379 - DEBUG - crumb = 'hvfQf/FPNsu'
+2024-03-11 02:09:53,379 - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:09:53,379 - DEBUG -     Exiting _get_cookie_and_crumb()
+2024-03-11 02:09:53,384 - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-03-11 02:09:53,597 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AA?range=1y&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:09:53,749 - DEBUG - response code=200
+2024-03-11 02:09:53,750 - DEBUG -    Exiting get()
+2024-03-11 02:09:53,754 - DEBUG - AA: yfinance received OHLC data: 2023-03-09 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:09:53,760 - DEBUG - AA: OHLC after cleaning: 2023-03-09 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:09:53,767 - DEBUG - AA: OHLC after combining events: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:09:53,769 - DEBUG - AA: yfinance returning OHLC: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:09:53,769 - DEBUG -   Exiting history()
+2024-03-11 02:09:53,769 - DEBUG -  Exiting history()
+2024-03-11 02:09:53,769 - DEBUG - Exiting download()
+2024-03-11 02:09:53,769 - DEBUG - Entering get()
+2024-03-11 02:09:53,769 - DEBUG - url=https://query2.finance.yahoo.com/v1/finance/search?q=AA
+2024-03-11 02:09:53,769 - DEBUG - params=None
+2024-03-11 02:09:53,769 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:09:53,769 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:09:53,769 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:09:53,769 - DEBUG - reusing cookie
+2024-03-11 02:09:53,769 - DEBUG - reusing crumb
+2024-03-11 02:09:53,769 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:09:53,769 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:09:53,902 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v1/finance/search?q=AA&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:09:53,903 - DEBUG - response code=200
+2024-03-11 02:09:53,903 - DEBUG - Exiting get()
+2024-03-11 02:09:53,904 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AA', 1, 0])
+2024-03-11 02:09:53,904 - DEBUG - Entering history()
+2024-03-11 02:09:53,905 - DEBUG - AA: Yahoo GET parameters: {'period1': '1925-04-04 19:00:00-05:00', 'period2': '2024-03-11 05:09:53-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:09:53,905 - DEBUG -  Entering get()
+2024-03-11 02:09:53,905 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AA
+2024-03-11 02:09:53,905 - DEBUG - params={'period1': -1411948800, 'period2': 1710148193, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:09:53,905 - DEBUG -   Entering _get_cookie_and_crumb()
+2024-03-11 02:09:53,905 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:09:53,905 - DEBUG -    Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:09:53,905 - DEBUG - reusing cookie
+2024-03-11 02:09:53,906 - DEBUG - reusing crumb
+2024-03-11 02:09:53,906 - DEBUG -    Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:09:53,906 - DEBUG -   Exiting _get_cookie_and_crumb()
+2024-03-11 02:09:54,279 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AA?period1=-1411948800&period2=1710148193&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:09:54,381 - DEBUG - response code=200
+2024-03-11 02:09:54,381 - DEBUG -  Exiting get()
+2024-03-11 02:09:54,418 - DEBUG - AA: yfinance received OHLC data: 1962-01-02 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:09:54,421 - DEBUG - AA: OHLC after cleaning: 1962-01-02 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:09:54,470 - DEBUG - AA: OHLC after combining events: 1962-01-02 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:09:54,473 - DEBUG - AA: yfinance returning OHLC: 1962-01-02 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:09:54,473 - DEBUG - Exiting history()
+2024-03-11 02:09:54,474 - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/
+2024-03-11 02:09:54,474 - DEBUG - Entering get()
+2024-03-11 02:09:54,474 - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/
+2024-03-11 02:09:54,474 - DEBUG - params={'modules': 'institutionOwnership,fundOwnership,majorDirectHolders,majorHoldersBreakdown,insiderTransactions,insiderHolders,netSharePurchaseActivity', 'corsDomain': 'finance.yahoo.com', 'symbol': 'AA', 'formatted': 'false'}
+2024-03-11 02:09:54,474 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:09:54,474 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:09:54,475 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:09:54,475 - DEBUG - reusing cookie
+2024-03-11 02:09:54,475 - DEBUG - reusing crumb
+2024-03-11 02:09:54,475 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:09:54,475 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:09:54,545 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/?modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com&symbol=AA&formatted=false&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 6590
+2024-03-11 02:09:54,546 - DEBUG - response code=200
+2024-03-11 02:09:54,546 - DEBUG - Exiting get()
+2024-03-11 02:09:54,551 - DEBUG - Entering get()
+2024-03-11 02:09:54,551 - DEBUG - url=https://query2.finance.yahoo.com/v7/finance/options/AA
+2024-03-11 02:09:54,551 - DEBUG - params=None
+2024-03-11 02:09:54,551 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:09:54,551 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:09:54,551 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:09:54,551 - DEBUG - reusing cookie
+2024-03-11 02:09:54,551 - DEBUG - reusing crumb
+2024-03-11 02:09:54,551 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:09:54,551 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:09:54,641 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v7/finance/options/AA?crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:09:54,642 - DEBUG - response code=200
+2024-03-11 02:09:54,642 - DEBUG - Exiting get()
+2024-03-11 02:09:54,643 - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AA
+2024-03-11 02:09:54,643 - DEBUG - Entering get()
+2024-03-11 02:09:54,643 - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AA
+2024-03-11 02:09:54,643 - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AA'}
+2024-03-11 02:09:54,643 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:09:54,643 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:09:54,643 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:09:54,643 - DEBUG - reusing cookie
+2024-03-11 02:09:54,643 - DEBUG - reusing crumb
+2024-03-11 02:09:54,643 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:09:54,643 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:09:54,800 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AA?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AA&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 2759
+2024-03-11 02:09:54,801 - DEBUG - response code=200
+2024-03-11 02:09:54,802 - DEBUG - Exiting get()
+2024-03-11 02:09:54,802 - DEBUG - Entering get()
+2024-03-11 02:09:54,802 - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AA?symbol=AA&type=trailingPegRatio&period1=1694390400&period2=1710201600
+2024-03-11 02:09:54,802 - DEBUG - params=None
+2024-03-11 02:09:54,803 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:09:54,803 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:09:54,803 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:09:54,803 - DEBUG - reusing cookie
+2024-03-11 02:09:54,803 - DEBUG - reusing crumb
+2024-03-11 02:09:54,803 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:09:54,803 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:09:54,860 - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AA?symbol=AA&type=trailingPegRatio&period1=1694390400&period2=1710201600&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 95
+2024-03-11 02:09:54,861 - DEBUG - response code=200
+2024-03-11 02:09:54,861 - DEBUG - Exiting get()
+2024-03-11 02:09:54,861 - INFO - GET /api/stock API Returning stock data for aa
+2024-03-11 02:09:55,142 - INFO - GET /api/predict AI prediction API called for ticker: AA
+2024-03-11 02:09:55,142 - DEBUG - Entering download()
+2024-03-11 02:09:55,142 - DEBUG - Disabling multithreading because DEBUG logging enabled
+2024-03-11 02:09:55,142 - DEBUG -  Entering history()
+2024-03-11 02:09:55,142 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AA', 1, 0])
+2024-03-11 02:09:55,142 - DEBUG -   Entering history()
+2024-03-11 02:09:55,142 - DEBUG - AA: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:09:55,142 - DEBUG -    Entering get()
+2024-03-11 02:09:55,142 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AA
+2024-03-11 02:09:55,142 - DEBUG - params={'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:09:55,142 - DEBUG -     Entering _get_cookie_and_crumb()
+2024-03-11 02:09:55,142 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:09:55,142 - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:09:55,142 - DEBUG - reusing cookie
+2024-03-11 02:09:55,142 - DEBUG - reusing crumb
+2024-03-11 02:09:55,142 - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:09:55,143 - DEBUG -     Exiting _get_cookie_and_crumb()
+2024-03-11 02:09:55,164 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AA?range=1y&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 8372
+2024-03-11 02:09:55,165 - DEBUG - response code=200
+2024-03-11 02:09:55,165 - DEBUG -    Exiting get()
+2024-03-11 02:09:55,167 - DEBUG - AA: yfinance received OHLC data: 2023-03-09 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:09:55,168 - DEBUG - AA: OHLC after cleaning: 2023-03-09 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:09:55,173 - DEBUG - AA: OHLC after combining events: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:09:55,175 - DEBUG - AA: yfinance returning OHLC: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:09:55,176 - DEBUG -   Exiting history()
+2024-03-11 02:09:55,176 - DEBUG -  Exiting history()
+2024-03-11 02:09:55,176 - DEBUG - Exiting download()
+2024-03-11 02:09:58,660 - INFO - GET /api/predict prediction for ticker AA
+2024-03-11 02:10:42,227 - INFO - GET /api/stock API called for ticker: aa
+2024-03-11 02:10:42,228 - DEBUG - Entering download()
+2024-03-11 02:10:42,228 - DEBUG - Disabling multithreading because DEBUG logging enabled
+2024-03-11 02:10:42,228 - DEBUG -  Entering history()
+2024-03-11 02:10:42,229 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AA', 1, 0])
+2024-03-11 02:10:42,229 - DEBUG -   Entering history()
+2024-03-11 02:10:42,229 - DEBUG - AA: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:10:42,229 - DEBUG -    Entering get()
+2024-03-11 02:10:42,229 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AA
+2024-03-11 02:10:42,229 - DEBUG - params={'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:10:42,229 - DEBUG -     Entering _get_cookie_and_crumb()
+2024-03-11 02:10:42,229 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:10:42,229 - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:10:42,229 - DEBUG - reusing cookie
+2024-03-11 02:10:42,229 - DEBUG - reusing crumb
+2024-03-11 02:10:42,229 - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:10:42,229 - DEBUG -     Exiting _get_cookie_and_crumb()
+2024-03-11 02:10:42,509 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AA?range=1y&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:10:42,521 - DEBUG - response code=200
+2024-03-11 02:10:42,522 - DEBUG -    Exiting get()
+2024-03-11 02:10:42,524 - DEBUG - AA: yfinance received OHLC data: 2023-03-09 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:10:42,526 - DEBUG - AA: OHLC after cleaning: 2023-03-09 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:10:42,534 - DEBUG - AA: OHLC after combining events: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:10:42,537 - DEBUG - AA: yfinance returning OHLC: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:10:42,537 - DEBUG -   Exiting history()
+2024-03-11 02:10:42,537 - DEBUG -  Exiting history()
+2024-03-11 02:10:42,537 - DEBUG - Exiting download()
+2024-03-11 02:10:42,538 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AA', 1, 0])
+2024-03-11 02:10:42,538 - DEBUG - Entering history()
+2024-03-11 02:10:42,539 - DEBUG - AA: Yahoo GET parameters: {'period1': '1925-04-04 19:00:00-05:00', 'period2': '2024-03-11 05:10:42-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:10:42,539 - DEBUG -  Entering get()
+2024-03-11 02:10:42,539 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AA
+2024-03-11 02:10:42,539 - DEBUG - params={'period1': -1411948800, 'period2': 1710148242, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:10:42,539 - DEBUG -   Entering _get_cookie_and_crumb()
+2024-03-11 02:10:42,539 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:10:42,539 - DEBUG -    Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:10:42,539 - DEBUG - reusing cookie
+2024-03-11 02:10:42,540 - DEBUG - reusing crumb
+2024-03-11 02:10:42,540 - DEBUG -    Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:10:42,540 - DEBUG -   Exiting _get_cookie_and_crumb()
+2024-03-11 02:10:42,833 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AA?period1=-1411948800&period2=1710148242&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:10:43,065 - DEBUG - response code=200
+2024-03-11 02:10:43,065 - DEBUG -  Exiting get()
+2024-03-11 02:10:43,095 - DEBUG - AA: yfinance received OHLC data: 1962-01-02 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:10:43,098 - DEBUG - AA: OHLC after cleaning: 1962-01-02 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:10:43,147 - DEBUG - AA: OHLC after combining events: 1962-01-02 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:10:43,149 - DEBUG - AA: yfinance returning OHLC: 1962-01-02 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:10:43,150 - DEBUG - Exiting history()
+2024-03-11 02:10:43,151 - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/
+2024-03-11 02:10:43,151 - DEBUG - Entering get()
+2024-03-11 02:10:43,151 - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/
+2024-03-11 02:10:43,151 - DEBUG - params={'modules': 'institutionOwnership,fundOwnership,majorDirectHolders,majorHoldersBreakdown,insiderTransactions,insiderHolders,netSharePurchaseActivity', 'corsDomain': 'finance.yahoo.com', 'symbol': 'AA', 'formatted': 'false'}
+2024-03-11 02:10:43,151 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:10:43,151 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:10:43,151 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:10:43,151 - DEBUG - reusing cookie
+2024-03-11 02:10:43,151 - DEBUG - reusing crumb
+2024-03-11 02:10:43,151 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:10:43,151 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:10:43,230 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/?modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com&symbol=AA&formatted=false&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 6590
+2024-03-11 02:10:43,230 - DEBUG - response code=200
+2024-03-11 02:10:43,230 - DEBUG - Exiting get()
+2024-03-11 02:10:43,234 - DEBUG - Entering get()
+2024-03-11 02:10:43,234 - DEBUG - url=https://query2.finance.yahoo.com/v7/finance/options/AA
+2024-03-11 02:10:43,234 - DEBUG - params=None
+2024-03-11 02:10:43,234 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:10:43,234 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:10:43,234 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:10:43,234 - DEBUG - reusing cookie
+2024-03-11 02:10:43,234 - DEBUG - reusing crumb
+2024-03-11 02:10:43,234 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:10:43,234 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:10:43,329 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v7/finance/options/AA?crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:10:43,330 - DEBUG - response code=200
+2024-03-11 02:10:43,330 - DEBUG - Exiting get()
+2024-03-11 02:10:43,331 - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AA
+2024-03-11 02:10:43,331 - DEBUG - Entering get()
+2024-03-11 02:10:43,331 - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AA
+2024-03-11 02:10:43,331 - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AA'}
+2024-03-11 02:10:43,331 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:10:43,331 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:10:43,331 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:10:43,331 - DEBUG - reusing cookie
+2024-03-11 02:10:43,331 - DEBUG - reusing crumb
+2024-03-11 02:10:43,331 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:10:43,331 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:10:43,392 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AA?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AA&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 2759
+2024-03-11 02:10:43,393 - DEBUG - response code=200
+2024-03-11 02:10:43,393 - DEBUG - Exiting get()
+2024-03-11 02:10:43,394 - INFO - GET /api/stock API Returning stock data for aa
+2024-03-11 02:10:43,779 - INFO - GET /api/predict AI prediction API called for ticker: AA
+2024-03-11 02:10:43,779 - DEBUG - Entering download()
+2024-03-11 02:10:43,779 - DEBUG - Disabling multithreading because DEBUG logging enabled
+2024-03-11 02:10:43,779 - DEBUG -  Entering history()
+2024-03-11 02:10:43,779 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AA', 1, 0])
+2024-03-11 02:10:43,779 - DEBUG -   Entering history()
+2024-03-11 02:10:43,779 - DEBUG - AA: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:10:43,779 - DEBUG -    Entering get()
+2024-03-11 02:10:43,779 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AA
+2024-03-11 02:10:43,779 - DEBUG - params={'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:10:43,779 - DEBUG -     Entering _get_cookie_and_crumb()
+2024-03-11 02:10:43,779 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:10:43,779 - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:10:43,779 - DEBUG - reusing cookie
+2024-03-11 02:10:43,779 - DEBUG - reusing crumb
+2024-03-11 02:10:43,779 - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:10:43,779 - DEBUG -     Exiting _get_cookie_and_crumb()
+2024-03-11 02:10:43,796 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AA?range=1y&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 8363
+2024-03-11 02:10:43,796 - DEBUG - response code=200
+2024-03-11 02:10:43,796 - DEBUG -    Exiting get()
+2024-03-11 02:10:43,797 - DEBUG - AA: yfinance received OHLC data: 2023-03-09 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:10:43,798 - DEBUG - AA: OHLC after cleaning: 2023-03-09 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:10:43,801 - DEBUG - AA: OHLC after combining events: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:10:43,802 - DEBUG - AA: yfinance returning OHLC: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:10:43,802 - DEBUG -   Exiting history()
+2024-03-11 02:10:43,802 - DEBUG -  Exiting history()
+2024-03-11 02:10:43,802 - DEBUG - Exiting download()
+2024-03-11 02:10:47,305 - INFO - GET /api/predict prediction for ticker AA
+2024-03-11 02:12:06,931 - INFO - GET /api/stock API called for ticker: aa
+2024-03-11 02:12:06,931 - DEBUG - Entering download()
+2024-03-11 02:12:06,931 - DEBUG - Disabling multithreading because DEBUG logging enabled
+2024-03-11 02:12:06,931 - DEBUG -  Entering history()
+2024-03-11 02:12:06,931 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AA', 1, 0])
+2024-03-11 02:12:06,931 - DEBUG -   Entering history()
+2024-03-11 02:12:06,931 - DEBUG - AA: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:12:06,931 - DEBUG -    Entering get()
+2024-03-11 02:12:06,931 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AA
+2024-03-11 02:12:06,931 - DEBUG - params={'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:12:06,931 - DEBUG -     Entering _get_cookie_and_crumb()
+2024-03-11 02:12:06,932 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:12:06,932 - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:12:06,932 - DEBUG - reusing cookie
+2024-03-11 02:12:06,932 - DEBUG - reusing crumb
+2024-03-11 02:12:06,932 - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:12:06,932 - DEBUG -     Exiting _get_cookie_and_crumb()
+2024-03-11 02:12:06,937 - INFO - GET /api/stock API called for ticker: hood
+2024-03-11 02:12:06,937 - DEBUG - Entering download()
+2024-03-11 02:12:06,937 - DEBUG - Disabling multithreading because DEBUG logging enabled
+2024-03-11 02:12:06,937 - DEBUG -  Entering history()
+2024-03-11 02:12:06,937 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['HOOD', 1, 0])
+2024-03-11 02:12:06,938 - DEBUG -   Entering history()
+2024-03-11 02:12:06,938 - DEBUG - HOOD: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:12:06,938 - DEBUG -    Entering get()
+2024-03-11 02:12:06,938 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/HOOD
+2024-03-11 02:12:06,938 - DEBUG - params={'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:12:06,938 - DEBUG -     Entering _get_cookie_and_crumb()
+2024-03-11 02:12:06,938 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:12:06,938 - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:12:06,938 - DEBUG - reusing cookie
+2024-03-11 02:12:06,938 - DEBUG - reusing crumb
+2024-03-11 02:12:06,938 - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:12:06,938 - DEBUG -     Exiting _get_cookie_and_crumb()
+2024-03-11 02:12:06,951 - DEBUG - Starting new HTTPS connection (2): query2.finance.yahoo.com:443
+2024-03-11 02:12:07,077 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/HOOD?range=1y&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:12:07,077 - DEBUG - response code=200
+2024-03-11 02:12:07,077 - DEBUG -    Exiting get()
+2024-03-11 02:12:07,078 - DEBUG - HOOD: yfinance received OHLC data: 2023-03-09 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:12:07,079 - DEBUG - HOOD: OHLC after cleaning: 2023-03-09 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:12:07,080 - DEBUG - HOOD: OHLC after combining events: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:12:07,082 - DEBUG - HOOD: yfinance returning OHLC: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:12:07,082 - DEBUG -   Exiting history()
+2024-03-11 02:12:07,082 - DEBUG -  Exiting history()
+2024-03-11 02:12:07,082 - DEBUG - Exiting download()
+2024-03-11 02:12:07,082 - DEBUG - Entering get()
+2024-03-11 02:12:07,082 - DEBUG - url=https://query2.finance.yahoo.com/v1/finance/search?q=HOOD
+2024-03-11 02:12:07,082 - DEBUG - params=None
+2024-03-11 02:12:07,082 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:12:07,082 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:12:07,082 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:12:07,082 - DEBUG - reusing cookie
+2024-03-11 02:12:07,082 - DEBUG - reusing crumb
+2024-03-11 02:12:07,082 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:12:07,082 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:12:07,091 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AA?range=1y&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:12:07,104 - DEBUG - response code=200
+2024-03-11 02:12:07,104 - DEBUG -    Exiting get()
+2024-03-11 02:12:07,105 - DEBUG - AA: yfinance received OHLC data: 2023-03-09 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:12:07,105 - DEBUG - AA: OHLC after cleaning: 2023-03-09 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:12:07,107 - DEBUG - AA: OHLC after combining events: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:12:07,108 - DEBUG - AA: yfinance returning OHLC: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:12:07,108 - DEBUG -   Exiting history()
+2024-03-11 02:12:07,108 - DEBUG -  Exiting history()
+2024-03-11 02:12:07,108 - DEBUG - Exiting download()
+2024-03-11 02:12:07,108 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AA', 1, 0])
+2024-03-11 02:12:07,108 - DEBUG - Entering history()
+2024-03-11 02:12:07,108 - DEBUG - AA: Yahoo GET parameters: {'period1': '1925-04-04 19:00:00-05:00', 'period2': '2024-03-11 05:12:07-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:12:07,108 - DEBUG -  Entering get()
+2024-03-11 02:12:07,108 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AA
+2024-03-11 02:12:07,108 - DEBUG - params={'period1': -1411948800, 'period2': 1710148327, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:12:07,108 - DEBUG -   Entering _get_cookie_and_crumb()
+2024-03-11 02:12:07,108 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:12:07,108 - DEBUG -    Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:12:07,108 - DEBUG - reusing cookie
+2024-03-11 02:12:07,108 - DEBUG - reusing crumb
+2024-03-11 02:12:07,108 - DEBUG -    Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:12:07,108 - DEBUG -   Exiting _get_cookie_and_crumb()
+2024-03-11 02:12:07,217 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v1/finance/search?q=HOOD&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:12:07,217 - DEBUG - response code=200
+2024-03-11 02:12:07,217 - DEBUG - Exiting get()
+2024-03-11 02:12:07,217 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['HOOD', 1, 0])
+2024-03-11 02:12:07,218 - DEBUG - Entering history()
+2024-03-11 02:12:07,218 - DEBUG - HOOD: Yahoo GET parameters: {'period1': '1925-04-04 19:00:00-05:00', 'period2': '2024-03-11 05:12:07-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:12:07,218 - DEBUG -  Entering get()
+2024-03-11 02:12:07,218 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/HOOD
+2024-03-11 02:12:07,218 - DEBUG - params={'period1': -1411948800, 'period2': 1710148327, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:12:07,218 - DEBUG -   Entering _get_cookie_and_crumb()
+2024-03-11 02:12:07,218 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:12:07,218 - DEBUG -    Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:12:07,218 - DEBUG - reusing cookie
+2024-03-11 02:12:07,218 - DEBUG - reusing crumb
+2024-03-11 02:12:07,218 - DEBUG -    Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:12:07,218 - DEBUG -   Exiting _get_cookie_and_crumb()
+2024-03-11 02:12:07,288 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/HOOD?period1=-1411948800&period2=1710148327&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:12:07,443 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AA?period1=-1411948800&period2=1710148327&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:12:07,444 - DEBUG - response code=200
+2024-03-11 02:12:07,444 - DEBUG -  Exiting get()
+2024-03-11 02:12:07,445 - DEBUG - HOOD: yfinance received OHLC data: 2021-07-29 13:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:12:07,446 - DEBUG - HOOD: OHLC after cleaning: 2021-07-29 09:30:00-04:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:12:07,447 - DEBUG - HOOD: OHLC after combining events: 2021-07-29 00:00:00-04:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:12:07,448 - DEBUG - HOOD: yfinance returning OHLC: 2021-07-29 00:00:00-04:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:12:07,448 - DEBUG - Exiting history()
+2024-03-11 02:12:07,449 - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/
+2024-03-11 02:12:07,449 - DEBUG - Entering get()
+2024-03-11 02:12:07,449 - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/
+2024-03-11 02:12:07,449 - DEBUG - params={'modules': 'institutionOwnership,fundOwnership,majorDirectHolders,majorHoldersBreakdown,insiderTransactions,insiderHolders,netSharePurchaseActivity', 'corsDomain': 'finance.yahoo.com', 'symbol': 'HOOD', 'formatted': 'false'}
+2024-03-11 02:12:07,449 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:12:07,449 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:12:07,449 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:12:07,449 - DEBUG - reusing cookie
+2024-03-11 02:12:07,449 - DEBUG - reusing crumb
+2024-03-11 02:12:07,449 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:12:07,449 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:12:07,519 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/?modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com&symbol=HOOD&formatted=false&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 5904
+2024-03-11 02:12:07,520 - DEBUG - response code=200
+2024-03-11 02:12:07,520 - DEBUG - Exiting get()
+2024-03-11 02:12:07,523 - DEBUG - Entering get()
+2024-03-11 02:12:07,523 - DEBUG - url=https://query2.finance.yahoo.com/v7/finance/options/HOOD
+2024-03-11 02:12:07,523 - DEBUG - params=None
+2024-03-11 02:12:07,523 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:12:07,523 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:12:07,523 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:12:07,523 - DEBUG - reusing cookie
+2024-03-11 02:12:07,523 - DEBUG - reusing crumb
+2024-03-11 02:12:07,523 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:12:07,523 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:12:07,573 - DEBUG - response code=200
+2024-03-11 02:12:07,573 - DEBUG -  Exiting get()
+2024-03-11 02:12:07,594 - DEBUG - AA: yfinance received OHLC data: 1962-01-02 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:12:07,596 - DEBUG - AA: OHLC after cleaning: 1962-01-02 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:12:07,636 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v7/finance/options/HOOD?crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:12:07,638 - DEBUG - AA: OHLC after combining events: 1962-01-02 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:12:07,638 - DEBUG - response code=200
+2024-03-11 02:12:07,638 - DEBUG - Exiting get()
+2024-03-11 02:12:07,638 - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/HOOD
+2024-03-11 02:12:07,638 - DEBUG - Entering get()
+2024-03-11 02:12:07,638 - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/HOOD
+2024-03-11 02:12:07,638 - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'HOOD'}
+2024-03-11 02:12:07,638 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:12:07,638 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:12:07,638 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:12:07,638 - DEBUG - reusing cookie
+2024-03-11 02:12:07,638 - DEBUG - reusing crumb
+2024-03-11 02:12:07,638 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:12:07,638 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:12:07,641 - DEBUG - AA: yfinance returning OHLC: 1962-01-02 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:12:07,642 - DEBUG - Exiting history()
+2024-03-11 02:12:07,642 - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/
+2024-03-11 02:12:07,642 - DEBUG - Entering get()
+2024-03-11 02:12:07,642 - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/
+2024-03-11 02:12:07,642 - DEBUG - params={'modules': 'institutionOwnership,fundOwnership,majorDirectHolders,majorHoldersBreakdown,insiderTransactions,insiderHolders,netSharePurchaseActivity', 'corsDomain': 'finance.yahoo.com', 'symbol': 'AA', 'formatted': 'false'}
+2024-03-11 02:12:07,642 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:12:07,642 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:12:07,642 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:12:07,642 - DEBUG - reusing cookie
+2024-03-11 02:12:07,642 - DEBUG - reusing crumb
+2024-03-11 02:12:07,642 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:12:07,642 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:12:07,699 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/HOOD?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=HOOD&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 2995
+2024-03-11 02:12:07,699 - DEBUG - response code=200
+2024-03-11 02:12:07,699 - DEBUG - Exiting get()
+2024-03-11 02:12:07,700 - DEBUG - Entering get()
+2024-03-11 02:12:07,700 - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/HOOD?symbol=HOOD&type=trailingPegRatio&period1=1694390400&period2=1710201600
+2024-03-11 02:12:07,700 - DEBUG - params=None
+2024-03-11 02:12:07,700 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:12:07,700 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:12:07,700 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:12:07,700 - DEBUG - reusing cookie
+2024-03-11 02:12:07,700 - DEBUG - reusing crumb
+2024-03-11 02:12:07,700 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:12:07,700 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:12:07,702 - DEBUG - Resetting dropped connection: query1.finance.yahoo.com
+2024-03-11 02:12:07,717 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/?modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com&symbol=AA&formatted=false&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 6590
+2024-03-11 02:12:07,718 - DEBUG - response code=200
+2024-03-11 02:12:07,718 - DEBUG - Exiting get()
+2024-03-11 02:12:07,721 - DEBUG - Entering get()
+2024-03-11 02:12:07,721 - DEBUG - url=https://query2.finance.yahoo.com/v7/finance/options/AA
+2024-03-11 02:12:07,721 - DEBUG - params=None
+2024-03-11 02:12:07,721 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:12:07,721 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:12:07,721 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:12:07,721 - DEBUG - reusing cookie
+2024-03-11 02:12:07,721 - DEBUG - reusing crumb
+2024-03-11 02:12:07,721 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:12:07,721 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:12:07,805 - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/HOOD?symbol=HOOD&type=trailingPegRatio&period1=1694390400&period2=1710201600&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 97
+2024-03-11 02:12:07,805 - DEBUG - response code=200
+2024-03-11 02:12:07,805 - DEBUG - Exiting get()
+2024-03-11 02:12:07,805 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-11 02:12:07,814 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v7/finance/options/AA?crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:12:07,814 - DEBUG - response code=200
+2024-03-11 02:12:07,814 - DEBUG - Exiting get()
+2024-03-11 02:12:07,814 - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AA
+2024-03-11 02:12:07,814 - DEBUG - Entering get()
+2024-03-11 02:12:07,815 - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AA
+2024-03-11 02:12:07,815 - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AA'}
+2024-03-11 02:12:07,815 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:12:07,815 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:12:07,815 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:12:07,815 - DEBUG - reusing cookie
+2024-03-11 02:12:07,815 - DEBUG - reusing crumb
+2024-03-11 02:12:07,815 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:12:07,815 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:12:08,024 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AA?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AA&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 2759
+2024-03-11 02:12:08,025 - DEBUG - response code=200
+2024-03-11 02:12:08,025 - DEBUG - Exiting get()
+2024-03-11 02:12:08,030 - INFO - GET /api/stock API Returning stock data for aa
+2024-03-11 02:12:08,463 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-11 02:12:08,464 - DEBUG - Entering download()
+2024-03-11 02:12:08,464 - DEBUG - Disabling multithreading because DEBUG logging enabled
+2024-03-11 02:12:08,464 - DEBUG -  Entering history()
+2024-03-11 02:12:08,464 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['HOOD', 1, 0])
+2024-03-11 02:12:08,465 - DEBUG -   Entering history()
+2024-03-11 02:12:08,467 - DEBUG - HOOD: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:12:08,468 - DEBUG -    Entering get()
+2024-03-11 02:12:08,468 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/HOOD
+2024-03-11 02:12:08,468 - DEBUG - params={'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:12:08,468 - DEBUG -     Entering _get_cookie_and_crumb()
+2024-03-11 02:12:08,468 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:12:08,468 - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:12:08,468 - DEBUG - reusing cookie
+2024-03-11 02:12:08,468 - DEBUG - reusing crumb
+2024-03-11 02:12:08,469 - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:12:08,469 - DEBUG -     Exiting _get_cookie_and_crumb()
+2024-03-11 02:12:08,568 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/HOOD?range=1y&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:12:08,568 - DEBUG - response code=200
+2024-03-11 02:12:08,568 - DEBUG -    Exiting get()
+2024-03-11 02:12:08,569 - DEBUG - HOOD: yfinance received OHLC data: 2023-03-09 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:12:08,570 - DEBUG - HOOD: OHLC after cleaning: 2023-03-09 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:12:08,571 - DEBUG - HOOD: OHLC after combining events: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:12:08,572 - DEBUG - HOOD: yfinance returning OHLC: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:12:08,572 - DEBUG -   Exiting history()
+2024-03-11 02:12:08,573 - DEBUG -  Exiting history()
+2024-03-11 02:12:08,573 - DEBUG - Exiting download()
+2024-03-11 02:12:08,604 - INFO - GET /api/predict AI prediction API called for ticker: AA
+2024-03-11 02:12:08,604 - DEBUG - Entering download()
+2024-03-11 02:12:08,604 - DEBUG - Disabling multithreading because DEBUG logging enabled
+2024-03-11 02:12:08,604 - DEBUG -  Entering history()
+2024-03-11 02:12:08,605 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AA', 1, 0])
+2024-03-11 02:12:08,605 - DEBUG -   Entering history()
+2024-03-11 02:12:08,605 - DEBUG - AA: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:12:08,605 - DEBUG -    Entering get()
+2024-03-11 02:12:08,605 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AA
+2024-03-11 02:12:08,605 - DEBUG - params={'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:12:08,605 - DEBUG -     Entering _get_cookie_and_crumb()
+2024-03-11 02:12:08,605 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:12:08,605 - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:12:08,605 - DEBUG - reusing cookie
+2024-03-11 02:12:08,605 - DEBUG - reusing crumb
+2024-03-11 02:12:08,605 - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:12:08,605 - DEBUG -     Exiting _get_cookie_and_crumb()
+2024-03-11 02:12:08,622 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AA?range=1y&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 8382
+2024-03-11 02:12:08,624 - DEBUG - response code=200
+2024-03-11 02:12:08,624 - DEBUG -    Exiting get()
+2024-03-11 02:12:08,626 - DEBUG - AA: yfinance received OHLC data: 2023-03-09 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:12:08,628 - DEBUG - AA: OHLC after cleaning: 2023-03-09 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:12:08,633 - DEBUG - AA: OHLC after combining events: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:12:08,637 - DEBUG - AA: yfinance returning OHLC: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:12:08,638 - DEBUG -   Exiting history()
+2024-03-11 02:12:08,638 - DEBUG -  Exiting history()
+2024-03-11 02:12:08,638 - DEBUG - Exiting download()
+2024-03-11 02:12:13,233 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-11 02:12:13,233 - INFO - GET /api/predict prediction for ticker AA
+2024-03-11 02:12:33,217 - INFO - GET /api/stock API called for ticker: hood
+2024-03-11 02:12:33,218 - DEBUG - Entering download()
+2024-03-11 02:12:33,218 - DEBUG - Disabling multithreading because DEBUG logging enabled
+2024-03-11 02:12:33,218 - DEBUG -  Entering history()
+2024-03-11 02:12:33,219 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['HOOD', 1, 0])
+2024-03-11 02:12:33,219 - DEBUG -   Entering history()
+2024-03-11 02:12:33,219 - DEBUG - HOOD: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:12:33,219 - DEBUG -    Entering get()
+2024-03-11 02:12:33,219 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/HOOD
+2024-03-11 02:12:33,219 - DEBUG - params={'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:12:33,219 - DEBUG -     Entering _get_cookie_and_crumb()
+2024-03-11 02:12:33,219 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:12:33,219 - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:12:33,219 - DEBUG - reusing cookie
+2024-03-11 02:12:33,219 - DEBUG - reusing crumb
+2024-03-11 02:12:33,219 - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:12:33,219 - DEBUG -     Exiting _get_cookie_and_crumb()
+2024-03-11 02:12:33,297 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/HOOD?range=1y&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:12:33,298 - DEBUG - response code=200
+2024-03-11 02:12:33,298 - DEBUG -    Exiting get()
+2024-03-11 02:12:33,300 - DEBUG - HOOD: yfinance received OHLC data: 2023-03-09 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:12:33,301 - DEBUG - HOOD: OHLC after cleaning: 2023-03-09 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:12:33,303 - DEBUG - HOOD: OHLC after combining events: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:12:33,305 - DEBUG - HOOD: yfinance returning OHLC: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:12:33,306 - DEBUG -   Exiting history()
+2024-03-11 02:12:33,306 - DEBUG -  Exiting history()
+2024-03-11 02:12:33,306 - DEBUG - Exiting download()
+2024-03-11 02:12:33,306 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['HOOD', 1, 0])
+2024-03-11 02:12:33,306 - DEBUG - Entering history()
+2024-03-11 02:12:33,307 - DEBUG - HOOD: Yahoo GET parameters: {'period1': '1925-04-04 19:00:00-05:00', 'period2': '2024-03-11 05:12:33-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:12:33,307 - DEBUG -  Entering get()
+2024-03-11 02:12:33,307 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/HOOD
+2024-03-11 02:12:33,307 - DEBUG - params={'period1': -1411948800, 'period2': 1710148353, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:12:33,307 - DEBUG -   Entering _get_cookie_and_crumb()
+2024-03-11 02:12:33,307 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:12:33,307 - DEBUG -    Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:12:33,307 - DEBUG - reusing cookie
+2024-03-11 02:12:33,307 - DEBUG - reusing crumb
+2024-03-11 02:12:33,307 - DEBUG -    Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:12:33,307 - DEBUG -   Exiting _get_cookie_and_crumb()
+2024-03-11 02:12:33,374 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/HOOD?period1=-1411948800&period2=1710148353&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:12:33,375 - DEBUG - response code=200
+2024-03-11 02:12:33,375 - DEBUG -  Exiting get()
+2024-03-11 02:12:33,379 - DEBUG - HOOD: yfinance received OHLC data: 2021-07-29 13:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:12:33,380 - DEBUG - HOOD: OHLC after cleaning: 2021-07-29 09:30:00-04:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:12:33,383 - DEBUG - HOOD: OHLC after combining events: 2021-07-29 00:00:00-04:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:12:33,387 - DEBUG - HOOD: yfinance returning OHLC: 2021-07-29 00:00:00-04:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:12:33,387 - DEBUG - Exiting history()
+2024-03-11 02:12:33,388 - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/
+2024-03-11 02:12:33,388 - DEBUG - Entering get()
+2024-03-11 02:12:33,388 - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/
+2024-03-11 02:12:33,388 - DEBUG - params={'modules': 'institutionOwnership,fundOwnership,majorDirectHolders,majorHoldersBreakdown,insiderTransactions,insiderHolders,netSharePurchaseActivity', 'corsDomain': 'finance.yahoo.com', 'symbol': 'HOOD', 'formatted': 'false'}
+2024-03-11 02:12:33,388 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:12:33,388 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:12:33,388 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:12:33,388 - DEBUG - reusing cookie
+2024-03-11 02:12:33,388 - DEBUG - reusing crumb
+2024-03-11 02:12:33,388 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:12:33,388 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:12:33,489 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/?modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com&symbol=HOOD&formatted=false&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 5904
+2024-03-11 02:12:33,489 - DEBUG - response code=200
+2024-03-11 02:12:33,490 - DEBUG - Exiting get()
+2024-03-11 02:12:33,502 - DEBUG - Entering get()
+2024-03-11 02:12:33,502 - DEBUG - url=https://query2.finance.yahoo.com/v7/finance/options/HOOD
+2024-03-11 02:12:33,502 - DEBUG - params=None
+2024-03-11 02:12:33,502 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:12:33,502 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:12:33,503 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:12:33,503 - DEBUG - reusing cookie
+2024-03-11 02:12:33,503 - DEBUG - reusing crumb
+2024-03-11 02:12:33,503 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:12:33,503 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:12:33,658 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v7/finance/options/HOOD?crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:12:33,659 - DEBUG - response code=200
+2024-03-11 02:12:33,659 - DEBUG - Exiting get()
+2024-03-11 02:12:33,662 - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/HOOD
+2024-03-11 02:12:33,662 - DEBUG - Entering get()
+2024-03-11 02:12:33,662 - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/HOOD
+2024-03-11 02:12:33,662 - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'HOOD'}
+2024-03-11 02:12:33,662 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:12:33,662 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:12:33,662 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:12:33,662 - DEBUG - reusing cookie
+2024-03-11 02:12:33,662 - DEBUG - reusing crumb
+2024-03-11 02:12:33,662 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:12:33,662 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:12:33,724 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/HOOD?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=HOOD&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 2995
+2024-03-11 02:12:33,725 - DEBUG - response code=200
+2024-03-11 02:12:33,725 - DEBUG - Exiting get()
+2024-03-11 02:12:33,726 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-11 02:12:33,812 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-11 02:12:33,812 - DEBUG - Entering download()
+2024-03-11 02:12:33,812 - DEBUG - Disabling multithreading because DEBUG logging enabled
+2024-03-11 02:12:33,812 - DEBUG -  Entering history()
+2024-03-11 02:12:33,812 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['HOOD', 1, 0])
+2024-03-11 02:12:33,813 - DEBUG -   Entering history()
+2024-03-11 02:12:33,813 - DEBUG - HOOD: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:12:33,813 - DEBUG -    Entering get()
+2024-03-11 02:12:33,813 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/HOOD
+2024-03-11 02:12:33,813 - DEBUG - params={'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:12:33,813 - DEBUG -     Entering _get_cookie_and_crumb()
+2024-03-11 02:12:33,813 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:12:33,813 - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:12:33,813 - DEBUG - reusing cookie
+2024-03-11 02:12:33,813 - DEBUG - reusing crumb
+2024-03-11 02:12:33,813 - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:12:33,813 - DEBUG -     Exiting _get_cookie_and_crumb()
+2024-03-11 02:12:33,831 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/HOOD?range=1y&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 5657
+2024-03-11 02:12:33,831 - DEBUG - response code=200
+2024-03-11 02:12:33,831 - DEBUG -    Exiting get()
+2024-03-11 02:12:33,832 - DEBUG - HOOD: yfinance received OHLC data: 2023-03-09 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:12:33,833 - DEBUG - HOOD: OHLC after cleaning: 2023-03-09 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:12:33,834 - DEBUG - HOOD: OHLC after combining events: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:12:33,835 - DEBUG - HOOD: yfinance returning OHLC: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:12:33,835 - DEBUG -   Exiting history()
+2024-03-11 02:12:33,835 - DEBUG -  Exiting history()
+2024-03-11 02:12:33,835 - DEBUG - Exiting download()
+2024-03-11 02:12:37,299 - INFO - GET /api/predict prediction for ticker HOOD
+2024-03-11 02:13:06,861 - INFO - GET /api/stock API called for ticker: hood
+2024-03-11 02:13:06,861 - DEBUG - Entering download()
+2024-03-11 02:13:06,862 - DEBUG - Disabling multithreading because DEBUG logging enabled
+2024-03-11 02:13:06,862 - DEBUG -  Entering history()
+2024-03-11 02:13:06,862 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['HOOD', 1, 0])
+2024-03-11 02:13:06,863 - DEBUG -   Entering history()
+2024-03-11 02:13:06,863 - DEBUG - HOOD: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:13:06,863 - DEBUG -    Entering get()
+2024-03-11 02:13:06,863 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/HOOD
+2024-03-11 02:13:06,863 - DEBUG - params={'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:13:06,863 - DEBUG -     Entering _get_cookie_and_crumb()
+2024-03-11 02:13:06,863 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:13:06,863 - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:13:06,863 - DEBUG - reusing cookie
+2024-03-11 02:13:06,863 - DEBUG - reusing crumb
+2024-03-11 02:13:06,863 - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:13:06,863 - DEBUG -     Exiting _get_cookie_and_crumb()
+2024-03-11 02:13:06,929 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/HOOD?range=1y&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:13:06,930 - DEBUG - response code=200
+2024-03-11 02:13:06,930 - DEBUG -    Exiting get()
+2024-03-11 02:13:06,933 - DEBUG - HOOD: yfinance received OHLC data: 2023-03-09 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:13:06,935 - DEBUG - HOOD: OHLC after cleaning: 2023-03-09 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:13:06,937 - DEBUG - HOOD: OHLC after combining events: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:13:06,940 - DEBUG - HOOD: yfinance returning OHLC: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:13:06,940 - DEBUG -   Exiting history()
+2024-03-11 02:13:06,940 - DEBUG -  Exiting history()
+2024-03-11 02:13:06,940 - DEBUG - Exiting download()
+2024-03-11 02:13:06,941 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['HOOD', 1, 0])
+2024-03-11 02:13:06,941 - DEBUG - Entering history()
+2024-03-11 02:13:06,942 - DEBUG - HOOD: Yahoo GET parameters: {'period1': '1925-04-04 19:00:00-05:00', 'period2': '2024-03-11 05:13:06-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:13:06,942 - DEBUG -  Entering get()
+2024-03-11 02:13:06,942 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/HOOD
+2024-03-11 02:13:06,942 - DEBUG - params={'period1': -1411948800, 'period2': 1710148386, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:13:06,942 - DEBUG -   Entering _get_cookie_and_crumb()
+2024-03-11 02:13:06,942 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:13:06,942 - DEBUG -    Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:13:06,942 - DEBUG - reusing cookie
+2024-03-11 02:13:06,942 - DEBUG - reusing crumb
+2024-03-11 02:13:06,942 - DEBUG -    Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:13:06,942 - DEBUG -   Exiting _get_cookie_and_crumb()
+2024-03-11 02:13:07,011 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/HOOD?period1=-1411948800&period2=1710148386&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:13:07,014 - DEBUG - response code=200
+2024-03-11 02:13:07,015 - DEBUG -  Exiting get()
+2024-03-11 02:13:07,019 - DEBUG - HOOD: yfinance received OHLC data: 2021-07-29 13:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:13:07,021 - DEBUG - HOOD: OHLC after cleaning: 2021-07-29 09:30:00-04:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:13:07,024 - DEBUG - HOOD: OHLC after combining events: 2021-07-29 00:00:00-04:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:13:07,034 - DEBUG - HOOD: yfinance returning OHLC: 2021-07-29 00:00:00-04:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:13:07,034 - DEBUG - Exiting history()
+2024-03-11 02:13:07,035 - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/
+2024-03-11 02:13:07,036 - DEBUG - Entering get()
+2024-03-11 02:13:07,036 - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/
+2024-03-11 02:13:07,036 - DEBUG - params={'modules': 'institutionOwnership,fundOwnership,majorDirectHolders,majorHoldersBreakdown,insiderTransactions,insiderHolders,netSharePurchaseActivity', 'corsDomain': 'finance.yahoo.com', 'symbol': 'HOOD', 'formatted': 'false'}
+2024-03-11 02:13:07,036 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:13:07,036 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:13:07,036 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:13:07,036 - DEBUG - reusing cookie
+2024-03-11 02:13:07,036 - DEBUG - reusing crumb
+2024-03-11 02:13:07,036 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:13:07,036 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:13:07,213 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/?modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com&symbol=HOOD&formatted=false&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 5904
+2024-03-11 02:13:07,215 - DEBUG - response code=200
+2024-03-11 02:13:07,215 - DEBUG - Exiting get()
+2024-03-11 02:13:07,226 - DEBUG - Entering get()
+2024-03-11 02:13:07,226 - DEBUG - url=https://query2.finance.yahoo.com/v7/finance/options/HOOD
+2024-03-11 02:13:07,226 - DEBUG - params=None
+2024-03-11 02:13:07,226 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:13:07,226 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:13:07,226 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:13:07,226 - DEBUG - reusing cookie
+2024-03-11 02:13:07,226 - DEBUG - reusing crumb
+2024-03-11 02:13:07,226 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:13:07,226 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:13:07,322 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v7/finance/options/HOOD?crumb=hvfQf%2FFPNsu HTTP/1.1" 200 None
+2024-03-11 02:13:07,323 - DEBUG - response code=200
+2024-03-11 02:13:07,323 - DEBUG - Exiting get()
+2024-03-11 02:13:07,325 - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/HOOD
+2024-03-11 02:13:07,325 - DEBUG - Entering get()
+2024-03-11 02:13:07,325 - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/HOOD
+2024-03-11 02:13:07,325 - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'HOOD'}
+2024-03-11 02:13:07,325 - DEBUG -  Entering _get_cookie_and_crumb()
+2024-03-11 02:13:07,325 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:13:07,325 - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:13:07,325 - DEBUG - reusing cookie
+2024-03-11 02:13:07,325 - DEBUG - reusing crumb
+2024-03-11 02:13:07,325 - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:13:07,325 - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-03-11 02:13:07,390 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/HOOD?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=HOOD&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 2995
+2024-03-11 02:13:07,390 - DEBUG - response code=200
+2024-03-11 02:13:07,391 - DEBUG - Exiting get()
+2024-03-11 02:13:07,392 - INFO - GET /api/stock API Returning stock data for hood
+2024-03-11 02:13:07,480 - INFO - GET /api/predict AI prediction API called for ticker: HOOD
+2024-03-11 02:13:07,480 - DEBUG - Entering download()
+2024-03-11 02:13:07,480 - DEBUG - Disabling multithreading because DEBUG logging enabled
+2024-03-11 02:13:07,480 - DEBUG -  Entering history()
+2024-03-11 02:13:07,480 - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['HOOD', 1, 0])
+2024-03-11 02:13:07,480 - DEBUG -   Entering history()
+2024-03-11 02:13:07,480 - DEBUG - HOOD: Yahoo GET parameters: {'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:13:07,480 - DEBUG -    Entering get()
+2024-03-11 02:13:07,480 - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/HOOD
+2024-03-11 02:13:07,480 - DEBUG - params={'range': '1y', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2024-03-11 02:13:07,480 - DEBUG -     Entering _get_cookie_and_crumb()
+2024-03-11 02:13:07,480 - DEBUG - cookie_mode = 'basic'
+2024-03-11 02:13:07,480 - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2024-03-11 02:13:07,480 - DEBUG - reusing cookie
+2024-03-11 02:13:07,480 - DEBUG - reusing crumb
+2024-03-11 02:13:07,480 - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2024-03-11 02:13:07,480 - DEBUG -     Exiting _get_cookie_and_crumb()
+2024-03-11 02:13:07,501 - DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/HOOD?range=1y&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains&crumb=hvfQf%2FFPNsu HTTP/1.1" 200 5665
+2024-03-11 02:13:07,501 - DEBUG - response code=200
+2024-03-11 02:13:07,501 - DEBUG -    Exiting get()
+2024-03-11 02:13:07,502 - DEBUG - HOOD: yfinance received OHLC data: 2023-03-09 14:30:00 -> 2024-03-08 14:30:00
+2024-03-11 02:13:07,502 - DEBUG - HOOD: OHLC after cleaning: 2023-03-09 09:30:00-05:00 -> 2024-03-08 09:30:00-05:00
+2024-03-11 02:13:07,503 - DEBUG - HOOD: OHLC after combining events: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:13:07,505 - DEBUG - HOOD: yfinance returning OHLC: 2023-03-09 00:00:00-05:00 -> 2024-03-08 00:00:00-05:00
+2024-03-11 02:13:07,505 - DEBUG -   Exiting history()
+2024-03-11 02:13:07,505 - DEBUG -  Exiting history()
+2024-03-11 02:13:07,505 - DEBUG - Exiting download()
+2024-03-11 02:13:10,863 - INFO - GET /api/predict prediction for ticker HOOD
