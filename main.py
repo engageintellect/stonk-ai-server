@@ -53,7 +53,8 @@ def chat(data: dict):
 
     if message:
         response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4-turbo-preview",
+            temperature=0.7,
             messages=[
                 {"role": "system", "content": "You are a helpful assistant. You also happen to be great at finding value. Give your opinion on the stock data provided to you."},
                 {"role": "user", "content": message}
@@ -87,7 +88,7 @@ def get_stock_data(ticker: str):
             item['Date'] = item['Date'].strftime('%Y-%m-%d %H:%M:%S')
             # Print the list of dictionaries
         
-        print(close_prices_list)
+        # print(close_prices_list)
 
         ticker_data = yf.Ticker(ticker)
         # close_prices = np.array(stock_data['Close']).reshape(-1, 1)
@@ -97,6 +98,19 @@ def get_stock_data(ticker: str):
         actions = ticker_data.actions
         major_holders = ticker_data.major_holders
         options = ticker_data.options
+        # financials = ticker_data.financials
+        # financials_list = []
+        # financials_dict = financials.to_dict()
+        # for index, values in financials_dict.items():
+            # for metric, value in values.items():
+                # if not pd.isnull(value):
+                    # financials_list.append({
+                    # "timestamp": index.strftime('%Y-%m-%d'),
+                    # "metric": metric,
+                    # "value": value
+            # })
+        # print(financials_list)
+
 
         # current_date = datetime.date.today()
         # dates_descending = [current_date - datetime.timedelta(days=i) for i in range(len(close_prices[-180:]))][::-1]
@@ -114,7 +128,9 @@ def get_stock_data(ticker: str):
             "news": stock_news,
             "actions": actions,
             "price_history": close_prices_list,
-            "options": options
+            "options": options,
+            # "financials": financials_list
+
         }
         return payload
 
@@ -179,5 +195,5 @@ def get_stock_prediction(ticker: str):
         raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=8000)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
     # uvicorn.run("main:app", host="0.0.0.0", port=8000, ssl_keyfile="/etc/letsencrypt/live/engage-dev.com/privkey.pem", ssl_certfile="/etc/letsencrypt/live/engage-dev.com/fullchain.pem")
