@@ -1,6 +1,9 @@
 from fastapi import FastAPI, HTTPException
 import json
+import pandas as pd
 import os
+import uvicorn
+import logging
 from openai import OpenAI
 import yfinance as yf
 import numpy as np
@@ -9,8 +12,6 @@ from sklearn.preprocessing import MinMaxScaler
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense
 import datetime
-import uvicorn
-import logging
 
 app = FastAPI()
 
@@ -32,7 +33,7 @@ client = OpenAI(api_key=openai_api_key)
 
 # Hello World route
 @app.get("/", tags=["root"])
-def hello():
+def root():
     msg = {"message": "Hello, World!", "version": "0.0.5"}
     logging.info("GET / called")
     return msg
@@ -69,39 +70,51 @@ def chat(data: dict):
 def get_stock_data(ticker: str):
     try:
         logging.info(f"GET /api/stock API called for ticker: {ticker}")
+        # stock_data = yf.download(ticker, period="10y")
 
-        stock_data = yf.download(ticker, period="1y")
+        stock_data = yf.download(tickers=ticker, period='10y', interval='1d')
+        pd.set_option('display.max_rows', None)
+        df = pd.DataFrame(stock_data)
+        close_prices = df
+        # convert close_prices to dictionary
+        close_prices = close_prices.to_dict()
+
+        # Convert DataFrame to a list of dictionaries
+        close_prices_list = df.reset_index().to_dict(orient='records')
+
+        # Format the timestamp as string
+        for item in close_prices_list:
+            item['Date'] = item['Date'].strftime('%Y-%m-%d %H:%M:%S')
+            # Print the list of dictionaries
+        
+        print(close_prices_list)
+
         ticker_data = yf.Ticker(ticker)
-        close_prices = np.array(stock_data['Close']).reshape(-1, 1)
-        stock_news = yf.Ticker(ticker).news
-        close_prices = [price for sublist in close_prices.tolist() for price in sublist]
+        # close_prices = np.array(stock_data['Close']).reshape(-1, 1)
+        stock_news = ticker_data.news
+        # close_prices = [price for sublist in close_prices.tolist() for price in sublist]
         dividends = ticker_data.dividends
         actions = ticker_data.actions
         major_holders = ticker_data.major_holders
         options = ticker_data.options
 
-        # Get the current date
-        current_date = datetime.date.today()
-        # Generate future dates starting from the current date
-        dates_descending = [current_date - datetime.timedelta(days=i) for i in range(len(close_prices[-180:]))][::-1]
+        # current_date = datetime.date.today()
+        # dates_descending = [current_date - datetime.timedelta(days=i) for i in range(len(close_prices[-180:]))][::-1]
 
-        # Create list of dictionaries containing date, price, and id
-        close_objects = [{"id": i+1, "date": str(date), "price": price} for i, (date, price) in enumerate(zip(dates_descending, close_prices[-180:]))]
-        
-        # Pretty print ticker_data.info
+        # close_objects = [{"id": i+1, "date": str(date), "price": price} for i, (date, price) in enumerate(zip(dates_descending, close_prices[-180:]))]
+
         ticker_info_dict = ticker_data.info
         logging.info(f"GET /api/stock API Returning stock data for {ticker}")
 
         payload={
             "ticker": ticker, 
             "ticker_info": ticker_info_dict, 
-            "price_history": close_objects,
             "dividends": dividends,
+            "major_holders": major_holders,
             "news": stock_news,
             "actions": actions,
-            "major_holders": major_holders,
+            "price_history": close_prices_list,
             "options": options
-
         }
         return payload
 
@@ -115,11 +128,9 @@ def get_stock_prediction(ticker: str):
     try:
         logging.info(f"GET /api/predict AI prediction API called for ticker: {ticker}")
         stock_data = yf.download(ticker, period="1y")
-        # ticker_data = yf.Ticker(ticker)
         close_prices = np.array(stock_data['Close']).reshape(-1, 1)
         scaler = MinMaxScaler(feature_range=(0, 1))
         close_prices_scaled = scaler.fit_transform(close_prices)
-        # options = yf.Ticker(ticker).options
 
         X, y = [], []
         look_back = 90
@@ -151,24 +162,14 @@ def get_stock_prediction(ticker: str):
 
         predicted_prices = scaler.inverse_transform(np.array(predicted_prices_scaled).reshape(-1, 1))
         predicted_prices = [price for sublist in predicted_prices.tolist() for price in sublist]
-        close_prices = [price for sublist in close_prices.tolist() for price in sublist]
 
-        # Get the current date
         current_date = datetime.date.today()
-        # Generate future dates starting from the current date
         dates_ascending = [current_date + datetime.timedelta(days=i) for i in range(len(predicted_prices))]
 
-        # Create list of dictionaries containing date, price, and id
         price_objects = [{"id": i+1, "date": str(date), "price": price} for i, (date, price) in enumerate(zip(dates_ascending, predicted_prices))]
         
-        # Pretty print ticker_data.info
-        # ticker_info_dict = ticker_data.info
-        # ticker_info_str = json.dumps(ticker_info_dict, indent=4)
-        # print(ticker_info_str)
-
         payload={
-            "predicted_prices": price_objects, 
-
+            "predicted_prices": price_objects
         }
         logging.info(f"GET /api/predict prediction for ticker {ticker}")
         return payload
@@ -179,5 +180,3 @@ def get_stock_prediction(ticker: str):
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000)
-    # uvicorn.run("main:app", host="0.0.0.0", port=8000, ssl_keyfile="/etc/letsencrypt/live/engage-dev.com/privkey.pem", ssl_certfile="/etc/letsencrypt/live/engage-dev.com/fullchain.pem")
-
