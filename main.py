@@ -71,9 +71,6 @@ def chat(data: dict):
             status_code=400, detail="Invalid request to OpenAI")
 
 
-app = FastAPI()
-
-
 @app.get("/api/options/getDelta/")
 async def calculate_option_delta(
     S: float = Query(..., description="Current price of the underlying asset (e.g., stock price)"),

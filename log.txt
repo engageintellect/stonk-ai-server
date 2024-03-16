@@ -25452,3 +25452,14 @@
 2024-03-15 23:51:06,264 - INFO - GET /api/options API called for ticker: PLTR
 2024-03-15 23:51:06,369 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
 2024-03-15 23:51:06,455 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 02:08:41,221 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 02:08:42,097 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 02:08:43,631 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 02:08:47,275 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 02:10:08,270 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 02:10:09,169 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 02:10:09,590 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 02:10:13,176 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 02:10:35,739 - INFO - GET /api/chat AI API called with message: Hello, ChatGPT!
+2024-03-16 02:10:36,415 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-03-16 02:10:36,417 - INFO - GET /api/chat AI API returning response: Hello! How can I assist you today?
