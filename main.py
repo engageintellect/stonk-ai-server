@@ -193,8 +193,7 @@ def get_stock_data(ticker: str, date: str):
         return payload
 
     except Exception as e:
-        logging.error(f"Error fetching stock data for ticker {
-                      ticker}: {str(e)}")
+        logging.error(f"Error fetching stock data for {ticker}: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
