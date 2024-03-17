@@ -25463,3 +25463,463 @@
 2024-03-16 02:10:35,739 - INFO - GET /api/chat AI API called with message: Hello, ChatGPT!
 2024-03-16 02:10:36,415 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2024-03-16 02:10:36,417 - INFO - GET /api/chat AI API returning response: Hello! How can I assist you today?
+2024-03-16 02:15:59,281 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 02:16:00,272 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 02:16:00,648 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 02:16:04,112 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 21:06:41,599 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 21:06:43,101 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 21:06:43,255 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 21:06:46,830 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 21:06:57,358 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 21:06:57,447 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 21:06:57,677 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 21:07:52,015 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 21:07:52,817 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 21:07:53,586 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 21:07:57,158 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 21:08:01,335 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 21:08:01,835 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 21:08:01,914 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 21:08:05,356 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 21:08:10,616 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 21:08:11,171 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 21:08:11,513 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 21:08:15,127 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 21:08:31,665 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 21:08:31,756 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 21:08:31,862 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 21:08:39,062 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 21:08:39,149 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 21:08:39,382 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 21:08:56,070 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 21:08:56,681 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 21:08:57,197 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 21:08:58,854 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 21:08:58,942 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 21:08:59,027 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 21:09:00,738 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 21:09:03,504 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 21:09:04,021 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 21:09:04,340 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 21:09:06,314 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 21:09:06,396 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 21:09:06,478 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 21:09:07,872 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 21:09:36,267 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 21:09:36,885 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 21:09:37,446 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 21:09:41,136 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 21:09:41,287 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 21:09:41,325 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 21:09:41,408 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 21:11:43,591 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 21:11:43,683 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 21:11:43,756 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 21:20:13,945 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 21:20:14,484 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 21:20:15,149 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 21:20:18,824 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 21:21:07,872 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 21:21:07,955 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 21:21:08,137 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 21:21:22,264 - INFO - GET /api/stock API called for ticker: spy
+2024-03-16 21:21:24,547 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/?modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com&symbol=SPY&formatted=false&crumb=.x4Dmq8Y5.D
+2024-03-16 21:21:24,654 - INFO - GET /api/stock API Returning stock data for spy
+2024-03-16 21:21:24,827 - INFO - GET /api/predict AI prediction API called for ticker: SPY
+2024-03-16 21:21:28,323 - INFO - GET /api/predict prediction for ticker SPY
+2024-03-16 21:22:04,537 - INFO - GET /api/stock API called for ticker: spy
+2024-03-16 21:22:06,104 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/?modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com&symbol=SPY&formatted=false&crumb=.x4Dmq8Y5.D
+2024-03-16 21:22:06,332 - INFO - GET /api/stock API Returning stock data for spy
+2024-03-16 21:22:06,985 - INFO - GET /api/predict AI prediction API called for ticker: SPY
+2024-03-16 21:22:10,397 - INFO - GET /api/predict prediction for ticker SPY
+2024-03-16 21:22:44,951 - INFO - GET /api/stock API called for ticker: spy
+2024-03-16 21:22:46,480 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/?modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com&symbol=SPY&formatted=false&crumb=.x4Dmq8Y5.D
+2024-03-16 21:22:46,698 - INFO - GET /api/stock API Returning stock data for spy
+2024-03-16 21:22:47,311 - INFO - GET /api/predict AI prediction API called for ticker: SPY
+2024-03-16 21:22:50,913 - INFO - GET /api/predict prediction for ticker SPY
+2024-03-16 21:23:23,713 - INFO - GET /api/stock API called for ticker: spy
+2024-03-16 21:23:25,131 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/?modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com&symbol=SPY&formatted=false&crumb=.x4Dmq8Y5.D
+2024-03-16 21:23:25,252 - INFO - GET /api/stock API Returning stock data for spy
+2024-03-16 21:23:25,865 - INFO - GET /api/predict AI prediction API called for ticker: SPY
+2024-03-16 21:23:29,456 - INFO - GET /api/predict prediction for ticker SPY
+2024-03-16 21:23:35,373 - INFO - GET /api/stock API called for ticker: spy
+2024-03-16 21:23:36,713 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/?modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com&symbol=SPY&formatted=false&crumb=.x4Dmq8Y5.D
+2024-03-16 21:23:36,815 - INFO - GET /api/stock API Returning stock data for spy
+2024-03-16 21:23:36,994 - INFO - GET /api/predict AI prediction API called for ticker: SPY
+2024-03-16 21:23:40,764 - INFO - GET /api/predict prediction for ticker SPY
+2024-03-16 21:24:56,066 - INFO - GET /api/stock API called for ticker: spy
+2024-03-16 21:24:57,905 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/?modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com&symbol=SPY&formatted=false&crumb=.x4Dmq8Y5.D
+2024-03-16 21:24:58,014 - INFO - GET /api/stock API Returning stock data for spy
+2024-03-16 21:24:58,714 - INFO - GET /api/predict AI prediction API called for ticker: SPY
+2024-03-16 21:25:02,310 - INFO - GET /api/predict prediction for ticker SPY
+2024-03-16 21:26:07,583 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 21:26:08,213 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 21:26:08,340 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 21:26:12,128 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 21:27:11,639 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 21:27:12,296 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 21:27:12,924 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 21:27:16,619 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 21:27:42,755 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 21:27:43,642 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 21:27:44,281 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 21:27:48,033 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 21:28:03,524 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 21:28:04,107 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 21:28:04,844 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 21:28:08,468 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 21:28:57,712 - INFO - GET /api/stock API called for ticker: h
+2024-03-16 21:28:58,748 - INFO - GET /api/stock API Returning stock data for h
+2024-03-16 21:28:58,927 - INFO - GET /api/predict AI prediction API called for ticker: H
+2024-03-16 21:29:02,478 - INFO - GET /api/predict prediction for ticker H
+2024-03-16 21:29:12,356 - INFO - GET /api/options API called for ticker: H
+2024-03-16 21:29:12,570 - INFO - Options for H: ('2024-04-19', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2025-01-17')
+2024-03-16 21:29:12,651 - INFO - GET /api/options Returning stock data for H
+2024-03-16 21:29:23,097 - INFO - GET /api/options API called for ticker: H
+2024-03-16 21:29:23,185 - INFO - Options for H: ('2024-04-19', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2025-01-17')
+2024-03-16 21:29:23,276 - INFO - GET /api/options Returning stock data for H
+2024-03-16 21:29:51,154 - INFO - GET /api/stock API called for ticker: spy
+2024-03-16 21:29:53,171 - ERROR - 404 Client Error: Not Found for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/?modules=institutionOwnership%2CfundOwnership%2CmajorDirectHolders%2CmajorHoldersBreakdown%2CinsiderTransactions%2CinsiderHolders%2CnetSharePurchaseActivity&corsDomain=finance.yahoo.com&symbol=SPY&formatted=false&crumb=.x4Dmq8Y5.D
+2024-03-16 21:29:53,276 - INFO - GET /api/stock API Returning stock data for spy
+2024-03-16 21:29:53,480 - INFO - GET /api/predict AI prediction API called for ticker: SPY
+2024-03-16 21:29:57,014 - INFO - GET /api/predict prediction for ticker SPY
+2024-03-16 21:29:58,869 - INFO - GET /api/options API called for ticker: SPY
+2024-03-16 21:29:58,997 - INFO - Options for SPY: ('2024-03-18', '2024-03-19', '2024-03-20', '2024-03-21', '2024-03-22', '2024-03-25', '2024-03-26', '2024-03-27', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-04-30', '2024-05-17', '2024-05-31', '2024-06-21', '2024-06-28', '2024-07-19', '2024-07-31', '2024-08-16', '2024-08-30', '2024-09-20', '2024-09-30', '2024-12-20', '2024-12-31', '2025-01-17', '2025-03-21', '2025-06-20', '2025-12-19', '2026-01-16', '2026-12-18')
+2024-03-16 21:29:59,233 - INFO - GET /api/options Returning stock data for SPY
+2024-03-16 21:38:00,068 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 21:38:00,700 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 21:38:00,807 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 21:38:04,299 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 21:43:34,141 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 21:43:34,813 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 21:43:35,469 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 21:43:39,266 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 21:43:44,225 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 21:43:44,471 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 21:43:44,619 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 21:43:51,418 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 21:43:51,515 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 21:43:51,593 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 21:43:55,084 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 21:43:55,176 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 21:43:55,270 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 21:43:57,732 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 21:43:57,813 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 21:43:57,913 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 22:56:27,317 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 22:56:28,161 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 22:56:28,285 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 22:56:31,754 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 22:56:39,868 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 22:56:40,055 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 22:56:40,141 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 22:56:46,569 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 22:56:46,660 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 22:56:46,874 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 22:56:54,522 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 22:56:54,737 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 22:56:54,823 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 23:48:26,424 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 23:48:26,530 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 23:48:26,639 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 23:50:31,163 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 23:50:31,782 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 23:50:32,633 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 23:50:35,556 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 23:50:35,657 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 23:50:35,893 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 23:50:36,362 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 23:50:50,350 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 23:50:51,096 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 23:50:51,637 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 23:50:52,901 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 23:50:53,013 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 23:50:53,196 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 23:50:55,187 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 23:51:04,595 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 23:51:05,333 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 23:51:05,871 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 23:51:09,443 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 23:51:17,153 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 23:51:17,385 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 23:51:17,466 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 23:55:18,834 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 23:55:19,608 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 23:55:20,462 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 23:55:22,280 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 23:55:22,375 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 23:55:22,473 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 23:55:24,186 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 23:55:38,409 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 23:55:39,022 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 23:55:39,589 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 23:55:40,892 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 23:55:41,109 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 23:55:41,236 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 23:55:43,279 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 23:57:10,922 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 23:57:11,719 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 23:57:12,283 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 23:57:15,263 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 23:57:15,485 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 23:57:15,579 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 23:57:15,974 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 23:57:45,325 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 23:57:46,007 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 23:57:46,742 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 23:57:50,683 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-16 23:57:57,471 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-16 23:57:58,031 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-16 23:57:58,760 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-16 23:58:01,030 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-16 23:58:01,145 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-16 23:58:01,259 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-16 23:58:02,570 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:00:26,540 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:00:27,096 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:00:27,651 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:00:31,099 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:00:33,474 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-17 00:00:33,553 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-17 00:00:33,640 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-17 00:01:33,243 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:01:34,171 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:01:34,703 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:01:36,654 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-17 00:01:36,739 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-17 00:01:36,833 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-17 00:01:38,541 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:01:48,227 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-17 00:01:48,335 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-17 00:01:48,443 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-17 00:02:13,750 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-17 00:02:13,839 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-17 00:02:13,928 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-17 00:02:34,417 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-17 00:02:34,542 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-17 00:02:34,634 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-17 00:02:45,088 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:02:45,686 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:02:46,009 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:02:47,906 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-17 00:02:48,021 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-17 00:02:48,137 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-17 00:02:49,310 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:03:22,591 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-17 00:03:22,696 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-17 00:03:22,850 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-17 00:03:43,862 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:03:44,342 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:03:44,918 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:03:46,686 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-17 00:03:46,797 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-17 00:03:46,964 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-17 00:03:48,673 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:04:29,616 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:04:30,272 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:04:30,889 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:04:33,289 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-17 00:04:33,381 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-17 00:04:33,463 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-17 00:04:34,663 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:05:23,537 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:05:24,227 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:05:25,274 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:05:27,413 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-17 00:05:27,495 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-17 00:05:27,695 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-17 00:05:28,869 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:05:47,242 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-17 00:05:47,346 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-17 00:05:47,450 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-17 00:06:17,182 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:06:17,851 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:06:18,747 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:06:20,857 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-17 00:06:20,972 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-17 00:06:21,169 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-17 00:06:22,595 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:06:36,906 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:06:37,525 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:06:38,072 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:06:39,740 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-17 00:06:39,851 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-17 00:06:40,044 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-17 00:06:41,734 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:06:54,352 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:06:54,990 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:06:55,615 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:06:59,317 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:07:01,368 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-17 00:07:01,537 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-17 00:07:01,634 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-17 00:07:30,982 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:07:31,945 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:07:32,569 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:07:34,313 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-17 00:07:34,566 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-17 00:07:34,659 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-17 00:07:36,216 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:07:51,142 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:07:51,867 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:07:52,436 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:07:54,460 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-17 00:07:54,565 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-17 00:07:54,675 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-17 00:07:56,033 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:08:47,631 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:08:48,253 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:08:48,862 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:08:50,694 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-17 00:08:50,788 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-17 00:08:50,884 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-17 00:08:52,819 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:09:35,387 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-17 00:09:35,490 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-17 00:09:35,680 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-17 00:10:40,419 - INFO - GET /api/options API called for ticker: PLTR
+2024-03-17 00:10:40,686 - INFO - Options for PLTR: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-06-20', '2026-01-16')
+2024-03-17 00:10:40,774 - INFO - GET /api/options Returning stock data for PLTR
+2024-03-17 00:12:02,014 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:12:02,566 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:12:03,398 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:12:07,176 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:13:04,143 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:13:04,834 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:13:05,434 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:13:09,194 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:13:18,432 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:13:18,988 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:13:19,532 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:13:23,012 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:14:13,844 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:14:14,661 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:14:15,647 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:14:19,230 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:15:21,997 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:15:22,812 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:15:23,348 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:15:27,195 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:15:45,299 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:15:45,881 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:15:46,484 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:15:50,060 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:15:57,938 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:15:58,507 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:15:59,356 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:16:03,120 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:16:11,062 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:16:11,642 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:16:12,660 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:16:16,284 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:16:42,816 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:16:43,457 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:16:43,979 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:16:47,589 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:17:15,841 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:17:16,560 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:17:17,449 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:17:21,074 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:17:42,291 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:17:42,868 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:17:43,566 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:17:47,188 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:18:25,869 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:18:26,416 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:18:27,028 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:18:30,600 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:18:51,043 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:18:51,557 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:18:52,218 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:18:56,023 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:19:21,475 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:19:22,075 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:19:22,677 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:19:26,390 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:20:12,734 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:20:13,339 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:20:14,002 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:20:17,877 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:20:59,075 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:20:59,824 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:21:00,429 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:21:03,952 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:22:04,700 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:22:05,360 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:22:06,231 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:22:09,852 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:22:51,140 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:22:51,795 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:22:52,391 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:22:56,383 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:22:58,827 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:22:59,210 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:22:59,755 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:23:03,627 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:26:52,548 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:26:53,390 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:26:54,153 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:26:57,814 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:27:28,135 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:27:28,680 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:27:29,514 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:27:33,229 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:28:05,351 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:28:06,059 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:28:06,605 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:28:10,200 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:29:12,670 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:29:13,253 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:29:13,796 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:29:17,500 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:29:48,844 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:29:49,431 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:29:49,973 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:29:53,693 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:32:23,277 - INFO - GET /api/stock API called for ticker: pltr
+2024-03-17 00:32:24,085 - INFO - GET /api/stock API Returning stock data for pltr
+2024-03-17 00:32:24,164 - INFO - GET /api/predict AI prediction API called for ticker: PLTR
+2024-03-17 00:32:27,676 - INFO - GET /api/predict prediction for ticker PLTR
+2024-03-17 00:32:30,551 - INFO - GET /api/stock API called for ticker: tsla
+2024-03-17 00:32:31,558 - INFO - GET /api/stock API Returning stock data for tsla
+2024-03-17 00:32:31,927 - INFO - GET /api/predict AI prediction API called for ticker: TSLA
+2024-03-17 00:32:35,377 - INFO - GET /api/predict prediction for ticker TSLA
+2024-03-17 00:33:22,028 - INFO - GET /api/stock API called for ticker: tsla
+2024-03-17 00:33:22,720 - INFO - GET /api/stock API Returning stock data for tsla
+2024-03-17 00:33:23,492 - INFO - GET /api/predict AI prediction API called for ticker: TSLA
+2024-03-17 00:33:27,081 - INFO - GET /api/predict prediction for ticker TSLA
+2024-03-17 00:34:16,854 - INFO - GET /api/stock API called for ticker: tsla
+2024-03-17 00:34:17,680 - INFO - GET /api/stock API Returning stock data for tsla
+2024-03-17 00:34:18,603 - INFO - GET /api/predict AI prediction API called for ticker: TSLA
+2024-03-17 00:34:22,206 - INFO - GET /api/predict prediction for ticker TSLA
+2024-03-17 00:34:40,905 - INFO - GET /api/stock API called for ticker: tsla
+2024-03-17 00:34:41,597 - INFO - GET /api/stock API Returning stock data for tsla
+2024-03-17 00:34:42,393 - INFO - GET /api/predict AI prediction API called for ticker: TSLA
+2024-03-17 00:34:46,025 - INFO - GET /api/predict prediction for ticker TSLA
+2024-03-17 00:34:58,361 - INFO - GET /api/stock API called for ticker: tsla
+2024-03-17 00:34:59,250 - INFO - GET /api/stock API Returning stock data for tsla
+2024-03-17 00:34:59,893 - INFO - GET /api/predict AI prediction API called for ticker: TSLA
+2024-03-17 00:35:03,541 - INFO - GET /api/predict prediction for ticker TSLA
+2024-03-17 00:35:29,030 - INFO - GET /api/stock API called for ticker: tsla
+2024-03-17 00:35:29,852 - INFO - GET /api/stock API Returning stock data for tsla
+2024-03-17 00:35:30,605 - INFO - GET /api/predict AI prediction API called for ticker: TSLA
+2024-03-17 00:35:34,266 - INFO - GET /api/predict prediction for ticker TSLA
+2024-03-17 00:43:05,916 - INFO - GET /api/stock API called for ticker: msft
+2024-03-17 00:43:07,105 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-17 00:43:07,305 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-17 00:43:11,063 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-17 00:44:51,622 - INFO - GET /api/stock API called for ticker: msft
+2024-03-17 00:44:52,492 - INFO - GET /api/stock API Returning stock data for msft
+2024-03-17 00:44:53,189 - INFO - GET /api/predict AI prediction API called for ticker: MSFT
+2024-03-17 00:44:56,805 - INFO - GET /api/predict prediction for ticker MSFT
+2024-03-17 00:47:53,100 - INFO - GET /api/options API called for ticker: MSFT
+2024-03-17 00:47:53,617 - INFO - Options for MSFT: ('2024-03-22', '2024-03-28', '2024-04-05', '2024-04-12', '2024-04-19', '2024-04-26', '2024-05-17', '2024-06-21', '2024-07-19', '2024-08-16', '2024-09-20', '2024-10-18', '2024-11-15', '2024-12-20', '2025-01-17', '2025-03-21', '2025-06-20', '2025-12-19', '2026-01-16', '2026-06-18', '2026-12-18')
+2024-03-17 00:47:53,712 - INFO - GET /api/options Returning stock data for MSFT
+2024-03-17 00:54:11,829 - INFO - GET /api/stock API called for ticker: faf
+2024-03-17 00:54:12,969 - INFO - GET /api/stock API Returning stock data for faf
+2024-03-17 00:54:13,153 - INFO - GET /api/predict AI prediction API called for ticker: FAF
+2024-03-17 00:54:16,763 - INFO - GET /api/predict prediction for ticker FAF
+2024-03-17 00:54:25,007 - INFO - GET /api/options API called for ticker: FAF
+2024-03-17 00:54:25,070 - INFO - Options for FAF: ('2024-04-19', '2024-07-19', '2024-10-18')
+2024-03-17 00:54:25,270 - INFO - GET /api/options Returning stock data for FAF

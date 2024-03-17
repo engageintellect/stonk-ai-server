@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from fastapi import FastAPI, Query, HTTPException
 import json
 import pandas as pd
@@ -12,14 +14,11 @@ from sklearn.preprocessing import MinMaxScaler
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense
 import datetime
-
 from scipy.stats import norm
 
 app = FastAPI()
 
-
-logging.basicConfig(filename='log.txt', level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='log.txt', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 config_file_path = '/etc/python-gpt.json'
 openai_api_key = None
@@ -71,24 +70,6 @@ def chat(data: dict):
             status_code=400, detail="Invalid request to OpenAI")
 
 
-@app.get("/api/options/getDelta/")
-async def calculate_option_delta(
-    S: float = Query(..., description="Current price of the underlying asset (e.g., stock price)"),
-    K: float = Query(..., description="Strike price of the option"),
-    T: float = Query(..., description="Time to expiration in years"),
-    r: float = Query(..., description="Risk-free interest rate"),
-    sigma: float = Query(...,
-                         description="Volatility of the underlying asset"),
-):
-    # Calculate d1
-    d1 = (np.log(S / K) + (r + (sigma ** 2) / 2) * T) / (sigma * np.sqrt(T))
-
-    # Calculate delta
-    delta = norm.cdf(d1)
-
-    return {"option_delta": delta}
-
-
 @app.get("/api/interestRates")
 def fetch_treasury_bill_rate():
     tbill_data = yf.Ticker('^IRX')
@@ -109,7 +90,6 @@ def get_stock_data(ticker: str):
         close_prices = df
         # convert close_prices to dictionary
         close_prices = close_prices.to_dict()
-
         # Convert DataFrame to a list of dictionaries
         close_prices_list = df.reset_index().to_dict(orient='records')
 
@@ -118,11 +98,7 @@ def get_stock_data(ticker: str):
             item['Date'] = item['Date'].strftime('%Y-%m-%d %H:%M:%S')
             # Print the list of dictionaries
 
-        # print(close_prices_list)
-
         ticker_data = yf.Ticker(ticker)
-        # close_prices = np.array(stock_data['Close']).reshape(-1, 1)
-        # close_prices = [price for sublist in close_prices.tolist() for price in sublist]
         ticker_info_dict = ticker_data.info
         news = ticker_data.news
         dividends = ticker_data.dividends
@@ -154,38 +130,6 @@ def get_stock_data(ticker: str):
             "price_history": close_prices_list,
             "options": options,
             # "financials": financials_list
-        }
-        return payload
-
-    except Exception as e:
-        logging.error(f"Error fetching stock data for {ticker}: {str(e)}")
-        raise HTTPException(status_code=500, detail=str(e))
-
-
-@app.get("/api/options/{ticker}/{date}")
-def get_stock_data(ticker: str, date: str):
-    try:
-        logging.info(f"GET /api/options API called for ticker: {ticker}")
-
-        stock = yf.Ticker(ticker)
-        options = stock.options
-        logging.info(f"Options for {ticker}: {options}")
-
-        opt = stock.option_chain(
-            date
-
-        )
-        # Replace NaN values with None
-        calls = opt.calls.replace({np.nan: None}).to_dict(orient='records')
-        puts = opt.puts.replace({np.nan: None}).to_dict(orient='records')
-
-        logging.info(f"GET /api/options Returning stock data for {ticker}")
-
-        payload = {
-            "options": {
-                "calls": calls,
-                "puts": puts
-            }
         }
         return payload
 
@@ -241,7 +185,8 @@ def get_stock_prediction(ticker: str):
 
         current_date = datetime.date.today()
         dates_ascending = [
-            current_date + datetime.timedelta(days=i) for i in range(len(predicted_prices))]
+                current_date + datetime.timedelta(days=i) for i in range(len(predicted_prices))
+                ]
 
         price_objects = [{"id": i+1, "date": str(date), "price": price}
                          for i, (date, price) in enumerate(zip(dates_ascending, predicted_prices))]
@@ -257,6 +202,55 @@ def get_stock_prediction(ticker: str):
         logging.error(f"Error predicting stock data for ticker {ticker}")
         raise HTTPException(status_code=500, detail=str(e))
 
+
+@app.get("/api/options/{ticker}/{date}")
+def get_stock_data(ticker: str, date: str):
+    try:
+        logging.info(f"GET /api/options API called for ticker: {ticker}")
+
+        stock = yf.Ticker(ticker)
+        options = stock.options
+        logging.info(f"Options for {ticker}: {options}")
+
+        opt = stock.option_chain(
+            date
+
+        )
+        # Replace NaN values with None
+        calls = opt.calls.replace({np.nan: None}).to_dict(orient='records')
+        puts = opt.puts.replace({np.nan: None}).to_dict(orient='records')
+
+        logging.info(f"GET /api/options Returning stock data for {ticker}")
+
+        payload = {
+            "options": {
+                "calls": calls,
+                "puts": puts
+            }
+        }
+        return payload
+
+    except Exception as e:
+        logging.error(f"Error fetching stock data for {ticker}: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/api/options/getDelta/")
+async def calculate_option_delta(
+    S: float = Query(..., description="Current price of the underlying asset (e.g., stock price)"),
+    K: float = Query(..., description="Strike price of the option"),
+    T: float = Query(..., description="Time to expiration in years"),
+    r: float = Query(..., description="Risk-free interest rate"),
+    sigma: float = Query(...,
+                         description="Volatility of the underlying asset"),
+):
+    # Calculate d1
+    d1 = (np.log(S / K) + (r + (sigma ** 2) / 2) * T) / (sigma * np.sqrt(T))
+
+    # Calculate delta
+    delta = norm.cdf(d1)
+
+    return {"option_delta": delta}
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
