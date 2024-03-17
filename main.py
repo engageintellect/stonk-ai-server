@@ -18,7 +18,8 @@ from scipy.stats import norm
 
 app = FastAPI()
 
-logging.basicConfig(filename='log.txt', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='log.txt', level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
 config_file_path = '/etc/python-gpt.json'
 openai_api_key = None
@@ -49,7 +50,7 @@ def hello():
 @app.post("/api/chat")
 def chat(data: dict):
     message = data.get("message")
-    logging.info(f"GET /api/chat AI API called with message: {message}")
+    logging.info(f"GET /api/chat AI API called with message.")
 
     if message:
         response = client.chat.completions.create(
@@ -61,7 +62,7 @@ def chat(data: dict):
             ]
         )
         logging.info(
-            f"GET /api/chat AI API returning response: {response.choices[0].message.content}")
+            f"GET /api/chat AI API responding with: {response.choices[0].message.content}")
         return {
             "message": response.choices[0].message.content,
         }
@@ -185,8 +186,8 @@ def get_stock_prediction(ticker: str):
 
         current_date = datetime.date.today()
         dates_ascending = [
-                current_date + datetime.timedelta(days=i) for i in range(len(predicted_prices))
-                ]
+            current_date + datetime.timedelta(days=i) for i in range(len(predicted_prices))
+        ]
 
         price_objects = [{"id": i+1, "date": str(date), "price": price}
                          for i, (date, price) in enumerate(zip(dates_ascending, predicted_prices))]
