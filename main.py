@@ -53,22 +53,28 @@ def chat(data: dict):
     logging.info(f"GET /api/chat AI API called with message.")
 
     if message:
-        response = client.chat.completions.create(
+        stream = client.chat.completions.create(
             model="gpt-3.5-turbo",
             temperature=0.7,
+            stream=True,
             messages=[
                 {"role": "system", "content": "You are a helpful assistant. You also happen to be great at finding value. Give your opinion on the stock data provided to you."},
                 {"role": "user", "content": message}
             ]
         )
-        logging.info(
-            f"GET /api/chat AI API responding with: {response.choices[0].message.content}")
-        return {
-            "message": response.choices[0].message.content,
-        }
-    else:
-        raise HTTPException(
-            status_code=400, detail="Invalid request to OpenAI")
+
+        for chunk in stream:
+            if chunk.choices:
+                logging.info(
+                    f"GET /api/chat AI API responding with: {chunk.choices[0].message.content}")
+                if chunk.choices[0].delta.contend is not None:
+
+                    return {
+                        "message": chunk.choices[0].delta.content,
+                    }
+                else:
+                    raise HTTPException(
+                        status_code=400, detail="Invalid request to OpenAI")
 
 
 @app.get("/api/interestRates")
